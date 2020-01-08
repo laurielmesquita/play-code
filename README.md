@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Brincadeira de criança
+  Brincadeira de Criança
 </h1>
 
 Site institucional da empresa de aluguel de brinquedos - Brincadeira de Criança.
