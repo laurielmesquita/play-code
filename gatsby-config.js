@@ -1,11 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: 'Brincadeira de Criança',
-    description: 'Quer frango?',
+    description: 'Alguma descrição aqui sobre a',
     author: '@brincadeira'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -18,17 +19,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: 'Brincadeira-de-Criança',
+        short_name: 'Brincadeira',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#E7134E',
+        theme_color: '#E7134E',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png' // This path is relative to the root of the site.
+        icon: 'src/images/gatsby-icon.png'
       }
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
     {
       resolve: 'gatsby-plugin-offline',
       options: {
