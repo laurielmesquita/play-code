@@ -39,11 +39,6 @@ module.exports = {
         icon: 'src/images/icon.png'
       }
     },
-    {
-      resolve: 'gatsby-plugin-offline',
-      options: {
-        precachePages: ['/page-2/']
-      }
-    }
+    'gatsby-plugin-offline'
   ]
 }
