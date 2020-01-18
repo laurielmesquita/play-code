@@ -8,6 +8,17 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Averia Libre',
+            variants: ['400', '700']
+          }
+        ]
+      }
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
@@ -25,7 +36,7 @@ module.exports = {
         background_color: '#E7134E',
         theme_color: '#E7134E',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png'
+        icon: 'src/images/icon.png'
       }
     },
     {
