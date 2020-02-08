@@ -6,7 +6,6 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-prefetch-google-fonts',
       options: {
@@ -38,7 +37,7 @@ module.exports = {
         display: 'standalone',
         icon: 'src/images/icon.png'
       }
-    },
-    'gatsby-plugin-offline'
+    }
+    // 'gatsby-plugin-offline'
   ]
 }
