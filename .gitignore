@@ -1,5 +1,5 @@
 # my temp tests
-01.js
+01/
 
 # Logs
 logs
@@ -55,11 +55,12 @@ typings/
 *.tgz
 
 # dotenv environment variable files
-.env*
+# .env*
 
 # gatsby files
 .cache/
 public
+static/admin/*.bundle.*
 
 # Mac files
 .DS_Store
