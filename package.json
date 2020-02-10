@@ -18,6 +18,7 @@
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-remark-images": "^3.1.44",
+    "gatsby-remark-relative-images": "^0.2.3",
     "gatsby-remark-responsive-iframe": "^2.2.32",
     "gatsby-source-filesystem": "^2.1.48",
     "gatsby-transformer-remark": "^2.6.50",
@@ -49,7 +50,8 @@
   },
   "keywords": [
     "brincadeira",
-    "criança"
+    "criança",
+    "aluguel"
   ],
   "license": "MIT",
   "scripts": {
