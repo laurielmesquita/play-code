@@ -17,6 +17,7 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
+    "react/prop-types": 0,
     "class-methods-use-this": "off",
     "no-param-reassing": "off",
     camelcase: "off",

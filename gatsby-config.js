@@ -2,22 +2,18 @@ const postcssPresetEnv = require('postcss-preset-env')
 
 module.exports = {
   siteMetadata: {
-    title: 'Brincadeira de Criança',
-    description: 'Alguma descrição aqui sobre a',
-    author: '@brincadeira'
+    title: 'Yelloecake',
+    siteUrl: 'https://yellowcake.netlify.com'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     {
-      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      resolve: 'gatsby-plugin-google-tagmanager',
       options: {
-        fonts: [
-          {
-            family: 'Averia Libre',
-            variants: ['400', '700']
-          }
-        ]
+        /* id: 'GTM-add_your_tag_here', */
+        id: 'GTM-P4RNF8D',
+        includeInDevelopment: false
       }
     },
     {
@@ -34,6 +30,11 @@ module.exports = {
             // Add runtime caching of various other page resources
             urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|gif|tiff|js|woff|woff2|json|css)$/,
             handler: 'staleWhileRevalidate'
+          },
+          {
+            // uploadcare
+            urlPattern: /^https:\/\/ucarecdn.com\/[-a-zA-Z0-9@:%_\+.~#?&//=]*?\/10x\//,
+            handler: 'staleWhileRevalidate'
           }
         ],
         skipWaiting: true,
@@ -41,10 +42,26 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'yellowcake',
+        short_name: 'yellowcake',
+        start_url: '/',
+        background_color: '#00C2BD',
+        theme_color: '#00C2BD',
+        // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
+        // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
+        display: 'standalone',
+        icon: `${__dirname}/static/images/logo.svg` // This path is relative to the root of the site.
+      }
+    },
+
+    // Add static assets before markdown files
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'images',
-        path: `${__dirname}/static/images`
+        path: `${__dirname}/static/images`,
+        name: 'images'
       }
     },
     {
@@ -54,8 +71,11 @@ module.exports = {
         name: 'pages'
       }
     },
+
+    // images
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
+
     {
       resolve: 'gatsby-transformer-remark',
       options: {
@@ -74,6 +94,8 @@ module.exports = {
         ]
       }
     },
+
+    // css (replace with gatsby-plugin-sass for v2)
     {
       resolve: 'gatsby-plugin-sass',
       options: {
@@ -97,23 +119,13 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-nprogress',
       options: {
-        color: 'black',
-        showSpinner: true
+        // Setting a color is optional.
+        color: 'white',
+        // Disable the loading spinner.
+        showSpinner: false
       }
     },
     'gatsby-plugin-sitemap',
-    {
-      resolve: 'gatsby-plugin-manifest',
-      options: {
-        name: 'Brincadeira-de-Criança',
-        short_name: 'Brincadeira',
-        start_url: '/',
-        background_color: '#E7134E',
-        theme_color: '#E7134E',
-        display: 'standalone',
-        icon: `${__dirname}/static/images/icon.png`
-      }
-    },
-    'gatsby-plugin-netlify'
+    'gatsby-plugin-netlify' // make sure to keep it last in the array
   ]
 }
