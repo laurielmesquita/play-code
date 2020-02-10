@@ -1,6 +1,6 @@
 ---
-template: SinglePost
-title: Main Post
+template: HomePage
+title: Postagem Principal
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: >-
@@ -10,18 +10,18 @@ excerpt: >-
   apareça corretamente no seu site. Este texto será substituído assim que o
   site está completo. No momento, você está lendo um texto escrito em português
 categories:
-  - category: News
+  - category:
 meta:
   canonicalLink: ''
-  description: Another post description
+  description: Uma descrição sobre a página
   noindex: false
-  title: Main Post
+  title: Postagem Principal
 ---
 Os parágrafos são separados por uma linha em branco.
 
 ![Test Image](https://brincadeira.co/)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Id64silK_7M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0gIZ0BVmkNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 O segundo parágrafo. Este é um texto de espaço reservado que nossos web designers colocam aqui para garantir que as palavras apareçam corretamente em seu site. _Italico_, **negrito** e `monospace`.
 
