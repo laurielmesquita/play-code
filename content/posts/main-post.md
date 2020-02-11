@@ -10,7 +10,7 @@ excerpt: >-
   apareça corretamente no seu site. Este texto será substituído assim que o
   site está completo. No momento, você está lendo um texto escrito em português
 categories:
-  - category:
+  - category: News
 meta:
   canonicalLink: ''
   description: Uma descrição sobre a página

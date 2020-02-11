@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
+
 import Meta from './Meta'
 
 import 'modern-normalize/modern-normalize.css'
