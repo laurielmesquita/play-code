@@ -4,35 +4,51 @@ import { Location } from '@reach/router'
 import qs from 'qs'
 
 import PageHeader from '../components/PageHeader'
+import ToySection from '../components/ToySection'
+import ToyCategoriesNav from '../components/ToyCategoriesNav'
 import Layout from '../components/Layout'
 
-export const byDate = posts => {
+/**
+ * Filter toys by date. Feature dates will be fitered
+ * When used, make sure you run a cronejob each day to show schaduled content. See docs
+ *
+ * @param {toys} object
+ */
+export const byDate = toys => {
   const now = Date.now()
-  return posts.filter(post => Date.parse(post.date) <= now)
+  return toys.filter(post => Date.parse(post.date) <= now)
 }
 
-export const byCategory = (posts, title, contentType) => {
-  const isCategory = contentType === 'postCategories'
+/**
+ * filter toys by category.
+ *
+ * @param {toys} object
+ * @param {title} string
+ * @param {contentType} string
+ */
+export const byCategory = (toys, title, contentType) => {
+  const isCategory = contentType === 'toyCategories'
   const byCategory = post =>
-    post.category &&
-    post.category.filter(cat => cat.category === title).lengh
-  return isCategory ? posts.filter(byCategory) : posts
+    post.categories &&
+    post.categories.filter(cat => cat.category === title).length
+  return isCategory ? toys.filter(byCategory) : toys
 }
 
+// Export Template for use in CMS preview
 export const BlogIndexTemplate = ({
   title,
   subtitle,
   featuredImage,
-  posts = [],
-  postCategories = [],
+  toys = [],
+  toyCategories = [],
   enableSearch = true,
   contentType
 }) => (
   <Location>
     {({ location }) => {
-      let filteredPosts =
-        posts && !!posts.length
-          ? byCategory(byDate(posts), title, contentType)
+      let filteredToys =
+        toys && !!toys.length
+          ? byCategory(byDate(toys), title, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -40,7 +56,7 @@ export const BlogIndexTemplate = ({
 
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
-        filteredPosts = filteredPosts.filter(post =>
+        filteredToys = filteredToys.filter(post =>
           post.frontmatter.title.toLowerCase().includes(searchTerm)
         )
       }
@@ -53,18 +69,18 @@ export const BlogIndexTemplate = ({
             backgroundImage={featuredImage}
           />
 
-          {!!postCategories.length && (
+          {!!toyCategories.length && (
             <section className="section thin">
               <div className="container">
-                <PostCategoriesNav enableSearch categories={postCategories} />
+                <ToyCategoriesNav enableSearch categories={toyCategories} />
               </div>
             </section>
           )}
 
-          {!!posts.length && (
+          {!!toys.length && (
             <section className="section">
               <div className="container">
-                <PostSection posts={filteredPosts} />
+                <ToySection toys={filteredToys} />
               </div>
             </section>
           )}
@@ -74,7 +90,8 @@ export const BlogIndexTemplate = ({
   </Location>
 )
 
-const BlogIndex = ({ data: { page, posts, postCategories } }) => (
+// Export Default BlogIndex for front-end
+const BlogIndex = ({ data: { page, toys, toyCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -83,12 +100,12 @@ const BlogIndex = ({ data: { page, posts, postCategories } }) => (
       {...page}
       {...page.fields}
       {...page.frontmatter}
-      posts={posts.edges.map(post => ({
+      toys={toys.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
         ...post.node.fields
       }))}
-      postCategories={postCategories.edges.map(post => ({
+      toyCategories={toyCategories.edges.map(post => ({
         ...post.node,
         ...post.node.frontmatter,
         ...post.node.fields
@@ -119,8 +136,8 @@ export const pageQuery = graphql`
       }
     }
 
-    posts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
+    toys: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "toys" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -140,8 +157,8 @@ export const pageQuery = graphql`
         }
       }
     }
-    postCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "postCategories" } } }
+    toyCategories: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "toyCategories" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
     ) {
       edges {

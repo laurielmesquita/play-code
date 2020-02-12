@@ -1,8 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import Marked from 'react-markdown'
 import PropTypes from 'prop-types'
-
 import Image from './Image'
 
 const encodeMarkdownURIs = (source = '') => {
@@ -26,7 +26,7 @@ const withContentImages = source => {
       images[i],
       ReactDOMServer.renderToStaticMarkup(
         <Image
-          resolution="medium"
+          resolutions="medium"
           className="Content--Image"
           lazy={false}
           src={src ? src[1] : null}
@@ -41,15 +41,15 @@ const withContentImages = source => {
 }
 
 const MyImage = ({ nodeKey, src, title, alt }) => {
-  const decodeSrc = decodeURI(src)
+  const decodedSrc = decodeURI(src)
   return (
     <Image
-      className="Content-Image markdown-preview"
-      resolution="medium"
+      className="Content--Image markdown-preview"
+      resolutions="medium"
       lazy={false}
-      src={decodeSrc}
-      alt={alt}
+      src={decodedSrc}
       title={title}
+      alt={alt}
     />
   )
 }
@@ -67,6 +67,7 @@ const HtmlBlock = ({ value }) => {
 }
 
 const Content = ({ source, src, className = '' }) => {
+  // accepts either html or markdown
   source = source || src || ''
   if (source.match(/^</)) {
     source = withContentImages(source)
@@ -83,7 +84,7 @@ const Content = ({ source, src, className = '' }) => {
     <Marked
       className={`Content ${className}`}
       source={encodeMarkdownURIs(source)}
-      renders={{
+      renderers={{
         image: MyImage,
         html: HtmlBlock
       }}

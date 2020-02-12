@@ -1,23 +1,11 @@
 import React from 'react'
 import ChevronDown from 'react-feather/dist/icons/chevron-down'
 import _kebabCase from 'lodash/kebabCase'
-
 export default class Accordion extends React.Component {
   static defaultProps = {
     items: [],
     className: ''
   }
-
-  // use state to auto close but has issues mobile view. onClick={() => this.handleClick(index)}
-  // state = {
-  //   activeItem: null
-  // }
-  //
-  // handleClick = index => {
-  //   this.setState({
-  //     activeItem: this.state.activeItem === index ? null : index
-  //   })
-  // }
 
   handleClick = event => event.target.classList.toggle('active')
 

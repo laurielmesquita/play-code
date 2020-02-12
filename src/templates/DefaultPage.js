@@ -6,6 +6,7 @@ import Content from '../components/Content'
 import Layout from '../components/Layout'
 import SVGIcon from '../components/SVGIcon'
 
+// Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
   title,
   subtitle,

@@ -20,15 +20,15 @@ class Image extends React.Component {
     '1500',
     '1600',
     '2000'
-  ]
+  ] // image sizes used for image source sets
 
   state = {
-    isIntersection: false
+    isIntersecting: false
   }
 
   handleIntersection = e => {
-    if (e.isIntersection) {
-      this.setState({ isIntersection: true })
+    if (e.isIntersecting) {
+      this.setState({ isIntersecting: true })
     }
   }
 
@@ -37,11 +37,12 @@ class Image extends React.Component {
   }
 
   getResolutionString(res) {
+    /* add resolutions options for inline images */
     if (res === 'small') {
       res = '800x'
-    } else if ( res === 'medium' ) {
+    } else if (res === 'medium') {
       res = '1000x'
-    } else if ( res === 'large' ) {
+    } else if (res === 'large') {
       res = '2000x'
     }
     return res
@@ -65,8 +66,9 @@ class Image extends React.Component {
 
     const isUploadcare = this.checkIsUploadcare(src),
       fullImage = !isUploadcare || !lazy
-    
-    if ( isUploadcare ) {
+
+    /* create source set for images */
+    if (isUploadcare) {
       secSet = this.imageSizes.map(size => {
         return `${src}-/progressive/yes/-/format/auto/-/preview/${size}x${size}/-/quality/lightest/${size}.jpg ${size}w`
       })

@@ -16,7 +16,7 @@ export const query = graphql`
 `
 
 export default class Meta extends Component {
-  render () {
+  render() {
     const {
       title,
       url,
@@ -29,6 +29,7 @@ export default class Meta extends Component {
       siteTitle,
       siteDescription,
       googleTrackingId
+      // overwrite { title, description } if in fields or fields.meta
     } = this.props
 
     return (

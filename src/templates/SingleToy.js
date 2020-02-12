@@ -6,7 +6,7 @@ import { ChevronLeft } from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 
-export const SinglePostTemplate = ({
+export const SingleToyTemplate = ({
   title,
   date,
   body,
@@ -16,19 +16,19 @@ export const SinglePostTemplate = ({
 }) => (
   <main>
     <article
-      className="SinglePost section light"
+      className="SingleToy section light"
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
       <div className="container skinny">
-        <Link className="SinglePost--BackButton" to="/blog/">
+        <Link className="SingleToy--BackButton" to="/toy/">
           <ChevronLeft /> BACK
         </Link>
-        <div className="SinglePost--Content relative">
-          <div className="SinglePost--Meta">
+        <div className="SingleToy--Content relative">
+          <div className="SingleToy--Meta">
             {date && (
               <time
-                className="SinglePost--Meta--Date"
+                className="SingleToy--Meta--Date"
                 itemProp="dateCreated pubdate datePublished"
                 date={date}
               >
@@ -41,7 +41,7 @@ export const SinglePostTemplate = ({
                 {categories.map((cat, index) => (
                   <span
                     key={cat.category}
-                    className="SinglePost--Meta--Category"
+                    className="SingleToy--Meta--Category"
                   >
                     {cat.category}
                     {/* Add a comma on all but last category */}
@@ -53,19 +53,19 @@ export const SinglePostTemplate = ({
           </div>
 
           {title && (
-            <h1 className="SinglePost--Title" itemProp="title">
+            <h1 className="SingleToy--Title" itemProp="title">
               {title}
             </h1>
           )}
 
-          <div className="SinglePost--InnerContent">
+          <div className="SingleToy--InnerContent">
             <Content source={body} />
           </div>
 
-          <div className="SinglePost--Pagination">
+          <div className="SingleToy--Pagination">
             {prevPostURL && (
               <Link
-                className="SinglePost--Pagination--Link prev"
+                className="SingleToy--Pagination--Link prev"
                 to={prevPostURL}
               >
                 Previous Post
@@ -73,7 +73,7 @@ export const SinglePostTemplate = ({
             )}
             {nextPostURL && (
               <Link
-                className="SinglePost--Pagination--Link next"
+                className="SingleToy--Pagination--Link next"
                 to={nextPostURL}
               >
                 Next Post
@@ -86,18 +86,18 @@ export const SinglePostTemplate = ({
   </main>
 )
 
-// Export Default SinglePost for front-end
-const SinglePost = ({ data: { post, allPosts } }) => {
-  const thisEdge = allPosts.edges.find(edge => edge.node.id === post.id)
+// Export Default SingleToy for front-end
+const SingleToy = ({ data: { toy, allPosts } }) => {
+  const thisEdge = allPosts.edges.find(edge => edge.node.id === toy.id)
   return (
     <Layout
-      meta={post.frontmatter.meta || false}
-      title={post.frontmatter.title || false}
+      meta={toy.frontmatter.meta || false}
+      title={toy.frontmatter.title || false}
     >
-      <SinglePostTemplate
-        {...post}
-        {...post.frontmatter}
-        body={post.html}
+      <SingleToyTemplate
+        {...toy}
+        {...toy.frontmatter}
+        body={toy.html}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
@@ -105,15 +105,11 @@ const SinglePost = ({ data: { post, allPosts } }) => {
   )
 }
 
-export default SinglePost
+export default SingleToy
 
 export const pageQuery = graphql`
-  ## Query for SinglePost data
-  ## Use GraphiQL interface (http://localhost:8000/___graphql)
-  ## $id is processed via gatsby-node.js
-  ## query name must be unique to this file
-  query SinglePost($id: String!) {
-    post: markdownRemark(id: { eq: $id }) {
+  query SingleToy($id: String!) {
+    toy: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
       id
@@ -129,7 +125,7 @@ export const pageQuery = graphql`
     }
 
     allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "posts" } } }
+      filter: { fields: { contentType: { eq: "toys" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

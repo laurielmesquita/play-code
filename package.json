@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Lauriel Mesquita <laurielmesquita@me.com>",
   "dependencies": {
+    "dom-form-serializer": "^1.0.7",
     "gatsby": "^2.19.12",
     "gatsby-image": "^2.2.40",
     "gatsby-plugin-google-tagmanager": "^2.1.25",
@@ -25,6 +26,7 @@
     "gatsby-transformer-remark": "^2.6.50",
     "gatsby-transformer-sharp": "^2.3.14",
     "gatsby-transformer-yaml": "^2.2.24",
+    "google-map-react": "^1.1.6",
     "lodash": "^4.17.15",
     "lodash.clonedeep": "^4.5.0",
     "modern-normalize": "^0.6.0",
