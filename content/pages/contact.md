@@ -6,7 +6,7 @@ featuredImage: https://brincadeira.co/
 subtitle: Subtítulo para página de contato.
 address: 'Rua Zumbí, n° 1048 - Mafrense - CEP: 64005-580 - Teresina - PI'
 phone: +55 (86) 98848-7045
-phone: +55 (86) 99522-2449
+# phone: +55 (86) 99522-2449
 email: contato@brincadeira.co
 locations:
   - lat: '-27.9654732'

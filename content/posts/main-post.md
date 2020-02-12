@@ -8,7 +8,7 @@ featuredImage: >-
 excerpt: >-
   Este é um texto de espaço reservado para garantir que as palavras
   apareça corretamente no seu site. Este texto será substituído assim que o
-  site está completo. No momento, você está lendo um texto escrito em português
+  site está completo. No momento, você está lendo um texto escrito em português.
 categories:
   - category: News
 meta:
