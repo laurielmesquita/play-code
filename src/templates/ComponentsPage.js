@@ -37,7 +37,7 @@ export const ComponentsPageTemplate = ({
 
     <section className="section">
       <div className="container">
-        <h2>Our gallery component</h2>
+        <h2>Teste de uso de imagem externa</h2>
         <Gallery images={gallery} />
       </div>
     </section>
