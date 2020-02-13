@@ -20,7 +20,7 @@ export default ({ children, meta, title }) => {
               image
             }
           }
-          allPosts: allMarkdownRemark(
+          allToys: allMarkdownRemark(
             filter: { fields: { contentType: { eq: "toyCategories" } } }
             sort: { order: DESC, fields: [frontmatter___date] }
           ) {
@@ -41,9 +41,9 @@ export default ({ children, meta, title }) => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
             data.settingsYaml || {}
         const subNav = {
-          toys: data.allPosts.hasOwnProperty('edges')
-            ? data.allPosts.edges.map(post => {
-              return { ...post.node.fields, ...post.node.frontmatter }
+          toys: data.allToys.hasOwnProperty('edges')
+            ? data.allToys.edges.map(toy => {
+              return { ...toy.node.fields, ...toy.node.frontmatter }
             })
             : false
         }

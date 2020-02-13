@@ -8,7 +8,7 @@ class ToySection extends React.Component {
     title: '',
     limit: 12,
     showLoadMore: true,
-    loadMoreTitle: 'Load More',
+    loadMoreTitle: 'Carregar mais',
     perPageLimit: 12
   }
 
@@ -31,8 +31,8 @@ class ToySection extends React.Component {
         {title && <h2 className="ToySection--Title">{title}</h2>}
         {!!visibleToys.length && (
           <div className="ToySection--Grid">
-            {visibleToys.map((post, index) => (
-              <ToyCard key={post.title + index} {...post} />
+            {visibleToys.map((toy, index) => (
+              <ToyCard key={toy.title + index} {...toy} />
             ))}
           </div>
         )}

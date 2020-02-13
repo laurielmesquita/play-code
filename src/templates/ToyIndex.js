@@ -16,7 +16,7 @@ import Layout from '../components/Layout'
  */
 export const byDate = toys => {
   const now = Date.now()
-  return toys.filter(post => Date.parse(post.date) <= now)
+  return toys.filter(toy => Date.parse(toy.date) <= now)
 }
 
 /**
@@ -28,9 +28,9 @@ export const byDate = toys => {
  */
 export const byCategory = (toys, title, contentType) => {
   const isCategory = contentType === 'toyCategories'
-  const byCategory = post =>
-    post.categories &&
-    post.categories.filter(cat => cat.category === title).length
+  const byCategory = toy =>
+    toy.categories &&
+    toy.categories.filter(cat => cat.category === title).length
   return isCategory ? toys.filter(byCategory) : toys
 }
 
@@ -56,8 +56,8 @@ export const BlogIndexTemplate = ({
 
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
-        filteredToys = filteredToys.filter(post =>
-          post.frontmatter.title.toLowerCase().includes(searchTerm)
+        filteredToys = filteredToys.filter(toy =>
+          toy.frontmatter.title.toLowerCase().includes(searchTerm)
         )
       }
 
@@ -100,15 +100,15 @@ const BlogIndex = ({ data: { page, toys, toyCategories } }) => (
       {...page}
       {...page.fields}
       {...page.frontmatter}
-      toys={toys.edges.map(post => ({
-        ...post.node,
-        ...post.node.frontmatter,
-        ...post.node.fields
+      toys={toys.edges.map(toy => ({
+        ...toy.node,
+        ...toy.node.frontmatter,
+        ...toy.node.fields
       }))}
-      toyCategories={toyCategories.edges.map(post => ({
-        ...post.node,
-        ...post.node.frontmatter,
-        ...post.node.fields
+      toyCategories={toyCategories.edges.map(toy => ({
+        ...toy.node,
+        ...toy.node.frontmatter,
+        ...toy.node.fields
       }))}
     />
   </Layout>
