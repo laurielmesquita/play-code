@@ -5,8 +5,9 @@
   --midGrey: #cacaca;
   --darkGrey: #272727;
   --danger: #ff3d3d;
-  --font-primary: 'Open Sans', sans-serif;
+  --font-primary: 'Lato', sans-serif;
   --font-system: system-ui; /* postcssPresetEnv */
+  --font-secondary: 'Quicksand', sans-serif;
   --borderRadius: 3px;
 }
 
@@ -66,6 +67,7 @@ h3,
 h4,
 h5,
 h6 {
+  font-family: var(--font-secondary);
   margin: 0;
   margin-bottom: 0.5em;
 }

@@ -6,6 +6,21 @@ module.exports = {
     siteUrl: 'https://brincadeira.co/'
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-prefetch-google-fonts',
+      options: {
+        fonts: [
+          {
+            family: 'Lato',
+            variants: ['300', '400', '700']
+          },
+          {
+            family: 'Quicksand',
+            variants: ['500', '700']
+          }
+        ]
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     {
