@@ -1,7 +1,7 @@
 ---
 template: ContactPage
 slug: contato
-title: Página de Contato
+title: Contato
 featuredImage: 'https://brincadeira.co/'
 subtitle: Esse é o subtítulo da página de contato.
 address: 'Rua Zumbí, n° 1048 - Mafrense - CEP: 64005-580 - Teresina - PI'

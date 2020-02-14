@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Image from '../components/Image'
 
+import './InstagramFeed.css'
+
 // A quick way to get your access token
 // https://instagram.pixelunion.net/
 

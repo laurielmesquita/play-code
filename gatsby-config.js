@@ -9,13 +9,6 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',
     {
-      resolve: 'gatsby-plugin-google-analytics',
-      options: {
-        // replace "UA-XXXXXXXXX-X" with your own Tracking ID
-        trackingId: 'UA-158355716-1'
-      }
-    },
-    {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {
         /* id: 'GTM-add_your_tag_here', */

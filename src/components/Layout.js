@@ -6,6 +6,7 @@ import Nav from './Nav'
 import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
+import './mainStyles.css'
 
 export default ({ children, meta, title }) => {
   return (
