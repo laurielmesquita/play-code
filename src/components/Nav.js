@@ -45,51 +45,57 @@ export class Navigation extends Component {
     return (
       <nav className={`Nav ${active ? 'Nav-active' : ''}`}>
         <div className="Nav--Container container">
-          <Link to="/" onClick={this.handleLinkClick}>
-            <Logo />
-          </Link>
-          <div className="Nav--Links">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/sobre-nos/">Sobre Nós</NavLink>
-            <div
-              className={`Nav--Group ${
-                this.state.activeSubNav === 'toys' ? 'active' : ''
-              }`}
-            >
-              <span
-                className={`NavLink Nav--GroupParent ${
-                  this.props.location.pathname.includes('toys') ||
-                  this.props.location.pathname.includes('toy') ||
-                  this.props.location.pathname.includes('toy-categories')
-                    ? 'active'
-                    : ''
+          <div className="inner-one">
+            <div className="Nav--Links">
+              <NavLink to="/">Home</NavLink>
+              <NavLink to="/sobre-nos/">Sobre Nós</NavLink>
+              <div
+                className={`Nav--Group ${
+                  this.state.activeSubNav === 'toys' ? 'active' : ''
                 }`}
-                onClick={() => this.toggleSubNav('toys')}
               >
-                Brinquedos
-              </span>
-              <div className="Nav--GroupLinks">
-                <NavLink to="/toy/" className="Nav--GroupLink">
-                  Todos os Brinquedos
-                </NavLink>
-                {subNav.toys.map((link, index) => (
-                  <NavLink
-                    to={link.slug}
-                    key={'toys-subnav-link-' + index}
-                    className="Nav--GroupLink"
-                  >
-                    {link.title}
+                <span
+                  className={`NavLink Nav--GroupParent ${
+                    this.props.location.pathname.includes('toys') ||
+                    this.props.location.pathname.includes('toy') ||
+                    this.props.location.pathname.includes('toy-categories')
+                      ? 'active'
+                      : ''
+                  }`}
+                  onClick={() => this.toggleSubNav('toys')}
+                >
+                  Brinquedos
+                </span>
+                <div className="Nav--GroupLinks">
+                  <NavLink to="/toy/" className="Nav--GroupLink">
+                    Todos os Brinquedos
                   </NavLink>
-                ))}
+                  {subNav.toys.map((link, index) => (
+                    <NavLink
+                      to={link.slug}
+                      key={'toys-subnav-link-' + index}
+                      className="Nav--GroupLink"
+                    >
+                      {link.title}
+                    </NavLink>
+                  ))}
+                </div>
               </div>
             </div>
-            <NavLink to="/default/">Default</NavLink>
-            <NavLink to="/contato/">Contato</NavLink>
           </div>
-          <button
-            className="Button-blank Nav--MenuButton"
-            onClick={this.handleMenuToggle}
-          >
+          <div className="inner">
+            <Link to="/" onClick={this.handleLinkClick}>
+              <Logo />
+            </Link>
+          </div>
+          <div className="inner">
+            <div className="Nav--Links">
+              <NavLink to="/tendas/">Tendas</NavLink>
+              <NavLink to="/climatizadores/">Climatizadores</NavLink>
+              <NavLink to="/contato/">Contato</NavLink>
+            </div>
+          </div>
+          <button className="Button-blank Nav--MenuButton" onClick={this.handleMenuToggle}>
             {active ? <X /> : <Menu />}
           </button>
         </div>

@@ -1,7 +1,7 @@
 ---
 template: DefaultPage
-slug: default
-title: Default Page
+slug: tendas
+title: Tendas
 featuredImage: 'https://brincadeira.co/'
 meta:
   description: Teste de Meta de descrição

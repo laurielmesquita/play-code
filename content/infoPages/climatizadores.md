@@ -1,7 +1,7 @@
 ---
 template: DefaultPage
-slug: test slug
-title: Esta é uma página de informações de teste
+slug: climatizadores
+title: Climatizadores
 featuredImage: >-
   'https://brincadeira.co/'
 meta:

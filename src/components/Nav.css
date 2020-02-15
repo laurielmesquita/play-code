@@ -1,4 +1,7 @@
 .Nav {
+  display: flex;
+  justify-content: center;
+  background-color: cyan;
   background: white;
   position: sticky;
   top: 0;
@@ -8,9 +11,10 @@
 }
 
 .Nav--Container {
-  display: flex;
   align-items: center;
-  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  height: 18rem;
 }
 
 .Nav--Links {
@@ -20,12 +24,7 @@
   flex-direction: row;
 }
 
-.Nav--Links > * + * {
-  margin-left: 1rem;
-}
-
 .Nav .Logo {
-  margin-right: 3rem;
   position: relative;
 }
 
@@ -36,12 +35,14 @@
 .NavLink {
   padding: 0.5rem 1rem;
   display: block;
-  font-weight: 500;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 13px;
   transition: color 0.2s, border-bottom-color 0.2s;
   color: inherit;
   text-decoration: none;
-  border-bottom: 2px solid;
-  border-bottom-color: transparent;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .NavLink:hover,
@@ -61,7 +62,7 @@
 }
 
 .Nav--GroupParent::after {
-  content: '';
+  content: "";
   position: absolute;
   top: calc(50% - 0.2rem);
   right: 1rem;
@@ -103,7 +104,8 @@
   width: 15rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1080px) {
+
   .Nav--Container {
     display: flex;
   }
