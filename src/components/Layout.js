@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Nav from './Nav'
+import NavMobile from './NavMobile'
 import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
@@ -40,7 +41,7 @@ export default ({ children, meta, title }) => {
       `}
       render={data => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
-            data.settingsYaml || {}
+          data.settingsYaml || {}
         const subNav = {
           toys: data.allToys.hasOwnProperty('edges')
             ? data.allToys.edges.map(toy => {
@@ -73,6 +74,7 @@ export default ({ children, meta, title }) => {
             />
 
             <Nav subNav={subNav} />
+            <NavMobile subNav={subNav} />
 
             <Fragment>{children}</Fragment>
 

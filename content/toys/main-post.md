@@ -2,8 +2,8 @@
 template: HomePage
 title: Postagem Principal
 status: Featured / Published
-date: '2020-02-10'
-featuredImage: 'https://brincadeira.co/'
+date: "2020-02-10"
+featuredImage: "https://brincadeira.co/"
 excerpt: >-
   Este é um texto de espaço reservado para garantir que as palavras apareça
   corretamente no seu site. Este texto será substituído assim que o site está
@@ -11,11 +11,12 @@ excerpt: >-
 categories:
   - category: News
 meta:
-  canonicalLink: ''
+  canonicalLink: ""
   description: Uma descrição sobre a página
   noindex: false
   title: Postagem Principal
 ---
+
 Os parágrafos são separados por uma linha em branco.
 
 ![Test Image](https://brincadeira.co/)
@@ -26,9 +27,9 @@ O segundo parágrafo. Este é um texto de espaço reservado que nossos web desig
 
 ### Lista não ordenada:
 
-* Um item
-* Outro item
-* Alguma outra coisa aqui
+- Um item
+- Outro item
+- Alguma outra coisa aqui
 
 ### Lista ordenada:
 

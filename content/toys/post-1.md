@@ -2,8 +2,8 @@
 template: SingleToy
 title: Título padrão pra encher linguiça
 status: Featured / Published
-date: '2018-05-25'
-featuredImage: 'https://brincadeira.co/'
+date: "2018-05-25"
+featuredImage: "https://brincadeira.co/"
 excerpt: >-
   Este é um texto de espaço reservado que nossos web designers colocam aqui para garantir que as palavras apareça corretamente no seu site. Este texto será substituído assim que o site está completo. No momento, você está lendo um texto escrito em Inglês, nenhum outro idioma.
 meta:

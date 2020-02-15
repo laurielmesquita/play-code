@@ -1,17 +1,17 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from "react"
+import { graphql } from "gatsby"
 
-import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
-import Layout from '../components/Layout'
-import SVGIcon from '../components/SVGIcon'
+import PageHeader from "../components/PageHeader"
+import Content from "../components/Content"
+import Layout from "../components/Layout"
+import SVGIcon from "../components/SVGIcon"
 
 // Export Template for use in CMS preview
 export const DefaultPageTemplate = ({
   title,
   subtitle,
   featuredImage,
-  body
+  body,
 }) => (
   <main className="DefaultPage">
     <PageHeader

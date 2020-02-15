@@ -43,8 +43,13 @@ export class Navigation extends Component {
       )
 
     return (
-      <nav className={`Nav ${active ? "Nav-active" : " Nav-Large"}`}>
+      <nav className={`Nav ${active ? "Nav-active" : " Nav-Mobile"}`}>
         <div className="Nav--Container container">
+          <div className="inner-one">
+            <Link to="/" onClick={this.handleLinkClick}>
+              <Logo />
+            </Link>
+          </div>
           <div className="inner">
             <div className="Nav--Links">
               <NavLink to="/">Home</NavLink>
@@ -81,21 +86,15 @@ export class Navigation extends Component {
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="inner">
-            <Link to="/" onClick={this.handleLinkClick}>
-              <Logo />
-            </Link>
-          </div>
-          <div className="inner">
-            <div className="Nav--Links">
               <NavLink to="/tendas/">Tendas</NavLink>
               <NavLink to="/climatizadores/">Climatizadores</NavLink>
               <NavLink to="/contato/">Contato</NavLink>
             </div>
           </div>
-          <button className="Button-blank Nav--MenuButton" onClick={this.handleMenuToggle}>
+          <button
+            className="Button-blank Nav--MenuButton"
+            onClick={this.handleMenuToggle}
+          >
             {active ? <X /> : <Menu />}
           </button>
         </div>

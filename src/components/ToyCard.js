@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 
-import Image from './Image'
+import Image from "./Image"
 
 const ToyCard = ({
   featuredImage,
@@ -10,7 +10,7 @@ const ToyCard = ({
   excerpt,
   slug,
   categories = [],
-  className = '',
+  className = "",
   ...props
 }) => (
   <Link to={slug} className={`ToyCard ${className}`}>
@@ -22,7 +22,7 @@ const ToyCard = ({
     <div className="ToyCard--Content">
       {title && <h3 className="ToyCard--Title">{title}</h3>}
       <div className="ToyCard--Category">
-        {categories && categories.map(cat => cat.category).join(', ')}
+        {categories && categories.map(cat => cat.category).join(", ")}
       </div>
       {excerpt && <div className="ToyCard--Excerpt">{excerpt}</div>}
     </div>

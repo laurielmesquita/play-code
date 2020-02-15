@@ -1,19 +1,19 @@
-import React, { Component, Fragment } from 'react'
-import { X } from 'react-feather'
+import React, { Component, Fragment } from "react"
+import { X } from "react-feather"
 
 class Popup extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.state = { showPopup: false }
   }
 
-  togglePopup () {
+  togglePopup() {
     this.setState({
-      showPopup: !this.state.showPopup
+      showPopup: !this.state.showPopup,
     })
   }
 
-  render () {
+  render() {
     const { children } = this.props
     return (
       <Fragment>

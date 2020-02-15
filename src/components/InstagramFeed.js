@@ -1,29 +1,29 @@
-import React, { Component } from 'react'
-import Image from '../components/Image'
+import React, { Component } from "react"
+import Image from "../components/Image"
 
-import './InstagramFeed.css'
+import "./InstagramFeed.css"
 
 // A quick way to get your access token
 // https://instagram.pixelunion.net/
 
 export default class InstagramFeed extends Component {
   static defaultProps = {
-    accessToken: '3472431622.452bff1.a10ccbd7f4d94f8ba87e3d4a1b7999a7',
-    count: 20
+    accessToken: "3472431622.452bff1.a10ccbd7f4d94f8ba87e3d4a1b7999a7",
+    count: 20,
   }
 
   state = {
     mounted: false,
-    posts: []
+    posts: [],
   }
 
   clearStorage() {
-    const lastclear = localStorage.getItem('lastclear'),
+    const lastclear = localStorage.getItem("lastclear"),
       time_now = new Date().getTime()
     // .getTime() returns milliseconds so 1000 * 60 * 60 * 24 = 1 days
     if (time_now - lastclear > 1000 * 60 * 60 * 1) {
       localStorage.clear()
-      localStorage.setItem('lastclear', time_now)
+      localStorage.setItem("lastclear", time_now)
     }
   }
 
@@ -32,31 +32,31 @@ export default class InstagramFeed extends Component {
     if (!this.state.mounted) {
       this.fetchInstagram()
       this.setState({
-        mounted: true
+        mounted: true,
       })
     }
   }
 
   fetchInstagram = () => {
-    let instaFeed = localStorage.getItem('instaFeed')
-      ? localStorage.getItem('instaFeed')
+    let instaFeed = localStorage.getItem("instaFeed")
+      ? localStorage.getItem("instaFeed")
       : false
 
     if (!instaFeed) {
-      typeof window !== 'undefined' &&
+      typeof window !== "undefined" &&
         fetch(`https://instagramapi.thrivex.io/?ref=${this.props.accessToken}`)
           .then(res => res.json())
           .then(data => {
             instaFeed = data && data.items ? data.items : []
-            localStorage.setItem('instaFeed', JSON.stringify(instaFeed))
+            localStorage.setItem("instaFeed", JSON.stringify(instaFeed))
             this.setState({
-              posts: instaFeed
+              posts: instaFeed,
             })
           })
           .catch(err => console.error(err))
     }
     this.setState({
-      posts: JSON.parse(instaFeed)
+      posts: JSON.parse(instaFeed),
     })
   }
 

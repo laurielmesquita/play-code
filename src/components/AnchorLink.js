@@ -1,22 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import MoveTo from 'moveto'
+import React from "react"
+import PropTypes from "prop-types"
+import MoveTo from "moveto"
 
 const AnchorLink = ({
   children,
   href,
-  className = '',
+  className = "",
   options,
   onClick = () => {},
-  toleranceElement // elementQuery e.g. '.Nav' – element height will be used as tolerance
+  toleranceElement, // elementQuery e.g. '.Nav' – element height will be used as tolerance
 }) => {
   const defaultOptions = {
     tolerance: 50,
     duration: 800,
-    easing: 'easeOutQuart'
+    easing: "easeOutQuart",
   }
 
-  const target = href.replace(/^\//, '')
+  const target = href.replace(/^\//, "")
 
   const handleClick = e => {
     e.preventDefault()
@@ -41,7 +41,7 @@ AnchorLink.propTypes = {
   onClick: PropTypes.func,
   options: PropTypes.object,
   className: PropTypes.string,
-  toleranceElement: PropTypes.string
+  toleranceElement: PropTypes.string,
 }
 
 export default AnchorLink

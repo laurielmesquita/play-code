@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import { graphql } from 'gatsby'
-import Helmet from 'react-helmet'
+import React, { Component } from "react"
+import { graphql } from "gatsby"
+import Helmet from "react-helmet"
 
 export const query = graphql`
   fragment Meta on MarkdownRemark {
@@ -16,19 +16,19 @@ export const query = graphql`
 `
 
 export default class Meta extends Component {
-  render () {
+  render() {
     const {
       title,
       url,
       description,
-      absoluteImageUrl = '',
+      absoluteImageUrl = "",
       twitterSiteAccount,
       twitterCreatorAccount,
       noindex,
       canonicalLink,
       siteTitle,
       siteDescription,
-      googleTrackingId
+      googleTrackingId,
     } = this.props
 
     return (

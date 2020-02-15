@@ -1,12 +1,12 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import { Location } from '@reach/router'
-import qs from 'qs'
+import React from "react"
+import { graphql } from "gatsby"
+import { Location } from "@reach/router"
+import qs from "qs"
 
-import PageHeader from '../components/PageHeader'
-import ToySection from '../components/ToySection'
-import ToyCategoriesNav from '../components/ToyCategoriesNav'
-import Layout from '../components/Layout'
+import PageHeader from "../components/PageHeader"
+import ToySection from "../components/ToySection"
+import ToyCategoriesNav from "../components/ToyCategoriesNav"
+import Layout from "../components/Layout"
 
 /**
  * Filter toys by date. Feature dates will be fitered
@@ -27,7 +27,7 @@ export const byDate = toys => {
  * @param {contentType} string
  */
 export const byCategory = (toys, title, contentType) => {
-  const isCategory = contentType === 'toyCategories'
+  const isCategory = contentType === "toyCategories"
   const byCategory = toy =>
     toy.categories &&
     toy.categories.filter(cat => cat.category === title).length
@@ -42,7 +42,7 @@ export const BlogIndexTemplate = ({
   toys = [],
   toyCategories = [],
   enableSearch = true,
-  contentType
+  contentType,
 }) => (
   <Location>
     {({ location }) => {
@@ -51,7 +51,7 @@ export const BlogIndexTemplate = ({
           ? byCategory(byDate(toys), title, contentType)
           : []
 
-      let queryObj = location.search.replace('?', '')
+      let queryObj = location.search.replace("?", "")
       queryObj = qs.parse(queryObj)
 
       if (enableSearch && queryObj.s) {
@@ -103,12 +103,12 @@ const BlogIndex = ({ data: { page, toys, toyCategories } }) => (
       toys={toys.edges.map(toy => ({
         ...toy.node,
         ...toy.node.frontmatter,
-        ...toy.node.fields
+        ...toy.node.fields,
       }))}
       toyCategories={toyCategories.edges.map(toy => ({
         ...toy.node,
         ...toy.node.frontmatter,
-        ...toy.node.fields
+        ...toy.node.fields,
       }))}
     />
   </Layout>

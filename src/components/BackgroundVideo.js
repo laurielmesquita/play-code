@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react'
-import ReactDOM from 'react-dom'
-import Image from './Image'
+import React, { Component, Fragment } from "react"
+import ReactDOM from "react-dom"
+import Image from "./Image"
 
 class BackgroundVideo extends Component {
   constructor(props) {
@@ -9,7 +9,7 @@ class BackgroundVideo extends Component {
   }
   state = {
     playing: false,
-    mobileWidth: false
+    mobileWidth: false,
   }
 
   updateDimensions() {
@@ -19,21 +19,21 @@ class BackgroundVideo extends Component {
   handelPlay() {
     this.setState({ playing: true })
     ReactDOM.findDOMNode(this.ref.current).removeEventListener(
-      'playing',
+      "playing",
       this.handelPlay
     )
   }
 
   componentDidMount() {
     this.updateDimensions()
-    window.addEventListener('resize', () => this.updateDimensions())
-    ReactDOM.findDOMNode(this.ref.current).addEventListener('playing', e =>
+    window.addEventListener("resize", () => this.updateDimensions())
+    ReactDOM.findDOMNode(this.ref.current).addEventListener("playing", e =>
       this.handelPlay(e)
     )
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateDimensions)
+    window.removeEventListener("resize", this.updateDimensions)
   }
 
   render() {
@@ -46,7 +46,7 @@ class BackgroundVideo extends Component {
               ref={this.ref}
               poster={poster}
               className={`BackgroundVideo--video ${
-                this.state.playing ? 'playing' : ''
+                this.state.playing ? "playing" : ""
               } `}
               playsInline
               autoPlay

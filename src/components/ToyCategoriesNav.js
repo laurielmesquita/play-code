@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from "react"
+import { Link } from "gatsby"
 
-import ToySearch from './ToySearch'
+import ToySearch from "./ToySearch"
 
 const ToyCategoriesNav = ({ categories, enableSearch }) => (
   <div className="ToyCategoriesNav">
-    <Link className="NavLink" exact="true" to={'/toy/'}>
+    <Link className="NavLink" exact="true" to={"/toy/"}>
       All
     </Link>
     {categories.map((category, index) => (

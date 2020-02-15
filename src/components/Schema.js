@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
 const Schema = ({
   name,
@@ -9,29 +9,29 @@ const Schema = ({
   url,
   logoUrl: logo,
   type,
-  openingHours
+  openingHours,
 }) => {
   // see http://schema.org/docs/schemas.html
   // test https://search.google.com/structured-data/testing-tool
 
   const data = {
-    '@context': 'http://schema.org/',
-    '@type': type,
+    "@context": "http://schema.org/",
+    "@type": type,
     address: {
-      '@type': 'PostalAddress',
-      streetAddress: address
+      "@type": "PostalAddress",
+      streetAddress: address,
     },
     name,
     email,
     telephone,
     url,
     openingHours,
-    logo
+    logo,
   }
 
   return (
     <script
-      type='application/ld+json'
+      type="application/ld+json"
       dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
     />
   )
@@ -44,7 +44,7 @@ Schema.propTypes = {
   address: PropTypes.string,
   email: PropTypes.string,
   phone: PropTypes.string,
-  logoUrl: PropTypes.string
+  logoUrl: PropTypes.string,
 }
 
 export default Schema
