@@ -116,8 +116,8 @@
   }
   
   .Logo {
-    width: 8.8rem;
-    height: 5.5rem;
+    width: 9.6rem;
+    height: 6rem;
   }
   
   .Nav-Mobile {
@@ -126,7 +126,7 @@
 
   .Nav--Container {
     display: flex;
-    height: 7rem;
+    height: 8rem;
   }
 
   .inner-one {
