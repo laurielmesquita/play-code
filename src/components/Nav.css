@@ -44,8 +44,13 @@
   transition: color 0.2s, border-bottom-color 0.2s;
   color: inherit;
   text-decoration: none;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+.NavLink.Nav--GroupLink {
+  padding: 0.8rem 1.8rem;
+  line-height: 1.4;
 }
 
 .NavLink:hover,
@@ -84,10 +89,12 @@
   left: 0;
   width: auto;
   background: white;
-  /* opacity: 0; */
+  opacity: 0;
   max-height: 0;
   overflow: hidden;
   transition: 0.3s ease all;
+  border-radius: 6px;
+  padding: 1rem 0;
 }
 
 .Nav--Group.active .Nav--GroupLinks {
@@ -108,12 +115,18 @@
     display: none;
   }
   
+  .Logo {
+    width: 8.8rem;
+    height: 5.5rem;
+  }
+  
   .Nav-Mobile {
     display: flex;
   }
 
   .Nav--Container {
     display: flex;
+    height: 7rem;
   }
 
   .inner-one {
@@ -132,6 +145,7 @@
   }
 
   .Nav--Links {
+    z-index: 1;
     display: none;
     align-items: center;
     flex-direction: column;
@@ -160,7 +174,7 @@
   }
 
   .Nav .NavLink {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 300;
   }
 
