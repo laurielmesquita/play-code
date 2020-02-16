@@ -1,8 +1,7 @@
 .Nav {
   display: flex;
   justify-content: center;
-  background-color: cyan;
-  background: white;
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -93,7 +92,7 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.3s ease all;
-  border-radius: 6px;
+  border-radius: var(--borderRadius);
   padding: 1rem 0;
 }
 
@@ -176,6 +175,7 @@
   .Nav .NavLink {
     font-size: 2rem;
     font-weight: 300;
+    text-align: center;
   }
 
   .Nav .NavLink:nth-of-type(2) {

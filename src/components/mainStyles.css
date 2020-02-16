@@ -1,14 +1,23 @@
 :root {
   --primary: #8918B3;
   --secondary: #000;
-  --lightGrey: whitesmoke;
-  --midGrey: #cacaca;
-  --darkGrey: #272727;
-  --danger: #ff3d3d;
+  --lightGrey: #F5F6F6;
+  --midGrey: #E8E9E9;
+  --darkGrey: #333333;
+  --lightYellow: #FFCF31;
+  --lightOrange: #FFA936;
+  --lightGreen: #3FB94E;
+  --midGreen: #96B819;
+  --darkGreen: #85A411;
+  --lightPurple: #D9CAFC;
+  --midPurple: #9476D6;
+  --darkPurple: #594593;
+  --midRed: #F44949;
+  --danger: #E7134E;
   --font-primary: 'Lato', sans-serif;
   --font-system: system-ui; /* postcssPresetEnv */
   --font-secondary: 'Quicksand', sans-serif;
-  --borderRadius: 3px;
+  --borderRadius: 6px;
 }
 
 ::-webkit-scrollbar {
