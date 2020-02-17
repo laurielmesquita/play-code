@@ -29,13 +29,13 @@ videoPoster: 'https://ucarecdn.com/69ba14a8-6481-4671-abb6-0e6f0d9c3e46/'
 videoTitle: Também vídeos de fundo, com imagem de cartaz e sobreposição de título.
 accordion:
   - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
+    title: Teste de Acordeon
   - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
+    title: Teste de Acordeon
   - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
+    title: Teste de Acordeon
   - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Taciti lorem
+    title: Teste de Acordeon
 gallery:
   - alt: Teste de título
     image: 'https://ucarecdn.com/277cdf82-24aa-4d80-8169-bb46f4cd319d/'
