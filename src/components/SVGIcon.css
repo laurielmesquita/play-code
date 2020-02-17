@@ -1,0 +1,24 @@
+.SVGIcon {
+  margin: 2rem 1.5rem 0;
+  height: 4.6rem;
+  width: 4.6rem;
+  display: inline-block;
+  background: var(--midGreen);
+  border-radius: 50%;
+  transition: 0.3s ease all;
+}
+
+.SVGIcon--icon {
+  display: block;
+  border-radius: 50%;
+  transition: 0.3s ease all;
+  background-color: var(--midGreen);
+}
+
+.SVGIcon:hover {
+  background: yellow;
+}
+
+.SVGIcon:hover .SVGIcon--icon {
+  background-color: var(--darkGreen);
+}

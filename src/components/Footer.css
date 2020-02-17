@@ -4,8 +4,8 @@
 }
 
 .footer-Top {
-  padding: 6rem 0 3rem;
-  background-color: var(--midGreen);
+  padding: 10rem 0;
+  background-color: var(--lightGreen);
 }
 
 .Logo-Footer {
@@ -17,8 +17,8 @@
 }
 
 .footer-Bottom {
-  padding: 2.5rem 0;
-  background-color: var(--darkGreen);
+  padding: 2rem 0;
+  background-color: var(--midGreen);
 }
 
 .footer a {
@@ -26,17 +26,22 @@
   text-decoration: none;
 }
 
+.footer p {
+  margin-bottom: 0.5rem;
+}
+
 .footer p:last-of-type {
   margin-bottom: 0;
 }
 
 @media (max-width: 1080px) {
+
+  .footer {
+    font-size: 1.2rem;
+  }
+
   .Logo-Footer {
     width: 16.5rem;
     height: 10rem;
-  }
-  
-  .footer-Top {
-    padding: 4rem 0 3rem;
   }
 }
