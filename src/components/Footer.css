@@ -4,7 +4,7 @@
 }
 
 .footer-Top {
-  padding: 10rem 0;
+  padding: 10rem 0 5rem;
   background-color: var(--lightGreen);
 }
 
@@ -38,10 +38,5 @@
 
   .footer {
     font-size: 1.2rem;
-  }
-
-  .Logo-Footer {
-    width: 16.5rem;
-    height: 10rem;
   }
 }
