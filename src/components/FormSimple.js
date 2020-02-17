@@ -1,10 +1,10 @@
 /* eslint-disable react/display-name */
-import React from "react"
+import React from 'react'
 
 export default ({
-  name = "Simple Form",
-  subject = "", // optional subject of the notification email
-  action = "",
+  name = 'Simple Form',
+  subject = '', // optional subject of the notification email
+  action = '',
 }) => (
   <form
     className="Form"
@@ -55,7 +55,7 @@ export default ({
         required
       />
     </label>
-    <input type="text" name="_gotcha" style={{ display: "none" }} />
+    <input type="text" name="_gotcha" style={{ display: 'none' }} />
     {!!subject && <input type="hidden" name="subject" value={subject} />}
     <input type="hidden" name="form-name" value={name} />
     <input

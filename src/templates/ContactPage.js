@@ -1,11 +1,11 @@
-import React from "react"
-import { MapPin, Smartphone, Mail } from "react-feather"
-import { graphql } from "gatsby"
+import React from 'react'
+import { MapPin, Smartphone, Mail } from 'react-feather'
+import { graphql } from 'gatsby'
 
-import PageHeader from "../components/PageHeader"
-import Content from "../components/Content"
-import GoogleMap from "../components/GoogleMap"
-import Layout from "../components/Layout"
+import PageHeader from '../components/PageHeader'
+import Content from '../components/Content'
+import GoogleMap from '../components/GoogleMap'
+import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({

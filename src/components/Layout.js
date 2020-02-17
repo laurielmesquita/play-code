@@ -45,9 +45,9 @@ export default ({ children, meta, title }) => {
         const subNav = {
           toys: data.allToys.hasOwnProperty('edges')
             ? data.allToys.edges.map(toy => {
-              return { ...toy.node.fields, ...toy.node.frontmatter }
-            })
-            : false
+                return { ...toy.node.fields, ...toy.node.frontmatter }
+              })
+            : false,
         }
 
         return (

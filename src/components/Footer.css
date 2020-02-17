@@ -1,0 +1,42 @@
+.footer {
+  color: white;
+  font-size: 1.4rem;
+}
+
+.footer-Top {
+  padding: 6rem 0 3rem;
+  background-color: var(--midGreen);
+}
+
+.Logo-Footer {
+  width: 19.8rem;
+  height: 12rem;
+  margin: 0 auto;
+  display: block;
+  background-color: transparent;
+}
+
+.footer-Bottom {
+  padding: 2.5rem 0;
+  background-color: var(--darkGreen);
+}
+
+.footer a {
+  color: var(--lightYellow);
+  text-decoration: none;
+}
+
+.footer p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 1080px) {
+  .Logo-Footer {
+    width: 16.5rem;
+    height: 10rem;
+  }
+  
+  .footer-Top {
+    padding: 4rem 0 3rem;
+  }
+}

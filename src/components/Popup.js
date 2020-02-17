@@ -1,5 +1,5 @@
-import React, { Component, Fragment } from "react"
-import { X } from "react-feather"
+import React, { Component, Fragment } from 'react'
+import { X } from 'react-feather'
 
 class Popup extends Component {
   constructor(props) {

@@ -1,10 +1,10 @@
-import { Component } from "react"
+import { Component } from 'react'
 
 export default class ServiceWorkerNotifications extends Component {
   static defaultProps = {
-    readyMessage: "Este site é armazenado em cache para uso offline!",
-    updatedMessage: "Novo conteúdo está disponível, atualize.",
-    offlineMessage: "Agora você está offline, navegando do cache.",
+    readyMessage: 'Este site é armazenado em cache para uso offline!',
+    updatedMessage: 'Novo conteúdo está disponível, atualize.',
+    offlineMessage: 'Agora você está offline, navegando do cache.',
     ready: false,
     updated: false,
     offline: false,
@@ -16,20 +16,20 @@ export default class ServiceWorkerNotifications extends Component {
   }
 
   componentDidMount = () => {
-    window.addEventListener("swReady", this.handleReady)
-    window.addEventListener("swUpdated", this.handleUpdated)
-    window.addEventListener("swOffline", this.handleOffline)
+    window.addEventListener('swReady', this.handleReady)
+    window.addEventListener('swUpdated', this.handleUpdated)
+    window.addEventListener('swOffline', this.handleOffline)
   }
 
   componentWillUnmount = () => {
-    window.removeEventListener("swReady", this.handleReady)
-    window.removeEventListener("swUpdated", this.handleUpdated)
-    window.removeEventListener("swOffline", this.handleOffline)
+    window.removeEventListener('swReady', this.handleReady)
+    window.removeEventListener('swUpdated', this.handleUpdated)
+    window.removeEventListener('swOffline', this.handleOffline)
   }
 
   reloadIfUpdated = () => {
     if (window.swUpdated) {
-      console.log("New content available: reloading window")
+      console.log('New content available: reloading window')
       window.location.reload()
     }
   }
@@ -41,7 +41,7 @@ export default class ServiceWorkerNotifications extends Component {
 
   handleUpdated = () => {
     window.swUpdated = true
-    console.log("Window will reload on next render")
+    console.log('Window will reload on next render')
     if (!this.props.updated) return
     this.setState({ message: this.props.updatedMessage })
   }

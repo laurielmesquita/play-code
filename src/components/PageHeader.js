@@ -1,17 +1,17 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import Image from "./Image"
-import Content from "./Content"
+import Image from './Image'
+import Content from './Content'
 
 const PageHeader = ({
   title,
   subtitle,
   backgroundImage,
   large,
-  className = "",
+  className = '',
 }) => {
-  if (large) className += " PageHeader-large"
+  if (large) className += ' PageHeader-large'
   return (
     <div className={`PageHeader relative ${className}`}>
       {backgroundImage && (

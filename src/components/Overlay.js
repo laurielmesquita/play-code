@@ -1,9 +1,9 @@
 /* eslint-disable react/display-name */
-import React from "react"
+import React from 'react'
 
 export default ({
-  className = "",
-  color = "var(--secondary)",
+  className = '',
+  color = 'var(--secondary)',
   opacity = 0.2,
   ...props
 }) => (
@@ -12,8 +12,8 @@ export default ({
     style={{
       color,
       opacity,
-      backgroundColor: "currentColor",
-      position: "absolute",
+      backgroundColor: 'currentColor',
+      position: 'absolute',
       left: 0,
       right: 0,
       top: 0,

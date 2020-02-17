@@ -2,7 +2,7 @@
 template: DefaultPage
 slug: tendas
 title: Tendas
-featuredImage: "https://brincadeira.co/"
+featuredImage: 'https://brincadeira.co/'
 meta:
   description: Teste de Meta de descrição
   title: Teste de Meta de título

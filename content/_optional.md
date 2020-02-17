@@ -1,14 +1,14 @@
 ---
 meta:
-  canonicalLink: ""
-  description: ""
+  canonicalLink: ''
+  description: ''
   noindex: false
-  title: ""
-featuredImage: "https://brincadeira.co"
+  title: ''
+featuredImage: 'https://brincadeira.co'
 gallery:
-  - alt: ""
-    image: ""
-    title: ""
+  - alt: ''
+    image: ''
+    title: ''
 ---
 
 <!-- Use this to force Gatsby to correctly determine optional images/file schema -->

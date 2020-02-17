@@ -1,14 +1,14 @@
-import React from "react"
+import React from 'react'
 
-import ToyCard from "./ToyCard"
+import ToyCard from './ToyCard'
 
 class ToySection extends React.Component {
   static defaultProps = {
     toys: [],
-    title: "",
+    title: '',
     limit: 12,
     showLoadMore: true,
-    loadMoreTitle: "Carregar mais",
+    loadMoreTitle: 'Carregar mais',
     perPageLimit: 12,
   }
 

@@ -1,23 +1,23 @@
-import React, { Component } from "react"
-import { stringify } from "qs"
+import React, { Component } from 'react'
+import { stringify } from 'qs'
 
 const fetch = window.fetch
 
 class Form extends Component {
   static defaultProps = {
-    name: "Controlled Form",
+    name: 'Controlled Form',
   }
 
   initialState = {
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
     subject: `New Submission from ${this.props.siteTitle}!`,
-    _gotcha: "",
+    _gotcha: '',
     disabled: false,
-    alert: "",
-    action: "/contact/",
-    "form-name": this.props.name,
+    alert: '',
+    action: '/contact/',
+    'form-name': this.props.name,
   }
 
   state = {
@@ -29,17 +29,17 @@ class Form extends Component {
 
   componentDidMount() {
     if (!this.form) return
-    this.inputs = [...this.form.querySelectorAll("input, textarea")]
+    this.inputs = [...this.form.querySelectorAll('input, textarea')]
     this.addListeners()
   }
 
   addListeners = () => {
     this.inputs.forEach(input => {
-      input.addEventListener("invalid", () => {
+      input.addEventListener('invalid', () => {
         input.dataset.touched = true
       })
-      input.addEventListener("blur", () => {
-        if (input.value !== "") input.dataset.touched = true
+      input.addEventListener('blur', () => {
+        if (input.value !== '') input.dataset.touched = true
       })
     })
   }
@@ -59,22 +59,22 @@ class Form extends Component {
       message: this.state.message,
       subject: this.state.subject,
       _gotcha: this.state._gotcha,
-      "form-name": this.state["form-name"],
+      'form-name': this.state['form-name'],
     }
     this.setState({ disabled: true })
-    fetch(this.state.action + "?" + stringify(data), {
-      method: "POST",
+    fetch(this.state.action + '?' + stringify(data), {
+      method: 'POST',
     })
       .then(res => {
         if (res.ok) {
           return res
         } else {
-          throw new Error("Network error")
+          throw new Error('Network error')
         }
       })
       .then(
         this.resetForm({
-          alert: "Thanks for your enquiry, we will get back to you soon.",
+          alert: 'Thanks for your enquiry, we will get back to you soon.',
         })
       )
       .catch(err => {
@@ -82,7 +82,7 @@ class Form extends Component {
         this.setState({
           disabled: false,
           alert:
-            "❗️ There is a problem, your message has not been sent, please try contacting us via email",
+            '❗️ There is a problem, your message has not been sent, please try contacting us via email',
         })
       })
   }
@@ -96,7 +96,7 @@ class Form extends Component {
     return (
       <form
         className="Form Form-controlled"
-        name={this.state["form-name"]}
+        name={this.state['form-name']}
         ref={form => {
           this.form = form
         }}
@@ -117,7 +117,7 @@ class Form extends Component {
             placeholder="Your Name"
             name="name"
             required
-            disabled={this.state.disabled ? "disabled" : ""}
+            disabled={this.state.disabled ? 'disabled' : ''}
           />
           <LineGroup />
         </label>
@@ -130,7 +130,7 @@ class Form extends Component {
             placeholder="Your Email"
             name="email"
             required
-            disabled={this.state.disabled ? "disabled" : ""}
+            disabled={this.state.disabled ? 'disabled' : ''}
           />
           <LineGroup />
         </label>
@@ -143,7 +143,7 @@ class Form extends Component {
             name="message"
             rows="10"
             required
-            disabled={this.state.disabled ? "disabled" : ""}
+            disabled={this.state.disabled ? 'disabled' : ''}
           />
           <LineGroup />
         </label>
@@ -151,7 +151,7 @@ class Form extends Component {
           className="Form--Input"
           type="text"
           name="_gotcha"
-          style={{ display: "none" }}
+          style={{ display: 'none' }}
           value={this.state._gotcha}
           onChange={this.handleChange}
         />
@@ -165,13 +165,13 @@ class Form extends Component {
           className="Form--Input"
           type="hidden"
           name="form-name"
-          value={this.state["form-name"]}
+          value={this.state['form-name']}
         />
         <button
           className="Button Form--SubmitButton"
           type="submit"
           value="Send"
-          disabled={this.state.disabled ? "disabled" : ""}
+          disabled={this.state.disabled ? 'disabled' : ''}
         >
           Enquire
         </button>

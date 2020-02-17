@@ -1,5 +1,5 @@
-import React from "react"
-import PropTypes from "prop-types"
+import React from 'react'
+import PropTypes from 'prop-types'
 
 const Schema = ({
   name,
@@ -15,10 +15,10 @@ const Schema = ({
   // test https://search.google.com/structured-data/testing-tool
 
   const data = {
-    "@context": "http://schema.org/",
-    "@type": type,
+    '@context': 'http://schema.org/',
+    '@type': type,
     address: {
-      "@type": "PostalAddress",
+      '@type': 'PostalAddress',
       streetAddress: address,
     },
     name,

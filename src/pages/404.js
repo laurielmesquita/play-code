@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/display-name */
-import React from "react"
-import Helmet from "react-helmet"
-import { Link, StaticQuery, graphql } from "gatsby"
-import _get from "lodash/get"
-import AlertTriangle from "react-feather/dist/icons/alert-triangle"
+import React from 'react'
+import Helmet from 'react-helmet'
+import { Link, StaticQuery, graphql } from 'gatsby'
+import _get from 'lodash/get'
+import AlertTriangle from 'react-feather/dist/icons/alert-triangle'
 
-import Layout from "../components/Layout"
+import Layout from '../components/Layout'
 
 export default ({ children }) => (
   <StaticQuery
@@ -31,8 +31,8 @@ export default ({ children }) => (
             <p>
               We can't find the page you are looking for!
               <br />
-              Head back to{" "}
-              <Link to="/">{_get(data, "globalSettings.siteTitle")}</Link>
+              Head back to{' '}
+              <Link to="/">{_get(data, 'globalSettings.siteTitle')}</Link>
             </p>
           </div>
         </section>

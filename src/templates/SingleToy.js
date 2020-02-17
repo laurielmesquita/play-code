@@ -1,10 +1,10 @@
-import React, { Fragment } from "react"
-import _get from "lodash/get"
-import { Link, graphql } from "gatsby"
-import { ChevronLeft } from "react-feather"
+import React, { Fragment } from 'react'
+import _get from 'lodash/get'
+import { Link, graphql } from 'gatsby'
+import { ChevronLeft } from 'react-feather'
 
-import Content from "../components/Content"
-import Layout from "../components/Layout"
+import Content from '../components/Content'
+import Layout from '../components/Layout'
 
 export const SingleToyTemplate = ({
   title,
@@ -45,7 +45,7 @@ export const SingleToyTemplate = ({
                   >
                     {cat.category}
                     {/* Add a comma on all but last category */}
-                    {index !== categories.length - 1 ? "," : ""}
+                    {index !== categories.length - 1 ? ',' : ''}
                   </span>
                 ))}
               </Fragment>
@@ -98,8 +98,8 @@ const SingleToy = ({ data: { toy, allPosts } }) => {
         {...toy}
         {...toy.frontmatter}
         body={toy.html}
-        nextPostURL={_get(thisEdge, "next.fields.slug")}
-        prevPostURL={_get(thisEdge, "previous.fields.slug")}
+        nextPostURL={_get(thisEdge, 'next.fields.slug')}
+        prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
     </Layout>
   )

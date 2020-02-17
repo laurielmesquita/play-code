@@ -1,20 +1,20 @@
-import React, { Fragment } from "react"
-import Helmet from "react-helmet"
-import { stringify } from "qs"
-import { serialize } from "dom-form-serializer"
+import React, { Fragment } from 'react'
+import Helmet from 'react-helmet'
+import { stringify } from 'qs'
+import { serialize } from 'dom-form-serializer'
 
 class Form extends React.Component {
   static defaultProps = {
-    name: "Simple Form Ajax",
-    subject: "", // optional subject of the notification email
-    action: "",
-    successMessage: "Thanks for your enquiry, we will get back to you soon",
+    name: 'Simple Form Ajax',
+    subject: '', // optional subject of the notification email
+    action: '',
+    successMessage: 'Thanks for your enquiry, we will get back to you soon',
     errorMessage:
-      "There is a problem, your message has not been sent, please try contacting us via email",
+      'There is a problem, your message has not been sent, please try contacting us via email',
   }
 
   state = {
-    alert: "",
+    alert: '',
     disabled: false,
   }
 
@@ -25,14 +25,14 @@ class Form extends React.Component {
     const form = e.target
     const data = serialize(form)
     this.setState({ disabled: true })
-    fetch(form.action + "?" + stringify(data), {
-      method: "POST",
+    fetch(form.action + '?' + stringify(data), {
+      method: 'POST',
     })
       .then(res => {
         if (res.ok) {
           return res
         } else {
-          throw new Error("Network error")
+          throw new Error('Network error')
         }
       })
       .then(() => {

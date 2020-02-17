@@ -1,10 +1,10 @@
-import React, { Component, Fragment } from "react"
-import PropTypes from "prop-types"
-import { graphql } from "gatsby"
-import { PhotoSwipe } from "react-photoswipe"
-import Image from "./Image"
+import React, { Component, Fragment } from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import { PhotoSwipe } from 'react-photoswipe'
+import Image from './Image'
 
-import _kebabCase from "lodash/kebabCase"
+import _kebabCase from 'lodash/kebabCase'
 
 export const query = graphql`
   fragment Gallery on MarkdownRemark {
@@ -27,12 +27,12 @@ export default class Gallery extends Component {
   }
 
   isOpen(isOpen, index) {
-    if (typeof index === "undefined") index = 0
+    if (typeof index === 'undefined') index = 0
     this.setState({ isOpen, index })
   }
 
   getImageInfo = (img, index) =>
-    fetch(img.image + "-/json/")
+    fetch(img.image + '-/json/')
       .then(res => res.json())
       .then(
         result => {
@@ -76,7 +76,7 @@ export default class Gallery extends Component {
             {images.map((image, index) => (
               <figure
                 className="Gallery--Item"
-                key={_kebabCase(image.alt) + "-" + index}
+                key={_kebabCase(image.alt) + '-' + index}
                 onClick={() => this.isOpen(true, index)}
               >
                 <div>

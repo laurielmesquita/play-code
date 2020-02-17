@@ -1,8 +1,8 @@
-import React, { Fragment } from "react"
-import PropTypes from "prop-types"
-import Observer from "./Observer"
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
+import Observer from './Observer'
 
-import "./Image.css"
+import './Image.css'
 
 class Image extends React.Component {
   constructor(props) {
@@ -11,17 +11,17 @@ class Image extends React.Component {
   }
 
   imageSizes = [
-    "320",
-    "450",
-    "640",
-    "750",
-    "800",
-    "900",
-    "1000",
-    "1200",
-    "1500",
-    "1600",
-    "2000",
+    '320',
+    '450',
+    '640',
+    '750',
+    '800',
+    '900',
+    '1000',
+    '1200',
+    '1500',
+    '1600',
+    '2000',
   ] // image sizes used for image source sets
 
   state = {
@@ -35,17 +35,17 @@ class Image extends React.Component {
   }
 
   checkIsUploadcare(src) {
-    return typeof src === "string" && src.includes("ucarecdn.com")
+    return typeof src === 'string' && src.includes('ucarecdn.com')
   }
 
   getResolutionString(res) {
     /* add resolutions options for inline images */
-    if (res === "small") {
-      res = "800x"
-    } else if (res === "medium") {
-      res = "1000x"
-    } else if (res === "large") {
-      res = "2000x"
+    if (res === 'small') {
+      res = '800x'
+    } else if (res === 'medium') {
+      res = '1000x'
+    } else if (res === 'large') {
+      res = '2000x'
     }
     return res
   }
@@ -53,16 +53,16 @@ class Image extends React.Component {
   render() {
     let {
       background,
-      backgroundSize = "cover",
-      resolutions = "1000x",
-      className = "",
+      backgroundSize = 'cover',
+      resolutions = '1000x',
+      className = '',
       src,
-      secSet = "",
+      secSet = '',
       fullSrc,
       smallSrc,
       onClick,
-      title = "",
-      alt = "",
+      title = '',
+      alt = '',
       lazy = true,
     } = this.props
 
@@ -78,13 +78,13 @@ class Image extends React.Component {
 
     fullSrc = `${src}${
       isUploadcare
-        ? "-/progressive/yes/-/format/auto/-/resize/" +
+        ? '-/progressive/yes/-/format/auto/-/resize/' +
           this.getResolutionString(resolutions) +
-          "/"
-        : ""
+          '/'
+        : ''
     }`
     smallSrc = `${src}${
-      isUploadcare ? "-/progressive/yes/-/format/auto/-/resize/10x/" : ""
+      isUploadcare ? '-/progressive/yes/-/format/auto/-/resize/10x/' : ''
     }`
 
     let style = {}
@@ -106,17 +106,17 @@ class Image extends React.Component {
               ref={this.ref}
               style={{
                 backgroundImage: `url(${smallSrc})`,
-                backgroundSize: "cover",
+                backgroundSize: 'cover',
               }}
             >
               {!background && (
                 <img
                   className={`LazyImage ${
-                    className + this.state.isIntersecting ? " faded" : ""
+                    className + this.state.isIntersecting ? ' faded' : ''
                   }`}
-                  src={this.state.isIntersecting ? fullSrc : ""}
-                  srcSet={this.state.isIntersecting ? secSet : ""}
-                  sizes={"100vw"}
+                  src={this.state.isIntersecting ? fullSrc : ''}
+                  srcSet={this.state.isIntersecting ? secSet : ''}
+                  sizes={'100vw'}
                   onClick={onClick}
                   title={title}
                   alt={alt}
@@ -125,7 +125,7 @@ class Image extends React.Component {
               {background && (
                 <div
                   className={`LazyImage BackgroundImage absolute ${
-                    className + this.state.isIntersecting ? " faded" : ""
+                    className + this.state.isIntersecting ? ' faded' : ''
                   }`}
                   style={style}
                 />
@@ -146,7 +146,7 @@ class Image extends React.Component {
                 className={`${className}`}
                 src={fullSrc}
                 srcSet={secSet}
-                sizes={"100vw"}
+                sizes={'100vw'}
                 onClick={onClick}
                 title={title}
                 alt={alt}
