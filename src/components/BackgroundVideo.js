@@ -2,6 +2,8 @@ import React, { Component, Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import Image from './Image'
 
+import './BackgroundVideo.css'
+
 class BackgroundVideo extends Component {
   constructor(props) {
     super(props)
