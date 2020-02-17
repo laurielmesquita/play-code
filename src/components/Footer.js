@@ -3,9 +3,6 @@ import React from 'react'
 import InstagramFeed from './InstagramFeed'
 
 import logofooter from '../../static/images/logo_footer.svg'
-import facebook from '../../static/images/facebook.svg'
-import instagram from '../../static/images/instagram.svg'
-import whatsapp from '../../static/images/whatsapp.svg'
 
 import './Footer.css'
 import './SVGIcon.css'
@@ -31,15 +28,15 @@ export default () => (
         </figure>
       </div>
       <div className="container taCenter">
-        <a href="https://www.facebook.com/brincadeiradecriancathe" className="SVGIcon">
-          <img src={facebook} className="SVGIcon--icon" />
-        </a>
-        <a href="https://www.instagram.com/brincadeiradecriancathe" className="SVGIcon">
-          <img src={instagram} className="SVGIcon--icon" />
-        </a>
-        <a href="https://wa.me/5586988487045" className="SVGIcon">
-          <img src={whatsapp} className="SVGIcon--icon" />
-        </a>
+        <div className="SVGIcon Icon-Instagram">
+          <a href="https://www.instagram.com/brincadeiradecriancathe" className="SVGIcon--icon" />
+        </div>
+        <div className="SVGIcon Icon-Facebook">
+          <a href="https://www.facebook.com/brincadeiradecriancathe" className="SVGIcon--icon" />
+        </div>
+        <div className="SVGIcon Icon-Whatsapp">
+          <a href="https://wa.me/5586988487045" className="SVGIcon--icon" />
+        </div>
       </div>
     </footer>
     <footer className="footer footer-Bottom">

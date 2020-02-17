@@ -1,7 +1,5 @@
 .SVGIcon {
   margin: 2rem 1.5rem 0;
-  height: 4.6rem;
-  width: 4.6rem;
   display: inline-block;
   background: var(--midGreen);
   border-radius: 50%;
@@ -10,15 +8,41 @@
 
 .SVGIcon--icon {
   display: block;
+  height: 4.6rem;
+  width: 4.6rem;
   border-radius: 50%;
   transition: 0.3s ease all;
-  background-color: var(--midGreen);
+  background-color: var(--darkGreen);
+  box-sizing: cover;
 }
 
 .SVGIcon:hover {
   background: yellow;
 }
 
-.SVGIcon:hover .SVGIcon--icon {
-  background-color: var(--darkGreen);
+.SVGIcon.Icon-Instagram .SVGIcon--icon {
+  background-image: url('../../static/images/instagram.svg');
+}
+
+.SVGIcon.Icon-Facebook .SVGIcon--icon {
+  background-image: url('../../static/images/facebook.svg');
+}
+
+.SVGIcon.Icon-Whatsapp .SVGIcon--icon {
+  background-image: url('../../static/images/whatsapp.svg');
+}
+
+.SVGIcon.Icon-Instagram:hover .SVGIcon--icon {
+  background-image: url('../../static/images/instagram_h.svg');
+  background-color: #c32aa3;
+}
+
+.SVGIcon.Icon-Facebook:hover .SVGIcon--icon {
+  background-image: url('../../static/images/facebook_h.svg');
+  background-color: #1877f2;
+}
+
+.SVGIcon.Icon-Whatsapp:hover .SVGIcon--icon {
+  background-image: url('../../static/images/whatsapp_h.svg');
+  background-color: #128c7e;
 }

@@ -35,7 +35,7 @@ accordion:
   - description: Taciti lorem tempor quam vestibulum dis habitasse
     title: Teste de Acordeon
   - description: Taciti lorem tempor quam vestibulum dis habitasse
-    title: Teste de Acordeon
+    title: Teste de Acordeon 
 gallery:
   - alt: Teste de título
     image: 'https://ucarecdn.com/277cdf82-24aa-4d80-8169-bb46f4cd319d/'
