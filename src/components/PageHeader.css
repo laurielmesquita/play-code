@@ -1,7 +1,7 @@
 .PageHeader {
   background-color: var(--darkGrey);
   color: white;
-  padding: 15rem 0;
+  padding: rfs(15rem 0);
 }
 
 .PageHeader .BackgroundImage {
@@ -9,11 +9,12 @@
 }
 
 .PageHeader-large {
-  padding: 20rem 0;
+  padding: rfs(20rem 0);
 }
 
 .PageHeader--Title {
-  font-size: 6rem;
+  font-size: rfs(6rem);
+  line-height: rfs(7.5rem);
   margin-bottom: 0;
 }
 
@@ -26,11 +27,3 @@
   animation: fadeIn 0.5s ease-out;
 }
 
-@media (max-width: 600px) {
-  .PageHeader {
-    padding: 7rem 0;
-  }
-  .PageHeader-large {
-    padding: 12.5rem 0;
-  }
-}
