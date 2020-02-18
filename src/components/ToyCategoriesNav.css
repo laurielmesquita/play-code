@@ -1,0 +1,37 @@
+.ToyCategoriesNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.ToyCategoriesNav > * + * {
+  margin-left: 1rem;
+}
+
+.ToyCategoriesNav input[type='text'] {
+  right: 0;
+  position: absolute;
+  border: 0;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.4rem;
+  color: black;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.ToyCategoriesNav input[type='text']:focus {
+  outline: none;
+}
+
+.ToyCategoriesNav input[type='text']::placeholder {
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .ToyCategoriesNav input[type='text'] {
+    position: relative;
+    width: 100%;
+  }
+}

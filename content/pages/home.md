@@ -1,11 +1,11 @@
 ---
 template: HomePage
 slug: ''
-title: Brincadeira de Criança
+title: Tombo Legal
 featuredImage: 'https://brincadeira.co/'
-subtitle: 'Site institucional da empresa Brincadeira de Criança.'
+subtitle: 'Diversão em dobro com o **Tombo Legal**!'
 meta:
-  description: Site institucional da empresa de aluguel de brinquedos - Brincadeira de Criança.
+  description: Site institucional da empresa de aluguel Brincadeira de Criança.
   title: Brincadeira de Criança
 ---
 

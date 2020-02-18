@@ -4,6 +4,8 @@ import { Link } from 'gatsby'
 
 import Image from './Image'
 
+import './ToyCard.css'
+
 const ToyCard = ({
   featuredImage,
   title,

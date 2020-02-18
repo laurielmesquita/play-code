@@ -2,6 +2,8 @@ import React from 'react'
 
 import ToyCard from './ToyCard'
 
+import './ToySection.css'
+
 class ToySection extends React.Component {
   static defaultProps = {
     toys: [],

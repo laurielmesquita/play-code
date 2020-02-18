@@ -15,12 +15,12 @@
 .PageHeader--Title {
   font-size: rfs(6rem);
   line-height: rfs(7.5rem);
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .PageHeader--Subtitle {
-  font-weight: 400;
-  font-size: 1.8rem;
+  font-weight: 300;
+  font-size: rfs(2.2rem);
 }
 
 .PageHeader .container {

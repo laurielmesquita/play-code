@@ -3,10 +3,12 @@ import { Link } from 'gatsby'
 
 import ToySearch from './ToySearch'
 
+import './ToyCategoriesNav.css'
+
 const ToyCategoriesNav = ({ categories, enableSearch }) => (
   <div className="ToyCategoriesNav">
     <Link className="NavLink" exact="true" to={'/toy/'}>
-      All
+      Todos
     </Link>
     {categories.map((category, index) => (
       <Link
