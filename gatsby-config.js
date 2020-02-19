@@ -12,7 +12,7 @@ module.exports = {
         fonts: [
           {
             family: 'Lato',
-            variants: ['300', '400', '700']
+            variants: ['100', '300', '400', '700']
           },
           {
             family: 'Quicksand',
@@ -95,8 +95,6 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
-          // gatsby-remark-relative-images must
-          // go before gatsby-remark-images
           'gatsby-remark-relative-images',
           {
             resolve: 'gatsby-remark-images',
@@ -136,9 +134,9 @@ module.exports = {
       resolve: 'gatsby-plugin-nprogress',
       options: {
         // Setting a color is optional.
-        color: 'white',
+        color: 'red',
         // Disable the loading spinner.
-        showSpinner: false
+        showSpinner: true
       }
     },
     'gatsby-plugin-sitemap',

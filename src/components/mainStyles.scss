@@ -1,42 +1,36 @@
-:root {
-  --primary: #8918B3;
-  --secondary: #000;
-  --lightGrey: #F5F6F6;
-  --midGrey: #E8E9E9;
-  --darkGrey: #333333;
-  --lightYellow: #FFCF31;
-  --lightOrange: #FFA936;
-  --midOrange: #F76E1B;
-  --vividGreen: #3FB94E;
-  --lightGreen: #96B819;
-  --midGreen: #799A1B;
-  --darkGreen: #638500;
-  --lightPurple: #D9CAFC;
-  --midPurple: #9476D6;
-  --darkPurple: #594593;
-  --midRed: #F44949;
-  --danger: #E7134E;
-  --font-primary: 'Lato', sans-serif;
-  --font-system: system-ui; /* postcssPresetEnv */
-  --font-secondary: 'Quicksand', sans-serif;
-  --borderRadius: 6px;
-}
+@import '../../node_modules/rfs/scss.scss';
+@import './variables';
+@import './Content';
+@import './Logo';
+@import './Nav';
+@import './PageHeader';
+@import './SVGIcon';
+@import './Image';
+@import './ToyCard';
+@import './ToyCategoriesNav';
+@import './ToySection';
+@import './Accordion';
+@import './BackgroundVideo';
+@import './Gallery';
+@import './Popup';
+@import './InstagramFeed';
+@import './Footer';
 
 ::-webkit-scrollbar {
   width: 0.4rem;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 3px var(--grey);
+  box-shadow: inset 0 0 3px $lightGrey;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
+  background-color: $primary;
 }
 
 ::selection {
   color: white;
-  background: var(--primary);
+  background: $primary;
 }
 
 html {
@@ -47,11 +41,11 @@ html {
 }
 
 body {
-  font-family: var(--font-system);
+  font-family: $font-system;
   min-height: 100%;
   position: relative;
   background: white;
-  color: var(--secondary);
+  color: $secondary;
   font-size: 1.6em;
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -60,7 +54,7 @@ body {
 }
 
 a {
-  color: var(--primary);
+  color: $primary;
 }
 
 strong {
@@ -78,13 +72,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-secondary);
+  font-family: $font-secondary;
   margin: 0;
   margin-bottom: 0.5em;
 }
 
 pre {
-  background: var(--lightGrey);
+  background: $lightGrey;
   line-height: 1.45;
   font-size: 85%;
   border-radius: 3px;
@@ -94,7 +88,7 @@ pre {
 code {
   font-size: 85%;
   padding: 0.15em 0;
-  background: var(--lightGrey);
+  background: $lightGrey;
   border-radius: 3px;
 }
 code:before,
@@ -115,18 +109,18 @@ blockquote {
   line-height: 1.1;
   font-size: 1em;
   font-style: italic;
-  border-left: 2px solid var(--primary);
+  border-left: 2px solid $primary;
 }
 
 /* Utility Classes */
 .light {
-  background-color: var(--lightGrey);
+  background-color: $lightGrey;
 }
 .white {
   background-color: white;
 }
 .dark {
-  background-color: var(--primary);
+  background-color: $primary;
   color: white;
 }
 .dark h1,
@@ -198,7 +192,7 @@ blockquote {
 }
 
 .container {
-  max-width: 1111px;
+  max-width: 1200px;
   width: 90%;
   margin: 0 auto;
 }
@@ -212,7 +206,7 @@ blockquote {
 /* Buttons */
 
 .Button {
-  background: var(--primary);
+  background: $primary;
   color: white;
   text-transform: uppercase;
   text-decoration: none;
@@ -224,7 +218,7 @@ blockquote {
   border: none;
   transition: all 0.2s ease;
   cursor: pointer;
-  border-radius: var(--borderRadius);
+  border-radius: $borderRadius;
 }
 .Button:hover,
 .Button:focus {

@@ -4,6 +4,8 @@ import PropTypes from 'prop-types'
 import Image from './Image'
 import Content from './Content'
 
+import heroImage from '../../static/products/tombo_legal.png'
+
 const PageHeader = ({
   title,
   subtitle,
@@ -29,6 +31,15 @@ const PageHeader = ({
           {subtitle && (
             <Content className="PageHeader--Subtitle" src={subtitle} />
           )}
+        </div>
+        <div className="PageHeader--Item">
+          <figure className="PageHeader--Image">
+            <img
+              src={heroImage}
+              title="Tombo Legal"
+              alt="Foto do brinquedo Tombo Legal"
+            />
+          </figure>
         </div>
       </div>
     </div>

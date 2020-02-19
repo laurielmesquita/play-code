@@ -1,7 +1,7 @@
 .SVGIcon {
   margin: 2rem 1.5rem 0;
   display: inline-block;
-  background: var(--midGreen);
+  background: $midGreen;
   border-radius: 50%;
   transition: 0.3s ease all;
 }

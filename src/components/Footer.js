@@ -4,9 +4,6 @@ import InstagramFeed from './InstagramFeed'
 
 import logofooter from '../../static/images/logo_footer.svg'
 
-import './Footer.css'
-import './SVGIcon.css'
-
 export default () => (
   <div>
     <h2 className="taCenter">

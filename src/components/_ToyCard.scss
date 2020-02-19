@@ -2,8 +2,8 @@
   text-decoration: none;
   background: white;
   color: inherit;
-  border: 1px solid var(--lightGrey);
-  border-radius: var(--borderRadius);
+  border: 1px solid $lightGrey;
+  border-radius: $borderRadius;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.15s ease-in-out;
   overflow: hidden;

@@ -5,8 +5,6 @@ import Marked from 'react-markdown'
 import PropTypes from 'prop-types'
 import Image from './Image'
 
-import './Content.css'
-
 const encodeMarkdownURIs = (source = '') => {
   const markdownLinkRegex = /\[(.+)\]\((.+)(".+)\)/g
   console.log(source)
@@ -62,7 +60,7 @@ const HtmlBlock = ({ value }) => {
     <div
       className={'Content--Iframe'}
       dangerouslySetInnerHTML={{
-        __html: value,
+        __html: value
       }}
     />
   )
@@ -88,7 +86,7 @@ const Content = ({ source, src, className = '' }) => {
       source={encodeMarkdownURIs(source)}
       renderers={{
         image: MyImage,
-        html: HtmlBlock,
+        html: HtmlBlock
       }}
     />
   )
@@ -97,7 +95,7 @@ const Content = ({ source, src, className = '' }) => {
 Content.propTypes = {
   source: PropTypes.string,
   src: PropTypes.string,
-  className: PropTypes.string,
+  className: PropTypes.string
 }
 
 export default Content

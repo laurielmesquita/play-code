@@ -1,0 +1,73 @@
+.PageHeader {
+  background-color: $darkGrey;
+  color: white;
+  @include padding(15rem 0)
+}
+
+.PageHeader .BackgroundImage {
+  opacity: 0.8;
+}
+
+.PageHeader-large {
+  @include padding(14.8rem 0)
+}
+
+.PageHeader--Item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: calc(100% / 2 - 3rem);
+  margin: 0;
+  padding: 0;
+}
+
+.PageHeader--Title {
+  @include font-size(6rem);
+  font-size: baseValue(6rem);
+  line-height: rfs(7.5rem);
+  margin-bottom: 1.5rem;
+}
+
+.PageHeader--Subtitle p {
+  @include font-size(2.4rem);
+  font-weight: 300;
+}
+
+.PageHeader .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.PageHeader--Image {
+  margin: 0;
+  padding: 0 2rem;
+  height: auto;
+}
+
+.PageHeader--Image img {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  height: unset;
+}
+
+@media screen and (max-width: 750px) {
+  .PageHeader .container {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .PageHeader--Item {
+    width: 100%;
+  }
+
+  .PageHeader--Item:first-of-type {
+    margin-bottom: 3rem;
+  }
+}

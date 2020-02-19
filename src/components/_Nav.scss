@@ -55,7 +55,7 @@
 .NavLink:hover,
 .NavLink.active,
 .NavLink:focus {
-  color: var(--primary);
+  color: $primary;
   border-bottom-color: currentColor;
 }
 
@@ -73,8 +73,8 @@
   position: absolute;
   top: calc(50% - 0.2rem);
   right: 1rem;
-  border-bottom: 2px solid var(--darkGrey);
-  border-right: 2px solid var(--darkGrey);
+  border-bottom: 2px solid $darkGrey;
+  border-right: 2px solid $darkGrey;
   display: block;
   height: 0.8rem;
   width: 0.8rem;
@@ -92,7 +92,7 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.3s ease all;
-  border-radius: var(--borderRadius);
+  border-radius: $borderRadius;
   padding: 1rem 0;
 }
 

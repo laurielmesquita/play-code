@@ -7,7 +7,7 @@ import NavMobile from './NavMobile'
 import Footer from './Footer'
 
 import 'modern-normalize/modern-normalize.css'
-import './mainStyles.css'
+import './mainStyles.scss'
 
 export default ({ children, meta, title }) => {
   return (
@@ -45,9 +45,9 @@ export default ({ children, meta, title }) => {
         const subNav = {
           toys: data.allToys.hasOwnProperty('edges')
             ? data.allToys.edges.map(toy => {
-                return { ...toy.node.fields, ...toy.node.frontmatter }
-              })
-            : false,
+              return { ...toy.node.fields, ...toy.node.frontmatter }
+            })
+            : false
         }
 
         return (

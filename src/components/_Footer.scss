@@ -5,7 +5,7 @@
 
 .footer-Top {
   padding: 10rem 0 5rem;
-  background-color: var(--lightGreen);
+  background-color: $lightGreen;
 }
 
 .Logo-Footer {
@@ -18,11 +18,11 @@
 
 .footer-Bottom {
   padding: 2rem 0;
-  background-color: var(--midGreen);
+  background-color: $midGreen;
 }
 
 .footer a {
-  color: var(--lightYellow);
+  color: $lightYellow;
   text-decoration: none;
 }
 

@@ -4,8 +4,6 @@ import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
 import Logo from './Logo'
 
-import './Nav.css'
-
 export class Navigation extends Component {
   state = {
     active: false,
