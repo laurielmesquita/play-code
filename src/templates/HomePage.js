@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHero'
-import Content from '../components/Content'
+import HeaderSection from '../components//HeaderSection'
 import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
@@ -17,7 +17,10 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
 
     <section className="section">
       <div className="container">
-        <Content source={body} />
+        <HeaderSection
+          hdSectionTt="Nossos Destaques"
+          hdSectionSubTt="Conheça os nossos maiores Sucessos"
+        />
       </div>
     </section>
   </main>

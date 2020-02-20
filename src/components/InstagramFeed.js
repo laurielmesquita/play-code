@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Image from '../components/Image'
+import Image from './Image'
 
 // A quick way to get your access token
 // https://instagram.pixelunion.net/

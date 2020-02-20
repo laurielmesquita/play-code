@@ -1,0 +1,30 @@
+.hdSection {
+  text-align: center;
+  @include margin-bottom(6rem)
+}
+
+.hdSection--Title {
+  @include font-size(3.2rem);
+  text-transform: uppercase;
+  letter-spacing: 0.37rem;
+  line-height: 1.2;
+}
+
+.hdSection--SubTitle {
+  line-height: 1.6;
+  color: #85A411;
+  font-family: $font-primary;
+  @include font-size(1.6rem);
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.34rem;
+  margin: 0;
+}
+
+.hdSection--SubTitle a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

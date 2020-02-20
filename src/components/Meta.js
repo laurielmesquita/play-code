@@ -16,7 +16,7 @@ export const query = graphql`
 `
 
 export default class Meta extends Component {
-  render() {
+  render () {
     const {
       title,
       url,
@@ -28,7 +28,7 @@ export default class Meta extends Component {
       canonicalLink,
       siteTitle,
       siteDescription,
-      googleTrackingId,
+      googleTrackingId
     } = this.props
 
     return (

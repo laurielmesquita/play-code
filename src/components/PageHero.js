@@ -31,7 +31,7 @@ const PageHeader = ({
           {subtitle && (
             <Content className="PageHeader--Subtitle" src={subtitle} />
           )}
-          <a className="Button Button--Large" href="" title="">Mais Informações</a>
+          <a className="Button Button--Large" href="/toys/postagem-principal/" title="Mais informações sobre Tombo Legal">Mais Informações</a>
         </div>
         <div className="PageHeader--Item">
           <figure className="PageHeader--Image">
