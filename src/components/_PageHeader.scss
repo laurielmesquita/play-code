@@ -23,10 +23,15 @@
   padding: 0;
 }
 
+.PageHeader--Title,
+.PageHeader--Subtitle {
+  width: 100%;
+}
+
 .PageHeader--Title {
   @include font-size(6rem);
   font-size: baseValue(6rem);
-  line-height: rfs(7.5rem);
+  line-height: 1.25;
   margin-bottom: 1.5rem;
 }
 

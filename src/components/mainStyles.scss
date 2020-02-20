@@ -1,11 +1,13 @@
 @import '../../node_modules/rfs/scss.scss';
 @import './variables';
 @import './Content';
+@import './UtilityClasses';
 @import './Logo';
 @import './Nav';
 @import './PageHeader';
 @import './SVGIcon';
 @import './Image';
+@import './Button';
 @import './ToyCard';
 @import './ToyCategoriesNav';
 @import './ToySection';
@@ -112,52 +114,6 @@ blockquote {
   border-left: 2px solid $primary;
 }
 
-/* Utility Classes */
-.light {
-  background-color: $lightGrey;
-}
-.white {
-  background-color: white;
-}
-.dark {
-  background-color: $primary;
-  color: white;
-}
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6 {
-  color: white;
-}
-
-.relative {
-  position: relative;
-}
-.absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.taCenter {
-  text-align: center;
-}
-.taLeft {
-  text-align: left;
-}
-.taRight {
-  text-align: right;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-}
-
 /* Layout */
 
 .section {
@@ -201,42 +157,4 @@ blockquote {
 }
 .container.skinnier {
   max-width: 555px;
-}
-
-/* Buttons */
-
-.Button {
-  background: $primary;
-  color: white;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  font-size: 1.4rem;
-  display: inline-block;
-  padding: 1.25rem 3rem;
-  border: none;
-  transition: all 0.2s ease;
-  cursor: pointer;
-  border-radius: $borderRadius;
-}
-.Button:hover,
-.Button:focus {
-  opacity: 0.95;
-  outline: none;
-}
-.Button[disabled] {
-  opacity: 0.4;
-  pointer-events: none;
-  cursor: progress;
-}
-.Button-blank {
-  appearance: none;
-  background: none;
-  outline: none;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

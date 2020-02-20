@@ -26,11 +26,12 @@ const PageHeader = ({
         />
       )}
       <div className="container relative">
-        <div className="PageHeader--Item">
+        <div className="PageHeader--Item PageHero">
           <h1 className="PageHeader--Title">{title}</h1>
           {subtitle && (
             <Content className="PageHeader--Subtitle" src={subtitle} />
           )}
+          <a className="Button Button--Large" href="" title="">Mais Informações</a>
         </div>
         <div className="PageHeader--Item">
           <figure className="PageHeader--Image">
