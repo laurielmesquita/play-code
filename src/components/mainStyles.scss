@@ -30,7 +30,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: $primary;
+  background-color: $darkPurple;
 }
 
 ::selection {
@@ -61,6 +61,7 @@ body {
 a {
   color: $primary;
   text-decoration: none;
+  transition: all 0.2s ease-in-out;
 }
 
 strong {

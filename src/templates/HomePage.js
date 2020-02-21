@@ -3,8 +3,9 @@ import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHero'
 import Layout from '../components/Layout'
-import OurHighlights from '../components/OurHighlights'
 import HeaderSection from '../components/HeaderSection'
+import OurHighlights from '../components/OurHighlights'
+import HomeCategories from '../components/HomeCategories'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
@@ -31,7 +32,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
           hdSectionTt="Nossos Produtos"
           hdSectionSubTt="NAVEGUE EM NOSSOS PRODUTOS POR CATEGORIA"
         />
-        <OurHighlights />
+        <HomeCategories />
       </div>
     </section>
   </main>

@@ -1,43 +1,34 @@
 /* eslint-disable react/display-name */
 import React from 'react'
-import tenda from '../../static/products/home_tenda.png'
-import aerohockey from '../../static/products/home_aerohockey.png'
-import camaelastica from '../../static/products/home_camaelastica.png'
-import pulapula from '../../static/products/home_pulapula.png'
+import tenda from '../../static/products/cat_tenda.png'
+import brinquedo from '../../static/products/cat_brinquedo.png'
+import climatizador from '../../static/products/cat_climatizador.png'
 
 export default () => (
-  <div className="OurHighlights">
-    <div className="OurHighlights--Item">
-      <h2 className="OurHighlights--Tt">
-        <a href="/">Tendas</a>
-      </h2>
-      <a href="/" className="OurHighlights--Img">
+  <div className="HomeCategories">
+    <div className="HomeCategories--Item">
+      <a href="/" className="HomeCategories--Img">
         <img src={tenda} title="Tendas" alt="Foto da Tenda" />
       </a>
-    </div>
-    <div className="OurHighlights--Item">
-      <h2 className="OurHighlights--Tt">
-        <a href="/">Aero Hockey</a>
+      <h2 className="HomeCategories--Tt">
+        <a href="/">Tendas</a>
       </h2>
-      <a href="/" className="OurHighlights--Img">
-        <img src={aerohockey} title="Tendas" alt="Foto da Tenda" />
-      </a>
     </div>
-    <div className="OurHighlights--Item">
-      <h2 className="OurHighlights--Tt">
-        <a href="/">Cama Elástica</a>
-      </h2>
-      <a href="/tendas/" className="OurHighlights--Img">
-        <img src={camaelastica} title="Tendas" alt="Foto da Tenda" />
+    <div className="HomeCategories--Item">
+      <a href="/" className="HomeCategories--Img">
+        <img src={brinquedo} title="Tendas" alt="Foto da Tenda" />
       </a>
+      <h2 className="HomeCategories--Tt">
+        <a href="/">Brinquedos</a>
+      </h2>
     </div>
-    <div className="OurHighlights--Item">
-      <h2 className="OurHighlights--Tt">
-        <a href="/">Pula Pula Inflável</a>
-      </h2>
-      <a href="/" className="OurHighlights--Img">
-        <img src={pulapula} title="Tendas" alt="Foto da Tenda" />
+    <div className="HomeCategories--Item">
+      <a href="/tendas/" className="HomeCategories--Img">
+        <img src={climatizador} title="Tendas" alt="Foto da Tenda" />
       </a>
+      <h2 className="HomeCategories--Tt">
+        <a href="/">Climatizadores</a>
+      </h2>
     </div>
   </div>
 )
