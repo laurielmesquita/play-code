@@ -105,6 +105,11 @@
   transition: 0.6s ease all;
 }
 
+.Nav--Group.active .Nav--GroupParent::after {
+  top: calc(50% + 0.2rem);
+  transform: translateY(-50%) rotate(-135deg);
+}
+
 .Nav--GroupLink {
   display: block;
   position: relative;

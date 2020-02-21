@@ -8,6 +8,10 @@
   text-transform: uppercase;
   letter-spacing: 0.37rem;
   line-height: 1.2;
+
+  .section-Inverse & {
+    color: white;
+  }
 }
 
 .hdSection--SubTitle {
@@ -19,6 +23,10 @@
   text-transform: uppercase;
   letter-spacing: 0.3rem;
   margin: 0;
+
+  .section-Inverse & {
+    color: $midYellow;
+  }
 }
 
 .hdSection--SubTitle a {

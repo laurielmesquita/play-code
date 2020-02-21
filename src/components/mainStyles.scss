@@ -4,9 +4,10 @@
 @import './UtilityClasses';
 @import './Logo';
 @import './Nav';
-@import './OurHighlights';
 @import './PageHeader';
 @import './HeaderSection';
+@import './OurHighlights';
+@import './HomeCategories';
 @import './SVGIcon';
 @import './Image';
 @import './Button';
@@ -124,6 +125,11 @@ blockquote {
 .section {
   width: 100%;
   @include padding(12rem 0);
+}
+.section.section-Purple {
+  background-color: $darkPurple;
+  background-image: url(/images/section_purple.jpg);
+  background-size: cover;
 }
 .section:last-child {
   border: 0;

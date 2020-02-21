@@ -25,6 +25,15 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
         <OurHighlights />
       </div>
     </section>
+    <section className="section section-Inverse section-Purple">
+      <div className="container">
+        <HeaderSection
+          hdSectionTt="Nossos Produtos"
+          hdSectionSubTt="NAVEGUE EM NOSSOS PRODUTOS POR CATEGORIA"
+        />
+        <OurHighlights />
+      </div>
+    </section>
   </main>
 )
 
