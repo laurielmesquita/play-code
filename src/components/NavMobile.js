@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Location } from '@reach/router'
 import { Link } from 'gatsby'
 import { Menu, X } from 'react-feather'
-import Logo from './Logo'
+import LogoMobile from './LogoMobile'
 
 export class Navigation extends Component {
   state = {
@@ -45,7 +45,7 @@ export class Navigation extends Component {
         <div className="Nav--Container container">
           <div className="inner-one">
             <Link to="/" onClick={this.handleLinkClick}>
-              <Logo />
+              <LogoMobile />
             </Link>
           </div>
           <div className="inner">

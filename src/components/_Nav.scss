@@ -26,7 +26,8 @@
   flex-direction: row;
 }
 
-.Nav .Logo {
+.Nav .Logo,
+.Nav .LogoMobile {
   position: relative;
 }
 
@@ -116,9 +117,9 @@
     display: none;
   }
   
-  .Logo {
-    width: 9.6rem;
-    height: 6rem;
+  .LogoMobile {
+    width: 12.658rem;
+    height: 5.6rem;
   }
   
   .Nav-Mobile {
@@ -141,7 +142,8 @@
     margin-left: auto;
     z-index: 1;
   }
-  .Nav .Logo {
+
+  .Nav .LogoMobile {
     z-index: 1;
   }
 

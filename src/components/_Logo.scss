@@ -1,4 +1,5 @@
-.Logo {
+.Logo,
+.LogoMobile {
   margin: 0 auto;
   display: flex;
   background-size: cover;
@@ -8,4 +9,9 @@
   height: 10rem;
   align-items: center;
   justify-content: center;
+}
+
+.Logo {
+  width: 16.5rem;
+  height: 10rem;
 }
