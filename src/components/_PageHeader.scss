@@ -16,11 +16,11 @@
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
-  width: calc(100% / 2 - 3rem);
+  justify-content: center;
   margin: 0;
   padding: 0;
+  width: calc(100% / 2 - 3rem);
 }
 
 .PageHeader--Title,
@@ -73,6 +73,6 @@
   }
 
   .PageHeader--Item:first-of-type {
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
   }
 }

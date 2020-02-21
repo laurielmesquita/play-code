@@ -13,7 +13,7 @@ export default () => (
           hdSectionTt="Instagram"
           hdSectionSubTt={[
             'Siga-nos no ',
-            <a href="https://www.instagram.com/brincadeiradecriancathe/">
+            <a key="Instagram" href="https://www.instagram.com/brincadeiradecriancathe/">
               @brincadeiradecriancathe
             </a>
           ]}

@@ -1,9 +1,10 @@
 @import '../../node_modules/rfs/scss.scss';
-@import './variables';
+@import './Variables';
 @import './Content';
 @import './UtilityClasses';
 @import './Logo';
 @import './Nav';
+@import './OurHighlights';
 @import './PageHeader';
 @import './HeaderSection';
 @import './SVGIcon';
@@ -58,6 +59,7 @@ body {
 
 a {
   color: $primary;
+  text-decoration: none;
 }
 
 strong {

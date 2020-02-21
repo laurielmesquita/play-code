@@ -83,6 +83,7 @@
 }
 
 .Nav--GroupLinks {
+  z-index: 999;
   position: absolute;
   top: 100%;
   left: 0;
@@ -92,6 +93,7 @@
   max-height: 0;
   overflow: hidden;
   transition: 0.3s ease all;
+  border: 3px solid $primary;
   border-radius: $borderRadius;
   padding: 1rem 0;
 }
