@@ -48,3 +48,10 @@
   }
 
 }
+
+@media screen and (min-width: 751px) and (max-width: 1199px) {
+  .Button {
+    @include font-size(1.4rem);
+    @include padding(1.5rem 2.5rem);
+  }
+}

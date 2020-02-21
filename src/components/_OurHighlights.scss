@@ -28,12 +28,11 @@
 }
 
 .OurHighlights--Tt {
-  font-family: $font-primary;
-  @include font-size(1.4rem);
+  @include font-size(1.6rem);
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.23rem;
   @include margin-bottom(2.8rem);
 
   a {
