@@ -27,7 +27,7 @@ export default () => (
       <h2 className="OurHighlights--Tt">
         <a href="/">Cama Elástica</a>
       </h2>
-      <a href="/" className="OurHighlights--Img">
+      <a href="/tendas/" className="OurHighlights--Img">
         <img src={camaelastica} title="Tendas" alt="Foto da Tenda" />
       </a>
     </div>
