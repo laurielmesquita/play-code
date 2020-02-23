@@ -74,12 +74,13 @@
   }
 }
 
-@media screen and (max-width: 1080px) {
+// Medium devices (tablets, less than 992px)
+@media screen and (max-width: 991.98px) {
   .OurHighlights > * {
     width: 100%;
     margin: 0 auto;
   }
-
+  
   @supports (display: grid) {
     .OurHighlights {
       display: grid;
@@ -89,19 +90,20 @@
   }
 }
 
-@media screen and (max-width: 888px) {
-  .OurHighlights > * {
-    width: 90%;
-    max-width: 50rem;
-    margin: 0 auto 4rem;
-    display: block;
-  }
+// Small devices (landscape phones, less than 768px)
+@media screen and (max-width: 767.98px) {
+  // .OurHighlights > * {
+  //   width: 90%;
+  //   max-width: 50rem;
+  //   margin: 0 auto 4rem;
+  //   display: block;
+  // }
 
   @supports (display: grid) {
     .OurHighlights {
-      display: block;
-      grid-template-columns: 1;
-      grid-gap: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
     }
   }
 }

@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @include padding(0 7rem);
+  @include padding(0 3rem);
 }
 
 .HomeCategories--Item {
@@ -45,7 +45,7 @@
     transition: all 0.15s ease-in-out;
   }
 
-  &:after {
+  &::after {
     content: '';
     display: block;
     position: absolute;
@@ -83,7 +83,28 @@
   }
 }
 
-@media screen and (max-width: 888px) {
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+  .HomeCategories {
+    padding: 0;
+  }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .HomeCategories--Img::after {
+    border: 1.2rem solid #513f88;
+  }
+
+  @supports (display: grid) {
+    .HomeCategories {
+      grid-gap: 6rem;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media screen and (max-width: 767.98px) {
   .HomeCategories > * {
     width: 90%;
     max-width: 50rem;
@@ -99,12 +120,13 @@
     .HomeCategories {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      grid-gap: 2rem;
+      grid-gap: 1.5rem;
     }
   }
 }
 
-@media screen and (max-width: 700px) {
+// Very samll devices (landscape phones, less than 576px)
+@media screen and (max-width: 575.98px) {
   .HomeCategories {
     @include padding(0 2rem);
   }
