@@ -4,7 +4,7 @@
 }
 
 .footer-Top {
-  padding: 10rem 0 5rem;
+  @include padding(10rem 0 5rem);
   background-color: $lightGreen;
 }
 

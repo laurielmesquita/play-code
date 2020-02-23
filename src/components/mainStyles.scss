@@ -122,7 +122,6 @@ blockquote {
 }
 
 /* Layout */
-
 .section {
   width: 100%;
   @include padding(12rem 0);
@@ -148,7 +147,6 @@ blockquote {
 @media (max-width: 600px) {
   .section {
     width: 100%;
-    padding: 5rem 0;
   }
   .section.thick {
     padding: 7rem 0;
