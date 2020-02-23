@@ -33,7 +33,7 @@
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.23rem;
-  @include margin-bottom(2.8rem);
+  @include margin-bottom(2.4rem);
 
   a {
     color: black;
@@ -74,36 +74,30 @@
   }
 }
 
-// Medium devices (tablets, less than 992px)
-@media screen and (max-width: 991.98px) {
-  .OurHighlights > * {
-    width: 100%;
-    margin: 0 auto;
+@media screen and (max-width: 1199.98px) {
+  .OurHighlights--Item {
+    @include padding(2rem);
   }
-  
-  @supports (display: grid) {
-    .OurHighlights {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 6rem;
-    }
+
+  .OurHighlights--Img {
+    @include padding(3rem 2rem);
   }
 }
 
-// Small devices (landscape phones, less than 768px)
-@media screen and (max-width: 767.98px) {
-  // .OurHighlights > * {
-  //   width: 90%;
-  //   max-width: 50rem;
-  //   margin: 0 auto 4rem;
-  //   display: block;
+@media screen and (max-width: 991.98px) {
+  // .OurHighlights--Item {
+  //   @include padding(2rem);
   // }
 
-  @supports (display: grid) {
-    .OurHighlights {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-gap: 4rem;
-    }
+  .OurHighlights--Img {
+    @include padding(3rem 2rem);
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .OurHighlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
   }
 }
