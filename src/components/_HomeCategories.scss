@@ -65,7 +65,7 @@
     }
 
     &::after {
-      border: 2rem solid #513f88;
+      border: 1.7rem solid #513f88;
     }
   }
 }
@@ -127,15 +127,14 @@
 
 // Very samll devices (landscape phones, less than 576px)
 @media screen and (max-width: 575.98px) {
-  .HomeCategories {
-    @include padding(0 2rem);
+
+  .HomeCategories--Tt {
+    @include font-size(1.2rem);
   }
   
   @supports (display: grid) {
     .HomeCategories {
-      display: block;
-      grid-template-columns: 1;
-      grid-gap: 0;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
