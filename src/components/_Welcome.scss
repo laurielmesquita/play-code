@@ -1,0 +1,40 @@
+.Welcome {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+
+  p {
+    @include padding(0 3.3rem);
+    text-align: center;
+  }
+
+  .Welcome--Item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .Welcome--Image {
+    width: 100%;
+    height: 40rem;
+    border-radius: $borderRadius;
+    background-image: url(/images/kid.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .Welcome {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+
+    p {
+      padding: 0;
+    }
+
+    .Welcome--Image {
+      @include margin-top(6rem);
+    }
+  }
+}

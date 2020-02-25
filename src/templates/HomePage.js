@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import HeaderSection from '../components/HeaderSection'
 import OurHighlights from '../components/OurHighlights'
 import HomeCategories from '../components/HomeCategories'
+import Welcome from '../components/Welcome'
 
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
@@ -30,9 +31,18 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
       <div className="container">
         <HeaderSection
           hdSectionTt="Nossos Produtos"
-          hdSectionSubTt="NAVEGUE EM NOSSOS PRODUTOS POR CATEGORIA"
+          hdSectionSubTt="Navegue em nossos produtos por categoria"
         />
         <HomeCategories />
+      </div>
+    </section>
+    <section className="section">
+      <div className="container">
+        <HeaderSection
+          hdSectionTt="Bem-Vindo ao Nosso Site"
+          hdSectionSubTt="Saiba mais sobre a brincadeira de criança"
+        />
+        <Welcome />
       </div>
     </section>
   </main>

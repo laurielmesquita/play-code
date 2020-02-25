@@ -8,6 +8,7 @@
 @import './HeaderSection';
 @import './OurHighlights';
 @import './HomeCategories';
+@import './Welcome';
 @import './SVGIcon';
 @import './Image';
 @import './Button';
@@ -51,9 +52,8 @@ body {
   position: relative;
   background: white;
   color: $secondary;
-  font-size: 1.6em;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  font-size: 1.8em;
+  font-weight: 300;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
@@ -70,7 +70,7 @@ strong {
 
 p {
   margin-top: 0;
-  margin-bottom: 1em;
+  @include margin-bottom(1.5em);
 }
 
 h1,
