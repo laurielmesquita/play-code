@@ -1,0 +1,89 @@
+.About {
+  display: grid;
+  grid-template-columns: 1.575fr 2fr;
+  grid-gap: 12.57rem;
+  @include padding(0 9rem);
+
+  p {
+    text-align: center;
+  }
+
+  .About--Item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+
+    .hdSection {
+      @include margin-bottom(3rem);
+
+      .hdSection--Title {
+        @include font-size(4.4rem);
+        @include margin-bottom(1rem);
+      }
+
+      .hdSection--SubTitle {
+        @include font-size(2rem);
+      }
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .About--Image {
+    width: 100%;
+    height: 75rem;
+    border-radius: $borderRadius;
+    background-image: url(/images/kid.jpg);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .About {
+    grid-template-columns: 1.575fr 2fr;
+    grid-gap: 8rem;
+    @include padding(0 3rem);
+
+    .About--Item {
+      .hdSection {
+        .hdSection--Title {
+          @include font-size(3rem);
+        }
+        .hdSection--SubTitle {
+          @include font-size(1.6rem);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .About {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+
+    p {
+      padding: 0;
+    }
+
+    .About--Image {
+      height: 40rem;
+      @include margin-top(6rem);
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .About {
+    @include padding(0 4rem);
+  }
+}
+
+@media screen and (max-width: 413.98px) {
+  .About {
+    padding: 0;
+  }
+}

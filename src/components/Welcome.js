@@ -1,8 +1,6 @@
 /* eslint-disable react/display-name */
 import React from 'react'
 
-import HeaderSection from './HeaderSection'
-
 export default () => (
   <div className="Welcome">
     <div className="Welcome--Item">
