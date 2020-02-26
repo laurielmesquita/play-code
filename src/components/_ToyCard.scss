@@ -2,36 +2,65 @@
   text-decoration: none;
   background: white;
   color: inherit;
-  border: 1px solid $lightGrey;
-  border-radius: $borderRadius;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   transition: all 0.15s ease-in-out;
   overflow: hidden;
+
+  .ToyCard--Content {
+    padding: 0;
+    text-align: center;
+  }
+
+  .ToyCard--Image {
+    margin: 0 0 2rem 0;
+    width: 100%;
+    height: 15rem;
+    background-color: $lightGrey;
+    border-radius: $borderRadius;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .ToyCard--Title {
+    @include font-size(1.7rem);
+    @include margin-bottom(1rem);
+    font-weight: 500;
+  }
+
+  .ToyCard--Category {
+    color: $midGrey;
+    font-size: 1.2rem;
+    min-height: 1.2em;
+    line-height: 1;
+    @include margin-bottom(0.5rem);
+    text-transform: uppercase;
+  }
+
+  .ToyCard--Excerpt {
+    color: $lightBlue;
+    font-family: $font-secondary;
+    @include font-size(1.8rem);
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    .ToyCard--Image {
+      background-color: $softGrey;
+    }
+
+    .ToyCard--Excerpt {
+      color: $danger;
+    }
+  }
 }
 
-.ToyCard:hover,
-.ToyCard:focus {
-  transform: translateY(-1px);
-  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.15);
-}
+@media screen and (max-width: 575.98px) {
+  .ToyCard {
+    display: block;
+    @include margin-bottom(4rem);
 
-.ToyCard--Image {
-  margin: 0 0 2rem 0;
-  width: 100%;
-  height: 15rem;
-}
-
-.ToyCard--Title {
-  margin: 0;
-}
-
-.ToyCard--Content {
-  padding: 0 2.5rem 2.5rem;
-}
-
-.ToyCard--Category {
-  font-size: 1.2rem;
-  min-height: 1.2em;
-  line-height: 1;
-  margin: 0.5em 0;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }

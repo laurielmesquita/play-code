@@ -12,7 +12,7 @@ export const SingleToyTemplate = ({
   body,
   nextPostURL,
   prevPostURL,
-  categories = [],
+  categories = []
 }) => (
   <main>
     <article

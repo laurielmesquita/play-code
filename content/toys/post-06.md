@@ -1,9 +1,10 @@
 ---
-template: HomePage
-title: Postagem Principal
+template: SingleToy
+title: Tobogã
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: 'https://brincadeira.co/'
+price: R$200,00
 excerpt: >-
   Este é um texto de espaço reservado para garantir que as palavras apareça
   corretamente no seu site. Este texto será substituído assim que o site está
@@ -14,7 +15,7 @@ meta:
   canonicalLink: ''
   description: Uma descrição sobre a página
   noindex: false
-  title: Postagem Principal
+  title: Tobogã
 ---
 
 Os parágrafos são separados por uma linha em branco.

@@ -39,6 +39,7 @@ export const BlogIndexTemplate = ({
   title,
   subtitle,
   featuredImage,
+  price,
   toys = [],
   toyCategories = [],
   enableSearch = true,
@@ -132,7 +133,8 @@ export const pageQuery = graphql`
         excerpt
         template
         subtitle
-        featuredImage
+        featuredImage,
+        price
       }
     }
 
@@ -153,6 +155,7 @@ export const pageQuery = graphql`
               category
             }
             featuredImage
+            price
           }
         }
       }

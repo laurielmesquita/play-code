@@ -6,6 +6,7 @@ import Image from './Image'
 
 const ToyCard = ({
   featuredImage,
+  price,
   title,
   excerpt,
   slug,
@@ -24,7 +25,7 @@ const ToyCard = ({
       <div className="ToyCard--Category">
         {categories && categories.map(cat => cat.category).join(', ')}
       </div>
-      {excerpt && <div className="ToyCard--Excerpt">{excerpt}</div>}
+      {price && <div className="ToyCard--Excerpt">{price}</div>}
     </div>
   </Link>
 )

@@ -1,16 +1,16 @@
 ---
 template: SingleToy
-title: Título padrão pra encher linguiça
+title: Castelinho
 status: Featured / Published
 date: '2018-05-25'
 featuredImage: 'https://brincadeira.co/'
-excerpt: >-
-  Este é um texto de espaço reservado que nossos web designers colocam aqui para garantir que as palavras apareça corretamente no seu site. Este texto será substituído assim que o site está completo. No momento, você está lendo um texto escrito em Inglês, nenhum outro idioma.
+price: R$200,00
+excerpt: Xoxota
 categories:
   - category: Outros
 meta:
   description: Teste de Meta descrição
-  title: Título padrão pra encher linguiça
+  title: Castelinho
 ---
 
 Este é um texto de espaço reservado que nossos web designers colocam aqui para garantir que as palavras apareçam corretamente em seu site. Este texto será substituído assim que o site for concluído. No momento, você está lendo um texto escrito em inglês e não em outro idioma.

@@ -1,41 +1,24 @@
 .ToySection--Grid {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4rem;
 }
 
 .ToySection button {
-  margin-top: 1rem;
-  margin-top: 5rem;
-  background: white;
-  border: 2px solid black;
-  padding: 1rem 2rem;
+  color: white;
+  @include margin-top(5rem);
+  background-color: $darkPurple;
+  border: none;
+  text-transform: uppercase;
+  @include padding(1.8rem 3rem);
   cursor: pointer;
+  border-radius: $borderRadius;
+  transition: all 0.3s ease-in-out;
 }
 
 .ToySection button:hover {
-  background: black;
-  border: 2px solid white;
-  color: white;
-}
-
-.ToySection--Grid > * {
-  width: calc(33.33% - 2rem);
-  margin-bottom: 4rem;
-}
-
-@supports (display: grid) {
-  .ToySection--Grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 4rem;
-  }
-
-  .ToySection--Grid > * {
-    width: auto;
-    margin: 0;
-  }
+  background-color: $primaryGreen;
+  outline: none;
 }
 
 .ToySection--Title {
@@ -45,19 +28,20 @@
   line-height: 1.2;
 }
 
-@media screen and (max-width: 888px) {
-  .ToySection--Grid > * {
-    width: 100%;
-    max-width: 50rem;
-    margin: 0 auto 4rem;
-    display: block;
-  }
-
+@media screen and (max-width: 767.98px) {
   @supports (display: grid) {
     .ToySection--Grid {
-      display: block;
-      grid-template-columns: 1;
-      grid-gap: 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 4rem;
     }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .ToySection--Grid {
+    display: block;
+    grid-template-columns: 1;
+    grid-gap: 0;
   }
 }
