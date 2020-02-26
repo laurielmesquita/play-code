@@ -15,7 +15,7 @@ export const ComponentsPageTemplate = ({ title, body }) => (
           <div className="About--Item">
             <HeaderSection
               hdSectionTt="Bem-vindo a Brincadeira de Criança"
-              hdSectionSubTt="Sobre Nós"
+              hdSectionSubTt="Locação de Brinquedos"
             />
             <p>
               Atuamos no mercado desde 2013, prestando serviços de locação de
