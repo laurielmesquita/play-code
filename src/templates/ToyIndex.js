@@ -42,7 +42,7 @@ export const BlogIndexTemplate = ({
   toys = [],
   toyCategories = [],
   enableSearch = true,
-  contentType,
+  contentType
 }) => (
   <Location>
     {({ location }) => {
@@ -70,7 +70,7 @@ export const BlogIndexTemplate = ({
           />
 
           {!!toyCategories.length && (
-            <section className="section thin">
+            <section className="section thin section-softPurple">
               <div className="container">
                 <ToyCategoriesNav enableSearch categories={toyCategories} />
               </div>
@@ -103,12 +103,12 @@ const BlogIndex = ({ data: { page, toys, toyCategories } }) => (
       toys={toys.edges.map(toy => ({
         ...toy.node,
         ...toy.node.frontmatter,
-        ...toy.node.fields,
+        ...toy.node.fields
       }))}
       toyCategories={toyCategories.edges.map(toy => ({
         ...toy.node,
         ...toy.node.frontmatter,
-        ...toy.node.fields,
+        ...toy.node.fields
       }))}
     />
   </Layout>

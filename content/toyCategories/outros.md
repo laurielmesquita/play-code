@@ -1,6 +1,6 @@
 ---
 template: ToyIndex
-title: Outros Brinquedos
+title: Outros
 subtitle: ''
 featuredImage: 'https://brincadeira.co/'
 meta:

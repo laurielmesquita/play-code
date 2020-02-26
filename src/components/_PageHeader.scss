@@ -1,9 +1,9 @@
 .PageHeader {
-  @include padding(3rem 0);
+  @include padding(4rem 0);
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  background-color: $darkPurple;
+  background-color: $deepPurple;
 }
 
 .PageHeader--Title {

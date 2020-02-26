@@ -1,9 +1,15 @@
 .ToyCategoriesNav {
+  color: white;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-wrap: wrap;
   position: relative;
+
+  .NavLink:hover,
+  .NavLink[aria-current] {
+    color: $midYellow;
+  }
 }
 
 .ToyCategoriesNav > * + * {
@@ -18,20 +24,41 @@
   border-radius: 2rem;
   font-size: 1.4rem;
   color: black;
-  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  background-color: $lightPurple;
+  transition: all 0.2s ease-in-out;
 }
 
 .ToyCategoriesNav input[type='text']:focus {
   outline: none;
+  background-color: white;
 }
 
 .ToyCategoriesNav input[type='text']::placeholder {
-  color: black;
+  color: $deepPurple;
 }
 
-@media (max-width: 600px) {
-  .ToyCategoriesNav input[type='text'] {
-    position: relative;
-    width: 100%;
+@media (max-width: 767.98px) {
+  .ToyCategoriesNav {
+    justify-content: center;
+
+    .NavLink {
+      letter-spacing: 0.14em;
+    }
+    
+    input[type='text'] {
+      position: relative;
+      width: 100%;
+      @include margin(1.4rem 0);
+    }
+  }
+}
+
+@media (max-width: 575.98px) {
+  .ToyCategoriesNav {
+    .NavLink {
+      @include font-size(1.2rem);
+      @include padding(0.5rem 0.7rem);
+      letter-spacing: 0.1em;
+    }
   }
 }
