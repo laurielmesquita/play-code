@@ -40,7 +40,7 @@
   display: block;
   font-family: Lato;
   font-weight: bold;
-  font-size: 12px;
+  @include font-size(1.25rem);
   transition: color 0.2s, border-bottom-color 0.2s;
   color: inherit;
   text-decoration: none;
@@ -70,7 +70,7 @@
 }
 
 .Nav--GroupParent::after {
-  content: "";
+  content: '';
   position: absolute;
   top: calc(50% - 0.2rem);
   right: 1rem;
@@ -117,16 +117,15 @@
 }
 
 @media (max-width: 1080px) {
-
   .Nav-Large {
     display: none;
   }
-  
+
   .LogoMobile {
     width: 12.658rem;
     height: 5.6rem;
   }
-  
+
   .Nav-Mobile {
     display: flex;
   }

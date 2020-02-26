@@ -6,16 +6,16 @@ import Content from './Content'
 
 import heroImage from '../../static/products/tombo_legal.png'
 
-const PageHeader = ({
+const PageHero = ({
   title,
   subtitle,
   backgroundImage,
   large,
   className = ''
 }) => {
-  if (large) className += ' PageHeader-large'
+  if (large) className += ' PageHero-large'
   return (
-    <div className={`PageHeader relative ${className}`}>
+    <div className={`PageHero relative ${className}`}>
       {backgroundImage && (
         <Image
           background
@@ -26,10 +26,10 @@ const PageHeader = ({
         />
       )}
       <div className="container relative">
-        <div className="PageHeader--Item PageHero">
-          <h1 className="PageHeader--Title">{title}</h1>
+        <div className="PageHero--Item">
+          <h1 className="PageHero--Title">{title}</h1>
           {subtitle && (
-            <Content className="PageHeader--Subtitle" src={subtitle} />
+            <Content className="PageHero--Subtitle" src={subtitle} />
           )}
           <a
             className="Button Button--Large"
@@ -39,8 +39,8 @@ const PageHeader = ({
             Mais Informações
           </a>
         </div>
-        <div className="PageHeader--Item">
-          <figure className="PageHeader--Image">
+        <div className="PageHero--Item">
+          <figure className="PageHero--Image">
             <img
               src={heroImage}
               title="Tombo Legal"
@@ -53,9 +53,9 @@ const PageHeader = ({
   )
 }
 
-PageHeader.propTypes = {
+PageHero.propTypes = {
   title: PropTypes.string,
   subtitle: PropTypes.string
 }
 
-export default PageHeader
+export default PageHero
