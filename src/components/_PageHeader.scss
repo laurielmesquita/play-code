@@ -1,92 +1,14 @@
 .PageHeader {
-  background-color: $darkGrey;
-  color: white;
-  @include padding(15rem 0);
-}
-
-.PageHeader .BackgroundImage {
-  opacity: 0.8;
-}
-
-.PageHeader-large {
-  @include padding(14.8rem 0);
-}
-
-.PageHeader--Item {
-  position: relative;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  width: calc(100% / 2 - 3rem);
-}
-
-.PageHeader--Title,
-.PageHeader--Subtitle {
-  width: 100%;
+  @include padding(3rem 0);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  background-color: $darkPurple;
 }
 
 .PageHeader--Title {
-  @include font-size(6rem);
-  font-size: baseValue(6rem);
-  line-height: 1.25;
-  margin-bottom: 1.5rem;
-}
-
-.PageHeader--Subtitle p {
-  @include font-size(2.4rem);
-  font-weight: 300;
-}
-
-.PageHeader .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  animation: fadeIn 0.5s ease-out;
-}
-
-.PageHeader--Image {
-  margin: 0;
-  padding: 0 2rem;
-  height: auto;
-}
-
-.PageHeader--Image img {
-  display: flex;
-  margin: 0 auto;
-  width: 100%;
-  height: unset;
-}
-
-@media screen and (max-width: 750px) {
-  .PageHeader .container {
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .PageHeader--Item {
-    width: 100%;
-  }
-
-  .PageHeader--Item:first-of-type {
-    margin-bottom: 6rem;
-  }
-}
-
-@media screen and (min-width: 751px) and (max-width: 1199px) {
-  .PageHeader {
-    @include padding(12rem 0);
-  }
-
-  .PageHeader--Title {
-    @include font-size(4.5rem);
-  }
-
-  .PageHeader--Subtitle p {
-    @include font-size(2rem);
-  }
+  @include margin-bottom(0rem);
+  color: white;
+  @include font-size(2.6rem);
+  font-weight: 500;
 }
