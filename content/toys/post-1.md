@@ -6,6 +6,8 @@ date: '2018-05-25'
 featuredImage: 'https://brincadeira.co/'
 excerpt: >-
   Este é um texto de espaço reservado que nossos web designers colocam aqui para garantir que as palavras apareça corretamente no seu site. Este texto será substituído assim que o site está completo. No momento, você está lendo um texto escrito em Inglês, nenhum outro idioma.
+categories:
+  - category: Outros
 meta:
   description: Teste de Meta descrição
   title: Título padrão pra encher linguiça

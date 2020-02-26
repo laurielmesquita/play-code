@@ -9,7 +9,7 @@ excerpt: >-
   corretamente no seu site. Este texto será substituído assim que o site está
   completo. No momento, você está lendo um texto escrito em português.
 categories:
-  - category: News
+  - category: Infláveis
 meta:
   canonicalLink: ''
   description: Uma descrição sobre a página
