@@ -1,6 +1,6 @@
 ---
 template: SingleToy
-title: Basquite Eletrônico
+title: Basquete Eletrônico
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_basquete.png
@@ -10,12 +10,12 @@ excerpt: >-
   corretamente no seu site. Este texto será substituído assim que o site está
   completo. No momento, você está lendo um texto escrito em português.
 categories:
-  - category: Infláveis
+  - category: Outros
 meta:
   canonicalLink: ''
   description: Uma descrição sobre a página
   noindex: false
-  title: Basquite Eletrônico
+  title: Basquete Eletrônico
 ---
 
 Os parágrafos são separados por uma linha em branco.

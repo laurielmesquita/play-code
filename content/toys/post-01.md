@@ -7,7 +7,7 @@ featuredImage: https://brincadeira.co/products/list_castelinho.png
 price: R$200,00
 excerpt: Xoxota
 categories:
-  - category: Outros
+  - category: Infláveis
 meta:
   description: Teste de Meta descrição
   title: Castelinho
