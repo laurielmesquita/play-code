@@ -79,7 +79,7 @@ export const BlogIndexTemplate = ({
           )}
 
           {!!toys.length && (
-            <section className="section">
+            <section className="section grid">
               <div className="container">
                 <ToySection toys={filteredToys} />
               </div>

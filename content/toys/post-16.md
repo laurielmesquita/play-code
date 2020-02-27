@@ -1,9 +1,9 @@
 ---
 template: SingleToy
-title: Tobogã
+title: Tombo Legal
 status: Featured / Published
 date: '2020-02-10'
-featuredImage: '../products/list_toboga.png'
+featuredImage: '../products/list_tombolegal.png'
 price: R$200,00
 excerpt: >-
   Este é um texto de espaço reservado para garantir que as palavras apareça
@@ -15,7 +15,7 @@ meta:
   canonicalLink: ''
   description: Uma descrição sobre a página
   noindex: false
-  title: Tobogã
+  title: Tombo Legal
 ---
 
 Os parágrafos são separados por uma linha em branco.

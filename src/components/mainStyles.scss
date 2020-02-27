@@ -128,23 +128,29 @@ blockquote {
   width: 100%;
   @include padding(12rem 0);
 }
+
 .section.section-Purple {
   background-color: $deepPurple;
   background-image: url(/images/section_purple.jpg);
   background-size: cover;
 }
+
 .section.section-softPurple {
   background-color: $softPurple;
 }
-.section:last-child {
-  border: 0;
-}
+
 .section.thick {
   padding: 10rem 0;
 }
+
+.section.grid {
+  @include padding-top(6rem);
+}
+
 .section.thin {
   @include padding(3rem 0);
 }
+
 .section.noPadding {
   padding: 0;
 }

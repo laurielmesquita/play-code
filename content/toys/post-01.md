@@ -3,7 +3,7 @@ template: SingleToy
 title: Castelinho
 status: Featured / Published
 date: '2018-05-25'
-featuredImage: 'https://brincadeira.co/'
+featuredImage: '../products/list_castelinho.png'
 price: R$200,00
 excerpt: Xoxota
 categories:
