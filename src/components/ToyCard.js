@@ -17,7 +17,7 @@ const ToyCard = ({
   <Link to={slug} className={`ToyCard ${className}`}>
     {featuredImage && (
       <div className="ToyCard--Image relative">
-        <Image background src={featuredImage} alt={title} />
+        <Image src={featuredImage} alt={title} />
       </div>
     )}
     <div className="ToyCard--Content">

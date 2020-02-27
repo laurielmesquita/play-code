@@ -11,12 +11,16 @@
   }
 
   .ToyCard--Image {
+    @include padding(4rem);
     margin: 0 0 2rem 0;
-    width: 100%;
-    height: 15rem;
     background-color: $lightGrey;
     border-radius: $borderRadius;
     transition: all 0.3s ease-in-out;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .ToyCard--Title {
