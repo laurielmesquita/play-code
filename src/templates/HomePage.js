@@ -22,6 +22,8 @@ export const HomePageTemplate = ({
   hdSectionSubTt02,
   hdSectionTt03,
   hdSectionSubTt03,
+  welcomeImage,
+  welcomeTitle,
   body
 }) => (
   <main className="Home">
@@ -59,7 +61,10 @@ export const HomePageTemplate = ({
           hdSectionTt={hdSectionTt03}
           hdSectionSubTt={hdSectionSubTt03}
         />
-        <Welcome />
+        <Welcome
+          welcomeImage={welcomeImage}
+          welcomeTitle={welcomeTitle}
+        />
       </div>
     </section>
   </main>
@@ -92,6 +97,8 @@ export const pageQuery = graphql`
         hdSectionSubTt02
         hdSectionTt03
         hdSectionSubTt03
+        welcomeImage
+        welcomeTitle
       }
     }
   }

@@ -56,7 +56,10 @@ const PageHero = ({
 
 PageHero.propTypes = {
   title: PropTypes.string,
-  subtitle: PropTypes.string
+  subtitle: PropTypes.string,
+  heroImage: PropTypes.string,
+  heroTitle: PropTypes.string,
+  heroAlt: PropTypes.string
 }
 
 export default PageHero

@@ -13,6 +13,8 @@ hdSectionTt02: Nossos Produtos
 hdSectionSubTt02: Navegue em Nossos Produtos por Categoria
 hdSectionTt03: Bem-Vindo ao Nosso Site
 hdSectionSubTt03: Saiba Mais Sobre a Brincadeira de Criança
+welcomeImage: https://brincadeira.co/images/kid.jpg
+welcomeTitle: Bem-vindo ao site da Brincadeira de Criança
 meta:
   description: Site institucional da empresa de aluguel Brincadeira de Criança.
   title: Brincadeira de Criança
