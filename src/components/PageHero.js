@@ -4,12 +4,13 @@ import PropTypes from 'prop-types'
 import Image from './Image'
 import Content from './Content'
 
-import heroImage from '../../static/products/tombo_legal.png'
-
 const PageHero = ({
   title,
   subtitle,
   backgroundImage,
+  heroImage,
+  heroTitle,
+  heroAlt,
   large,
   className = ''
 }) => {
@@ -41,10 +42,10 @@ const PageHero = ({
         </div>
         <div className="PageHero--Item">
           <figure className="PageHero--Image">
-            <img
+            <Image
               src={heroImage}
-              title="Tombo Legal"
-              alt="Foto do brinquedo Tombo Legal"
+              title={heroTitle}
+              alt={heroAlt}
             />
           </figure>
         </div>

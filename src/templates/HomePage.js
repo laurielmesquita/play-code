@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHero'
+import PageHero from '../components/PageHero'
 import Layout from '../components/Layout'
 import HeaderSection from '../components/HeaderSection'
 import OurHighlights from '../components/OurHighlights'
@@ -9,20 +9,37 @@ import HomeCategories from '../components/HomeCategories'
 import Welcome from '../components/Welcome'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
+export const HomePageTemplate = ({
+  title,
+  subtitle,
+  featuredImage,
+  heroImage,
+  heroTitle,
+  heroAlt,
+  hdSectionTt01,
+  hdSectionSubTt01,
+  hdSectionTt02,
+  hdSectionSubTt02,
+  hdSectionTt03,
+  hdSectionSubTt03,
+  body
+}) => (
   <main className="Home">
-    <PageHeader
+    <PageHero
       large
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
+      heroImage={heroImage}
+      heroTitle={heroTitle}
+      heroAlt={heroAlt}
     />
 
     <section className="section">
       <div className="container">
         <HeaderSection
-          hdSectionTt="Nossos Destaques"
-          hdSectionSubTt="Conheça os nossos maiores Sucessos"
+          hdSectionTt={hdSectionTt01}
+          hdSectionSubTt={hdSectionSubTt01}
         />
         <OurHighlights />
       </div>
@@ -30,8 +47,8 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
     <section className="section section-Inverse section-Purple">
       <div className="container">
         <HeaderSection
-          hdSectionTt="Nossos Produtos"
-          hdSectionSubTt="Navegue em nossos produtos por categoria"
+          hdSectionTt={hdSectionTt02}
+          hdSectionSubTt={hdSectionSubTt02}
         />
         <HomeCategories />
       </div>
@@ -39,8 +56,8 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
     <section className="section">
       <div className="container">
         <HeaderSection
-          hdSectionTt="Bem-Vindo ao Nosso Site"
-          hdSectionSubTt="Saiba mais sobre a brincadeira de criança"
+          hdSectionTt={hdSectionTt03}
+          hdSectionSubTt={hdSectionSubTt03}
         />
         <Welcome />
       </div>
@@ -66,6 +83,15 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        heroImage
+        heroTitle
+        heroAlt
+        hdSectionTt01
+        hdSectionSubTt01
+        hdSectionTt02
+        hdSectionSubTt02
+        hdSectionTt03
+        hdSectionSubTt03
       }
     }
   }

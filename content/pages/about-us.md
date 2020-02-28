@@ -15,6 +15,6 @@ section1: >-
   Nosso objetivo é satisfazer nossos clientes, prezando pela qualidade no atendimento, pontualidade, cordialidade e produtos em bom estado proporcionando maior segurança.
 
 meta:
-  description: Meta tag de descrição
+  description: Saiba um pouco mais sobre a Brincadeira de Criança
   title: Sobre Nós
 ---

@@ -2,12 +2,18 @@
 template: HomePage
 slug: ''
 title: Tombo Legal
-featuredImage: '../images/home_bg.jpg'
+featuredImage: https://brincadeira.co/images/home_bg.jpg
+heroImage: https://brincadeira.co/products/tombo_legal.png
+heroTitle: Tombo Legal
+heroAlt: Foto do brinquedo Tombo Legal
 subtitle: 'Diversão em dobro com o **Tombo Legal**!'
-hdSectionTr: 'Do markdown'
+hdSectionTt01: Nossos Destaques
+hdSectionSubTt01: Conheça os Nossos Maiores Sucessos
+hdSectionTt02: Nossos Produtos
+hdSectionSubTt02: Navegue em Nossos Produtos por Categoria
+hdSectionTt03: Bem-Vindo ao Nosso Site
+hdSectionSubTt03: Saiba Mais Sobre a Brincadeira de Criança
 meta:
   description: Site institucional da empresa de aluguel Brincadeira de Criança.
   title: Brincadeira de Criança
 ---
-
-Breve teste de conteúdo.
