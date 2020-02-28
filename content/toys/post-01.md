@@ -2,16 +2,18 @@
 template: SingleToy
 title: Castelinho
 status: Featured / Published
-date: '2018-05-25'
+date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_castelinho.png
 price: R$200,00
-excerpt: Xoxota
+excerpt: Only test
 categories:
   - category: Infláveis
 meta:
   description: Teste de Meta descrição
   title: Castelinho
 ---
+
+![Test Image](https://brincadeira.co/products/list_castelinho.png)
 
 Este é um texto de espaço reservado que nossos web designers colocam aqui para garantir que as palavras apareçam corretamente em seu site. Este texto será substituído assim que o site for concluído. No momento, você está lendo um texto escrito em inglês e não em outro idioma.
 

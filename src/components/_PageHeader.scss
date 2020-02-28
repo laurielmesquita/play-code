@@ -10,12 +10,11 @@
   color: white;
   @include font-size(2.6rem);
   font-weight: 500;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.26rem;
 }
 
 @media screen and (max-width: 413.98px) {
   .PageHeader--Title {
     @include font-size(2.5rem);
-    letter-spacing: 0.4rem;
   }
 }

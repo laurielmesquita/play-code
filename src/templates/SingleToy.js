@@ -5,6 +5,7 @@ import { ChevronLeft } from 'react-feather'
 
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import PageHeader from '../components/PageHeader'
 
 export const SingleToyTemplate = ({
   title,
@@ -15,15 +16,13 @@ export const SingleToyTemplate = ({
   categories = []
 }) => (
   <main>
+    <PageHeader title={title} />
     <article
       className="SingleToy section light"
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
       <div className="container skinny">
-        <Link className="SingleToy--BackButton" to="/toy/">
-          <ChevronLeft /> BACK
-        </Link>
         <div className="SingleToy--Content relative">
           <div className="SingleToy--Meta">
             {date && (
@@ -39,10 +38,7 @@ export const SingleToyTemplate = ({
               <Fragment>
                 <span>|</span>
                 {categories.map((cat, index) => (
-                  <span
-                    key={cat.category}
-                    className="SingleToy--Meta--Category"
-                  >
+                  <span key={cat.category} className="SingleToy--Meta--Category">
                     {cat.category}
                     {/* Add a comma on all but last category */}
                     {index !== categories.length - 1 ? ',' : ''}
@@ -53,9 +49,7 @@ export const SingleToyTemplate = ({
           </div>
 
           {title && (
-            <h1 className="SingleToy--Title" itemProp="title">
-              {title}
-            </h1>
+            <h1 className="SingleToy--Title" itemProp="title">{title}</h1>
           )}
 
           <div className="SingleToy--InnerContent">
@@ -64,23 +58,20 @@ export const SingleToyTemplate = ({
 
           <div className="SingleToy--Pagination">
             {prevPostURL && (
-              <Link
-                className="SingleToy--Pagination--Link prev"
-                to={prevPostURL}
-              >
-                Previous Post
+              <Link className="SingleToy--Pagination--Link prev" to={prevPostURL}>
+                Brinquedo Anterior
               </Link>
             )}
             {nextPostURL && (
-              <Link
-                className="SingleToy--Pagination--Link next"
-                to={nextPostURL}
-              >
-                Next Post
+              <Link className="SingleToy--Pagination--Link next" to={nextPostURL}>
+                Próximo Brinquedo
               </Link>
             )}
           </div>
         </div>
+        <Link className="SingleToy--BackButton" to="/toy/">
+          <ChevronLeft /> TODOS OS BRINQUEDOS
+        </Link>
       </div>
     </article>
   </main>

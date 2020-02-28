@@ -1,0 +1,78 @@
+.SingleToy {
+  background: $primary;
+}
+
+.SingleToy--BackButton {
+  color: white;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+}
+
+.SingleToy--BackButton svg {
+  transition: transform 0.2s ease-out;
+  transform: translateX(0);
+  height: 1.2em;
+}
+
+.SingleToy--BackButton:hover svg,
+.SingleToy--BackButton:focus svg {
+  transform: translateX(-0.25em);
+}
+
+.SingleToy--Content {
+  background: white;
+  padding: 8rem 8rem 4rem 8rem;
+}
+
+@media screen and (max-width: 750px) {
+  .SingleToy--Content {
+    padding: 4rem 2rem;
+  }
+}
+
+.SingleToy--Meta {
+  font-size: 1rem;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.SingleToy--Meta > * + * {
+  margin-left: 0.75em;
+}
+
+.SingleToy--Title {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.SingleToy--InnerContent {
+  padding: 0 8rem;
+}
+
+@media screen and (max-width: 750px) {
+  .SingleToy--InnerContent {
+    padding: 0;
+  }
+}
+
+.SingleToy--Pagination {
+  margin: 4rem 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.SingleToy--Pagination--Link {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.SingleToy--Pagination--Link.next {
+  margin-left: auto;
+}
