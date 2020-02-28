@@ -4,7 +4,7 @@
 }
 
 .footer-Top {
-  @include padding(10rem 0 5rem);
+  @include padding(8rem 0 5rem);
   background-color: $lightGreen;
 }
 
@@ -35,7 +35,6 @@
 }
 
 @media (max-width: 1080px) {
-
   .footer {
     font-size: 1.2rem;
   }

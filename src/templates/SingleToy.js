@@ -9,7 +9,6 @@ import PageHeader from '../components/PageHeader'
 
 export const SingleToyTemplate = ({
   title,
-  date,
   body,
   nextPostURL,
   prevPostURL,
@@ -18,25 +17,15 @@ export const SingleToyTemplate = ({
   <main>
     <PageHeader title={title} />
     <article
-      className="SingleToy section light"
+      className="SingleToy section"
       itemScope
       itemType="http://schema.org/BlogPosting"
     >
-      <div className="container skinny">
+      <div className="container">
         <div className="SingleToy--Content relative">
           <div className="SingleToy--Meta">
-            {date && (
-              <time
-                className="SingleToy--Meta--Date"
-                itemProp="dateCreated pubdate datePublished"
-                date={date}
-              >
-                {date}
-              </time>
-            )}
             {categories && (
               <Fragment>
-                <span>|</span>
                 {categories.map((cat, index) => (
                   <span key={cat.category} className="SingleToy--Meta--Category">
                     {cat.category}
@@ -70,7 +59,7 @@ export const SingleToyTemplate = ({
           </div>
         </div>
         <Link className="SingleToy--BackButton" to="/toy/">
-          <ChevronLeft /> TODOS OS BRINQUEDOS
+          <ChevronLeft /> Voltar para Brinquedos
         </Link>
       </div>
     </article>

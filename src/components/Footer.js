@@ -7,7 +7,7 @@ import logofooter from '../../static/images/logo_footer.svg'
 
 export default () => (
   <div>
-    <section className="section pb0">
+    <section className="section section-Instagram section-Inverse section-lightGreen">
       <div className="container">
         <HeaderSection
           hdSectionTt="Instagram"

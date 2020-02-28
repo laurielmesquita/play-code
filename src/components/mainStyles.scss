@@ -140,6 +140,10 @@ blockquote {
   background-color: $softPurple;
 }
 
+.section.section-lightGreen {
+  background-color: $lightGreen;
+}
+
 .section.thick {
   padding: 10rem 0;
 }
@@ -173,9 +177,7 @@ blockquote {
   width: 90%;
   margin: 0 auto;
 }
-.container.skinny {
-  max-width: 888px;
-}
+
 .container.skinnier {
   max-width: 555px;
 }

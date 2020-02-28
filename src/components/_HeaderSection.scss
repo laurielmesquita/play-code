@@ -1,6 +1,8 @@
 .hdSection {
   text-align: center;
-  @include margin-bottom(6rem)
+  @include margin-bottom(6rem) .section-Instagram & {
+    @include margin-bottom(3rem);
+  }
 }
 
 .hdSection--Title {
@@ -16,7 +18,7 @@
 
 .hdSection--SubTitle {
   line-height: 1.6;
-  color: #85A411;
+  color: #85a411;
   font-family: $font-primary;
   @include font-size(1.6rem);
   font-weight: 400;
@@ -26,6 +28,14 @@
 
   .section-Inverse & {
     color: $midYellow;
+  }
+
+  .section-Instagram & {
+    color: white;
+
+    a {
+      color: $primary;
+    }
   }
 }
 

@@ -4,6 +4,11 @@
   background: white;
 }
 
+.section.section-Instagram {
+  @include padding-top(8rem) ;
+  padding-bottom: 0;
+}
+
 .InstagramFeed--EmptyPost {
   width: calc(100% / 8);
   padding: calc(50% / 8) 0;
