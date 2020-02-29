@@ -1,11 +1,12 @@
 .InstagramFeed {
   display: flex;
   flex-wrap: wrap;
-  background: white;
+  background: $midGreen;
+  @include padding(1.2rem 0);
 }
 
 .section.section-Instagram {
-  @include padding-top(8rem) ;
+  @include padding-top(6rem);
   padding-bottom: 0;
 }
 

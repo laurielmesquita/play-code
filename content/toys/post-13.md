@@ -6,9 +6,12 @@ date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_aerohockey.png
 price: R$200,00
 excerpt: >-
-  Este é um texto de espaço reservado para garantir que as palavras apareça
-  corretamente no seu site. Este texto será substituído assim que o site está
-  completo. No momento, você está lendo um texto escrito em português.
+  O Aerohockey é um brinquedo recomendado para todas as idades e bastante adorado, tanto por crianças quanto por adultos. Proporcionando momentos de pura diversão e desafio em uma competição saudável, o aerohockey é garantia da alegria para qualquer pessoa que aceita o desafio para sagrar-se o “campeão da mesa”.
+
+
+  **Como funciona:**  
+
+  O Aerohockey é um jogo para duas pessoas que, em volta de uma mesa, usam rebatedores nas mãos para disputar um disco na tentativa de “fazer um gol” no adversário. O disco flutua sobre a mesa graças a uma ventilação potente que “sopra” por perfurações na superfície da mesma.
 categories:
   - category: Outros
 meta:
@@ -17,42 +20,3 @@ meta:
   noindex: false
   title: Aero Hockey
 ---
-
-Os parágrafos são separados por uma linha em branco.
-
-![Test Image](https://brincadeira.co/)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0gIZ0BVmkNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-O segundo parágrafo. Este é um texto de espaço reservado que nossos web designers colocam aqui para garantir que as palavras apareçam corretamente em seu site. _Italico_, **negrito** e `monospace`.
-
-### Lista não ordenada:
-
-- Um item
-- Outro item
-- Alguma outra coisa aqui
-
-### Lista ordenada:
-
-1. Primeiro item
-2. Segundo item
-3. Terceiro item
-
-> As citações em bloco são escritas assim.
->
-> Elas podem abranger vários parágrafos,
-> caso queira.
-
-## Cabeçalho 2
-
-# Cabeçalho 1
-
-## Cabeçalho 2
-
-### Cabeçalho 3
-
-#### Cabeçalho 4
-
-##### Cabeçalho 5
-
-###### Cabeçalho 6

@@ -12,12 +12,13 @@ const ToyCard = ({
   slug,
   categories = [],
   className = '',
+  lazy = true,
   ...props
 }) => (
   <Link to={slug} className={`ToyCard ${className}`}>
     {featuredImage && (
       <div className="ToyCard--Image relative">
-        <Image src={featuredImage} alt={title} />
+        <Image LazyImage src={featuredImage} alt={title} />
       </div>
     )}
     <div className="ToyCard--Content">

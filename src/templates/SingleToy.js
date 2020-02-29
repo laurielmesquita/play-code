@@ -12,7 +12,7 @@ export const SingleToyTemplate = ({
   title,
   price,
   featuredImage,
-  sectionImage,
+  excerpt,
   nextPostURL,
   prevPostURL
 }) => (
@@ -31,7 +31,7 @@ export const SingleToyTemplate = ({
                 <h1 className="SingleToy--Title" itemProp="title">{title}</h1>
               )}
               <div className="SingleToy--Price">{price}</div>
-              <Content source={sectionImage} />
+              <Content source={excerpt} />
             </div>
           </div>
 
@@ -89,7 +89,7 @@ export const pageQuery = graphql`
         subtitle
         price
         featuredImage
-        sectionImage
+        excerpt
         date(formatString: "MMMM Do, YYYY")
         categories {
           category

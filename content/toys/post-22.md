@@ -6,9 +6,7 @@ date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_tortanacara.png
 price: R$200,00
 excerpt: >-
-  Este é um texto de espaço reservado para garantir que as palavras apareça
-  corretamente no seu site. Este texto será substituído assim que o site está
-  completo. No momento, você está lendo um texto escrito em português.
+  Acreditamos que o brincar e aprender devem andar juntinhos e ajudam na formação de hábitos, atitudes e valores. Indo nessa direção, a BRINCADEIRA DE CRIANÇA inovou mais uma vez. Indicado para escolas, recreadores, clubes, hotéis, reuniões familiares ou simplesmente, aquele encontro de amigos no fim de semana; é um brinquedo interativo, capaz de tornar sua gincana muito mais dinâmica e divertida!
 categories:
   - category: Torta na Cara
 meta:
@@ -17,42 +15,3 @@ meta:
   noindex: false
   title: Torta na Cara
 ---
-
-Os parágrafos são separados por uma linha em branco.
-
-![Test Image](https://brincadeira.co/products/list_corrida.png)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0gIZ0BVmkNg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-O segundo parágrafo. Este é um texto de espaço reservado que nossos web designers colocam aqui para garantir que as palavras apareçam corretamente em seu site. _Italico_, **negrito** e `monospace`.
-
-### Lista não ordenada:
-
-- Um item
-- Outro item
-- Alguma outra coisa aqui
-
-### Lista ordenada:
-
-1. Primeiro item
-2. Segundo item
-3. Terceiro item
-
-> As citações em bloco são escritas assim.
->
-> Elas podem abranger vários parágrafos,
-> caso queira.
-
-## Cabeçalho 2
-
-# Cabeçalho 1
-
-## Cabeçalho 2
-
-### Cabeçalho 3
-
-#### Cabeçalho 4
-
-##### Cabeçalho 5
-
-###### Cabeçalho 6

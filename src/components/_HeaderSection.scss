@@ -34,6 +34,11 @@
     color: white;
 
     a {
+      display: block;
+      color: white;
+    }
+    
+    &:hover a {
       color: $primary;
     }
   }
