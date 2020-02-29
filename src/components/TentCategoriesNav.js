@@ -6,7 +6,7 @@ import TentSearch from './TentSearch'
 const TentCategoriesNav = ({ categories, enableSearch }) => (
   <div className="TentCategoriesNav">
     <Link className="NavLink" exact="true" to={'/tent/'}>
-      Todos
+      Todas
     </Link>
     {categories.map((category, index) => (
       <Link
