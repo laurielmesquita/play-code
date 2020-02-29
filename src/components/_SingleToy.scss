@@ -1,5 +1,54 @@
 .SingleToy {
-  background: $primary;
+  background: white;
+}
+
+.SingleToy--Content {
+  background: white;
+}
+
+.SingleToy--InnerContent {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 8rem;
+}
+
+.SingleToy--Image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  @include padding(7rem);
+  background-color: $lightGrey;
+  border-radius: $borderRadius;
+  transition: all 0.3s ease-in-out;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transform: scale(0.95);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: $softGrey;
+
+    img {
+      transform: scale(1);
+    }
+  }
+}
+
+.SingleToy--Title {
+  @include font-size(4rem);
+  @include margin-bottom(2.5rem);
+}
+
+.SingleToy--Price {
+  @include font-size(3rem);
+  color: $danger;
+  font-family: $font-primary;
+  font-weight: 500;
+  @include margin-bottom(2.7rem);
 }
 
 .SingleToy--BackButton {
@@ -23,41 +72,6 @@
   transform: translateX(-0.25em);
 }
 
-.SingleToy--Content {
-  background: white;
-}
-
-@media screen and (max-width: 750px) {
-  .SingleToy--Content {
-    padding: 4rem 2rem;
-  }
-}
-
-.SingleToy--Meta {
-  font-size: 1rem;
-  margin: 0 0 2rem 0;
-  text-align: center;
-}
-
-.SingleToy--Meta > * + * {
-  margin-left: 0.75em;
-}
-
-.SingleToy--Title {
-  text-align: center;
-  line-height: 1.2;
-}
-
-.SingleToy--InnerContent {
-  padding: 0 8rem;
-}
-
-@media screen and (max-width: 750px) {
-  .SingleToy--InnerContent {
-    padding: 0;
-  }
-}
-
 .SingleToy--Pagination {
   margin: 4rem 0 0 0;
   display: flex;
@@ -74,4 +88,29 @@
 
 .SingleToy--Pagination--Link.next {
   margin-left: auto;
+}
+
+@media screen and (max-width: 991.98px) {
+  .SingleToy--Image {
+    img {
+      transform: scale(1);
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .SingleToy--InnerContent {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+
+  .SingleToy--Image {
+    @include margin-bottom(4rem);
+  }
 }

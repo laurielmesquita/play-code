@@ -6,54 +6,44 @@ import { ChevronLeft } from 'react-feather'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import PageHeader from '../components/PageHeader'
+import Image from '../components/Image'
 
 export const SingleToyTemplate = ({
   title,
-  body,
+  price,
+  featuredImage,
+  sectionImage,
   nextPostURL,
-  prevPostURL,
-  categories = []
+  prevPostURL
 }) => (
   <main>
     <PageHeader title={title} />
-    <article
-      className="SingleToy section"
-      itemScope
-      itemType="http://schema.org/BlogPosting"
-    >
+    <article className="section grid">
       <div className="container">
         <div className="SingleToy--Content relative">
-          <div className="SingleToy--Meta">
-            {categories && (
-              <Fragment>
-                {categories.map((cat, index) => (
-                  <span key={cat.category} className="SingleToy--Meta--Category">
-                    {cat.category}
-                    {/* Add a comma on all but last category */}
-                    {index !== categories.length - 1 ? ',' : ''}
-                  </span>
-                ))}
-              </Fragment>
-            )}
-          </div>
-
-          {title && (
-            <h1 className="SingleToy--Title" itemProp="title">{title}</h1>
-          )}
 
           <div className="SingleToy--InnerContent">
-            <Content source={body} />
+            <div className="SingleToy--Image">
+              <Image src={featuredImage} alt={title} />
+            </div>
+            <div className="SingleToy--Info">
+              {title && (
+                <h1 className="SingleToy--Title" itemProp="title">{title}</h1>
+              )}
+              <div className="SingleToy--Price">{price}</div>
+              <Content source={sectionImage} />
+            </div>
           </div>
 
           <div className="SingleToy--Pagination">
             {prevPostURL && (
               <Link className="SingleToy--Pagination--Link prev" to={prevPostURL}>
-                Brinquedo Anterior
+                Anterior
               </Link>
             )}
             {nextPostURL && (
               <Link className="SingleToy--Pagination--Link next" to={nextPostURL}>
-                Próximo Brinquedo
+                Próximo
               </Link>
             )}
           </div>
@@ -97,6 +87,9 @@ export const pageQuery = graphql`
         title
         template
         subtitle
+        price
+        featuredImage
+        sectionImage
         date(formatString: "MMMM Do, YYYY")
         categories {
           category

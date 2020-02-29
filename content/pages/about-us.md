@@ -10,8 +10,8 @@ section1: >-
 
 
   Através de um trabalho diferenciado e empenho de toda uma equipe de profissionais treinados, a **Brincadeira de Criança** é hoje uma das maiores empresas nesse segmento atendendo crianças, jovens e adultos de forma individual e personalizada.
-  
-  
+
+
   Nosso objetivo é satisfazer nossos clientes, prezando pela qualidade no atendimento, pontualidade, cordialidade e produtos em bom estado proporcionando maior segurança.
 
 meta:
