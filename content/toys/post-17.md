@@ -1,10 +1,10 @@
 ---
 template: SingleToy
-title: Cama Elástica
+title: Cama Elástica 3,05m
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_camaelastica.png
-price: R$200,00
+price: R$100,00
 excerpt: >-
   Há uma maneira melhor para incentivar as crianças a fazerem exercício físico ao ar livre?  
   
@@ -21,5 +21,5 @@ meta:
   canonicalLink: ''
   description: As camas elásticas são um complemento cada vez mais popular para os eventos infantis.
   noindex: false
-  title: Cama Elástica
+  title: Cama Elástica 3,05m
 ---

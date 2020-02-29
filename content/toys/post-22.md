@@ -1,17 +1,19 @@
 ---
 template: SingleToy
-title: Torta na Cara
+title: Simulador de Corridas
 status: Featured / Published
 date: '2020-02-10'
-featuredImage: https://brincadeira.co/products/list_tortanacara.png
-price: R$200,00
+featuredImage: https://brincadeira.co/products/list_simulador.png
+price: R$250,00
 excerpt: >-
-  Acreditamos que o brincar e aprender devem andar juntinhos e ajudam na formação de hábitos, atitudes e valores. Indo nessa direção, a BRINCADEIRA DE CRIANÇA inovou mais uma vez. Indicado para escolas, recreadores, clubes, hotéis, reuniões familiares ou simplesmente, aquele encontro de amigos no fim de semana; é um brinquedo interativo, capaz de tornar sua gincana muito mais dinâmica e divertida!
+  Este é um texto de espaço reservado para garantir que as palavras apareça
+  corretamente no seu site. Este texto será substituído assim que o site está
+  completo. No momento, você está lendo um texto escrito em português.
 categories:
-  - category: Torta na Cara
+  - category: Outros
 meta:
   canonicalLink: ''
-  description: Uma descrição sobre a página
+  description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
-  title: Torta na Cara
+  title: Simulador de Corridas
 ---

@@ -4,7 +4,7 @@ title: Castelinho
 status: Featured / Published
 date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_castelinho.png
-price: R$200,00
+price: R$180,00
 excerpt: >-
   Diversão em dobro com o Tombo Legal!  
 

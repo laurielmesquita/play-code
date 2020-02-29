@@ -1,10 +1,10 @@
 ---
 template: SingleToy
-title: Tombo Legal
+title: Tombo Legal 2
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_tombo.png
-price: R$200,00
+price: R$250,00
 excerpt: >-
   Teste a sua pontaria e desafie a sua própria coragem e a coragem de seus amigos com este brinquedo incrível, que consiste em derrubar uma pessoa na piscina de bolinhas através de um divertido jogo que testa a sua pontaria e a sua coordenação.
   
@@ -14,12 +14,12 @@ excerpt: >-
 
 
 
-  **Recomendação:** usuário de até 70kg.
+  **Limitação:** usuário de até 100kg.
 categories:
   - category: Outros
 meta:
   canonicalLink: ''
   description: Tombo Legal proporciona momentos de intensa alegria, tanto para quem atira as bolinhas quanto para quem está na cadeirinha.
   noindex: false
-  title: Tombo Legal
+  title: Tombo Legal 2
 ---

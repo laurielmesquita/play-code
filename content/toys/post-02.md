@@ -4,7 +4,7 @@ title: Corrida Maluca
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_corrida.png
-price: R$200,00
+price: R$130,00
 excerpt: >-
   Diversão em dobro com o Tombo Legal!  
 

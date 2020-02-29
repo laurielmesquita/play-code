@@ -1,20 +1,22 @@
 ---
 template: SingleToy
-title: Simulador de Corridas
+title: Multi Jogos
 status: Featured / Published
 date: '2020-02-10'
-featuredImage: https://brincadeira.co/products/list_simulador.png
-price: R$200,00
+featuredImage: https://brincadeira.co/products/list_multijogos.png
+price: R$180,00
 excerpt: >-
   Este é um texto de espaço reservado para garantir que as palavras apareça
   corretamente no seu site. Este texto será substituído assim que o site está
-  completo. No momento, você está lendo um texto escrito em português.
+  completo. No momento, você está lendo um texto escrito em português.  
+
+
+  **Destaque:** mais de 600 jogos
 categories:
   - category: Outros
 meta:
   canonicalLink: ''
-  description: Este é um texto de espaço reservado para garantir que as palavras apareça
-  corretamente no seu site.
+  description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
-  title: Simulador de Corridas
+  title: Multi Jogos
 ---

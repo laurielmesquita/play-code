@@ -4,7 +4,7 @@ title: Bob Esponja
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_bobesponja.png
-price: R$200,00
+price: R$250,00
 excerpt: >-
   Diversão em dobro com o Tombo Legal!  
 

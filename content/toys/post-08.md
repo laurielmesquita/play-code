@@ -4,7 +4,7 @@ title: Touro Mecânico
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_touromecanico.png
-price: R$200,00
+price: R$600,00
 excerpt: >-
   Segura peão!  
   
