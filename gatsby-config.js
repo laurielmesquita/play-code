@@ -40,7 +40,9 @@ module.exports = {
           '/toy/',
           '/toys/*',
           '/toy-categories/*',
-          '/tendas/',
+          '/tent/',
+          '/tents/*',
+          '/tent-categories/*',
           '/climatizadores/',
           '/contato/'
         ]

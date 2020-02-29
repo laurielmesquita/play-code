@@ -37,6 +37,21 @@ export default ({ children, meta, title }) => {
               }
             }
           }
+          allTents: allMarkdownRemark(
+            filter: { fields: { contentType: { eq: "tentCategories" } } }
+            sort: { order: DESC, fields: [frontmatter___date] }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title
+                }
+              }
+            }
+          }
         }
       `}
       render={data => {
@@ -46,6 +61,11 @@ export default ({ children, meta, title }) => {
           toys: data.allToys.hasOwnProperty('edges')
             ? data.allToys.edges.map(toy => {
               return { ...toy.node.fields, ...toy.node.frontmatter }
+            })
+            : false,
+          tents: data.allTents.hasOwnProperty('edges')
+            ? data.allTents.edges.map(tent => {
+              return { ...tent.node.fields, ...tent.node.frontmatter }
             })
             : false
         }

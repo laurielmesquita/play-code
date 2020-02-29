@@ -4,52 +4,52 @@ import { Location } from '@reach/router'
 import qs from 'qs'
 
 import PageHeader from '../components/PageHeader'
-import ToySection from '../components/ToySection'
-import ToyCategoriesNav from '../components/ToyCategoriesNav'
+import TentSection from '../components/TentSection'
+import TentCategoriesNav from '../components/TentCategoriesNav'
 import Layout from '../components/Layout'
 
 /**
- * Filter toys by date. Feature dates will be fitered
+ * Filter tents by date. Feature dates will be fitered
  * When used, make sure you run a cronejob each day to show schaduled content. See docs
  *
- * @param {toys} object
+ * @param {tents} object
  */
-export const byDate = toys => {
+export const byDate = tents => {
   const now = Date.now()
-  return toys.filter(toy => Date.parse(toy.date) <= now)
+  return tents.filter(tent => Date.parse(tent.date) <= now)
 }
 
 /**
- * filter toys by category.
+ * filter tents by category.
  *
- * @param {toys} object
+ * @param {tents} object
  * @param {title} string
  * @param {contentType} string
  */
-export const byCategory = (toys, title, contentType) => {
-  const isCategory = contentType === 'toyCategories'
-  const byCategory = toy =>
-    toy.categories &&
-    toy.categories.filter(cat => cat.category === title).length
-  return isCategory ? toys.filter(byCategory) : toys
+export const byCategory = (tents, title, contentType) => {
+  const isCategory = contentType === 'tentCategories'
+  const byCategory = tent =>
+    tent.categories &&
+    tent.categories.filter(cat => cat.category === title).length
+  return isCategory ? tents.filter(byCategory) : tents
 }
 
 // Export Template for use in CMS preview
-export const ToyIndexTemplate = ({
+export const TentIndexTemplate = ({
   title,
   subtitle,
   featuredImage,
   price,
-  toys = [],
-  toyCategories = [],
+  tents = [],
+  tentCategories = [],
   enableSearch = true,
   contentType
 }) => (
   <Location>
     {({ location }) => {
-      let filteredToys =
-        toys && !!toys.length
-          ? byCategory(byDate(toys), title, contentType)
+      let filteredTents =
+        tents && !!tents.length
+          ? byCategory(byDate(tents), title, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -57,8 +57,8 @@ export const ToyIndexTemplate = ({
 
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
-        filteredToys = filteredToys.filter(toy =>
-          toy.frontmatter.title.toLowerCase().includes(searchTerm)
+        filteredTents = filteredTents.filter(tent =>
+          tent.frontmatter.title.toLowerCase().includes(searchTerm)
         )
       }
 
@@ -70,18 +70,18 @@ export const ToyIndexTemplate = ({
             backgroundImage={featuredImage}
           />
 
-          {!!toyCategories.length && (
+          {!!tentCategories.length && (
             <section className="section thin section-softPurple">
               <div className="container">
-                <ToyCategoriesNav enableSearch categories={toyCategories} />
+                <TentCategoriesNav enableSearch categories={tentCategories} />
               </div>
             </section>
           )}
 
-          {!!toys.length && (
+          {!!tents.length && (
             <section className="section grid">
               <div className="container">
-                <ToySection toys={filteredToys} />
+                <TentSection tents={filteredTents} />
               </div>
             </section>
           )}
@@ -91,38 +91,38 @@ export const ToyIndexTemplate = ({
   </Location>
 )
 
-// Export Default ToyIndex for front-end
-const ToyIndex = ({ data: { page, toys, toyCategories } }) => (
+// Export Default TentIndex for front-end
+const TentIndex = ({ data: { page, tents, tentCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
   >
-    <ToyIndexTemplate
+    <TentIndexTemplate
       {...page}
       {...page.fields}
       {...page.frontmatter}
-      toys={toys.edges.map(toy => ({
-        ...toy.node,
-        ...toy.node.frontmatter,
-        ...toy.node.fields
+      tents={tents.edges.map(tent => ({
+        ...tent.node,
+        ...tent.node.frontmatter,
+        ...tent.node.fields
       }))}
-      toyCategories={toyCategories.edges.map(toy => ({
-        ...toy.node,
-        ...toy.node.frontmatter,
-        ...toy.node.fields
+      tentCategories={tentCategories.edges.map(tent => ({
+        ...tent.node,
+        ...tent.node.frontmatter,
+        ...tent.node.fields
       }))}
     />
   </Layout>
 )
 
-export default ToyIndex
+export default TentIndex
 
 export const pageQuery = graphql`
-  ## Query for ToyIndex data
+  ## Query for TentIndex data
   ## Use GraphiQL interface (http://localhost:8000/___graphql)
   ## $id is processed via gatsby-node.js
   ## query name must be unique to this file
-  query ToyIndex($id: String!) {
+  query TentIndex($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
       fields {
@@ -138,8 +138,8 @@ export const pageQuery = graphql`
       }
     }
 
-    toys: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "toys" } } }
+    tents: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "tents" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -160,8 +160,8 @@ export const pageQuery = graphql`
         }
       }
     }
-    toyCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "toyCategories" } } }
+    tentCategories: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "tentCategories" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
     ) {
       edges {
