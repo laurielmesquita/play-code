@@ -1,5 +1,6 @@
 .ToyCategoriesNav,
-.TentCategoriesNav {
+.TentCategoriesNav,
+.GeneralCategoriesNav {
   color: white;
   display: flex;
   align-items: center;
@@ -14,12 +15,14 @@
 }
 
 .ToyCategoriesNav > * + *,
-.TentCategoriesNav > * + * {
+.TentCategoriesNav > * + *,
+.GeneralCategoriesNav > * + * {
   margin-left: 1rem;
 }
 
 .ToyCategoriesNav input[type='text'],
-.TentCategoriesNav input[type='text'] {
+.TentCategoriesNav input[type='text'],
+.GeneralCategoriesNav input[type='text'] {
   right: 0;
   position: absolute;
   border: 0;
@@ -32,19 +35,22 @@
 }
 
 .ToyCategoriesNav input[type='text']:focus,
-.TentCategoriesNav input[type='text']:focus {
+.TentCategoriesNav input[type='text']:focus,
+.GeneralCategoriesNav input[type='text']:focus {
   outline: none;
   background-color: white;
 }
 
 .ToyCategoriesNav input[type='text']::placeholder,
-.TentCategoriesNav input[type='text']::placeholder {
+.TentCategoriesNav input[type='text']::placeholder,
+.GeneralCategoriesNav input[type='text']::placeholder {
   color: $deepPurple;
 }
 
 @media (max-width: 767.98px) {
   .ToyCategoriesNav,
-  .TentCategoriesNav {
+  .TentCategoriesNav,
+  .GeneralCategoriesNav {
     justify-content: center;
 
     .NavLink {
@@ -61,7 +67,8 @@
 
 @media (max-width: 575.98px) {
   .ToyCategoriesNav,
-  .TentCategoriesNav {
+  .TentCategoriesNav,
+  .GeneralCategoriesNav {
     .NavLink {
       @include font-size(1.2rem);
       @include padding(0.5rem 0.7rem);

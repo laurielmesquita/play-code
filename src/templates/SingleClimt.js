@@ -20,35 +20,35 @@ export const SingleClimtTemplate = ({
     <PageHeader title={title} />
     <article className="section grid">
       <div className="container">
-        <div className="SingleClimt--Content relative">
+        <div className="SingleGeneral--Content relative">
 
-          <div className="SingleClimt--InnerContent">
-            <div className="SingleClimt--Image">
+          <div className="SingleGeneral--InnerContent">
+            <div className="SingleGeneral--Image">
               <Image src={featuredImage} alt={title} />
             </div>
-            <div className="SingleClimt--Info">
+            <div className="SingleGeneral--Info">
               {title && (
-                <h1 className="SingleClimt--Title" itemProp="title">{title}</h1>
+                <h1 className="SingleGeneral--Title" itemProp="title">{title}</h1>
               )}
-              <div className="SingleClimt--Price">{price}</div>
+              <div className="SingleGeneral--Price">{price}</div>
               <Content source={excerpt} />
             </div>
           </div>
 
-          <div className="SingleClimt--Pagination">
+          <div className="SingleGeneral--Pagination">
             {prevPostURL && (
-              <Link className="SingleClimt--Pagination--Link prev" to={prevPostURL}>
+              <Link className="SingleGeneral--Pagination--Link prev" to={prevPostURL}>
                 Anterior
               </Link>
             )}
             {nextPostURL && (
-              <Link className="SingleClimt--Pagination--Link next" to={nextPostURL}>
+              <Link className="SingleGeneral--Pagination--Link next" to={nextPostURL}>
                 Próximo
               </Link>
             )}
           </div>
         </div>
-        <Link className="SingleClimt--BackButton" to="/climt/">
+        <Link className="SingleGeneral--BackButton" to="/climt/">
           <ChevronLeft /> Voltar para Brinquedos
         </Link>
       </div>

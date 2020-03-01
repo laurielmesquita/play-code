@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import ClimtSearch from './ClimtSearch'
 
 const ClimtCategoriesNav = ({ categories, enableSearch }) => (
-  <div className="ClimtCategoriesNav">
+  <div className="GeneralCategoriesNav">
     <Link className="NavLink" exact="true" to={'/climt/'}>
       Todos
     </Link>

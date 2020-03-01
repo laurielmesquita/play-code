@@ -27,10 +27,10 @@ class ClimtSection extends React.Component {
       visibleClimts = climts.slice(0, limit || climts.length)
 
     return (
-      <div className="ClimtSection">
-        {title && <h2 className="ClimtSection--Title">{title}</h2>}
+      <div className="GeneralSection">
+        {title && <h2 className="GeneralSection--Title">{title}</h2>}
         {!!visibleClimts.length && (
-          <div className="ClimtSection--Grid">
+          <div className="GeneralSection--Grid">
             {visibleClimts.map((climt, index) => (
               <ClimtCard key={climt.title + index} {...climt} />
             ))}

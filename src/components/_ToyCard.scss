@@ -1,5 +1,6 @@
 .ToyCard,
-.TentCard {
+.TentCard,
+.GeneralCard {
   text-decoration: none;
   background: white;
   color: inherit;
@@ -7,13 +8,15 @@
   overflow: hidden;
 
   .ToyCard--Content,
-  .TentCard--Content {
+  .TentCard--Content,
+  .GeneralCard--Content {
     padding: 0;
     text-align: center;
   }
 
   .ToyCard--Image,
-  .TentCard--Image {
+  .TentCard--Image,
+  .GeneralCard--Image {
     @include padding(4rem);
     margin: 0 0 2rem 0;
     background-color: $lightGrey;
@@ -27,14 +30,16 @@
   }
 
   .ToyCard--Title,
-  .TentCard--Title {
+  .TentCard--Title,
+  .GeneralCard--Title {
     @include font-size(1.7rem);
     @include margin-bottom(1rem);
     font-weight: 500;
   }
 
   .ToyCard--Category,
-  .TentCard--Category {
+  .TentCard--Category,
+  .GeneralCard--Category {
     color: $midGrey;
     font-size: 1.2rem;
     min-height: 1.2em;
@@ -44,7 +49,8 @@
   }
 
   .ToyCard--Excerpt,
-  .TentCard--Excerpt {
+  .TentCard--Excerpt,
+  .GeneralCard--Excerpt {
     color: $lightBlue;
     font-family: $font-secondary;
     @include font-size(1.8rem);
@@ -55,12 +61,14 @@
   &:hover,
   &:focus {
     .ToyCard--Image,
-    .TentCard--Image {
+    .TentCard--Image,
+    .GeneralCard--Image {
       background-color: $softGrey;
     }
 
     .ToyCard--Excerpt,
-    .TentCard--Excerpt {
+    .TentCard--Excerpt,
+    .GeneralCard--Excerpt {
       color: $danger;
     }
   }
@@ -68,7 +76,8 @@
 
 @media screen and (max-width: 575.98px) {
   .ToyCard,
-  .TentCard {
+  .TentCard,
+  .GeneralCard {
     display: block;
     @include margin-bottom(4rem);
 

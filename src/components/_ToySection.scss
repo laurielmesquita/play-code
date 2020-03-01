@@ -1,12 +1,14 @@
 .ToySection--Grid,
-.TentSection--Grid {
+.TentSection--Grid,
+.GeneralSection--Grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 3rem;
 }
 
 .ToySection button,
-.TentSection button {
+.TentSection button,
+.GeneralSection button {
   color: white;
   @include margin-top(5rem);
   background-color: $darkPurple;
@@ -19,13 +21,15 @@
 }
 
 .ToySection button:hover,
-.TentSection button:hover {
+.TentSection button:hover,
+.GeneralSection button:hover {
   background-color: $primaryGreen;
   outline: none;
 }
 
 .ToySection--Title,
-.TentSection--Title {
+.TentSection--Title,
+.GeneralSection--Title {
   width: 100%;
   max-width: 200px;
   margin: 0 auto 4rem auto;
@@ -34,7 +38,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 991.98px) {
   .ToySection--Grid,
-  .TentSection--Grid {
+  .TentSection--Grid,
+  .GeneralSection--Grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 4rem;
@@ -43,7 +48,8 @@
 
 @media screen and (max-width: 767.98px) {
   .ToySection--Grid,
-  .TentSection--Grid {
+  .TentSection--Grid,
+  .GeneralSection--Grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 4rem;
@@ -52,7 +58,8 @@
 
 @media screen and (max-width: 575.98px) {
   .ToySection--Grid,
-  .TentSection--Grid {
+  .TentSection--Grid,
+  .GeneralSection--Grid {
     display: block;
     grid-template-columns: 1;
     grid-gap: 0;

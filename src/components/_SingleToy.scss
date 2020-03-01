@@ -1,22 +1,26 @@
 .SingleToy,
-.SingleTent {
+.SingleTent,
+.SingleGeneral {
   background: white;
 }
 
 .SingleToy--Content,
-.SingleTent--Content {
+.SingleTent--Content,
+.SingleGeneral--Content {
   background: white;
 }
 
 .SingleToy--InnerContent,
-.SingleTent--InnerContent {
+.SingleTent--InnerContent,
+.SingleGeneral--InnerContent {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 8rem;
 }
 
 .SingleToy--Image,
-.SingleTent--Image {
+.SingleTent--Image,
+.SingleGeneral--Image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,13 +47,15 @@
 }
 
 .SingleToy--Title,
-.SingleTent--Title {
+.SingleTent--Title,
+.SingleGeneral--Title {
   @include font-size(4rem);
   @include margin-bottom(2.5rem);
 }
 
 .SingleToy--Price,
-.SingleTent--Price {
+.SingleTent--Price,
+.SingleGeneral--Price {
   @include font-size(3rem);
   color: $danger;
   font-family: $font-primary;
@@ -58,7 +64,8 @@
 }
 
 .SingleToy--BackButton,
-.SingleTent--BackButton {
+.SingleTent--BackButton,
+.SingleGeneral--BackButton {
   color: white;
   position: relative;
   display: flex;
@@ -69,7 +76,8 @@
 }
 
 .SingleToy--BackButton svg,
-.SingleTent--BackButton svg {
+.SingleTent--BackButton svg,
+.SingleGeneral--BackButton svg {
   transition: transform 0.2s ease-out;
   transform: translateX(0);
   height: 1.2em;
@@ -77,13 +85,16 @@
 
 .SingleToy--BackButton:hover svg,
 .SingleTent--BackButton:hover svg,
+.SingleGeneral--BackButton:focus svg,
 .SingleToy--BackButton:focus svg,
-.SingleTent--BackButton:focus svg {
-  transform: translateX(-0.25em);
+.SingleTent--BackButton:focus svg,
+.SingleGeneral--BackButton:focus svg {
+transform: translateX(-0.25em);
 }
 
 .SingleToy--Pagination,
-.SingleTent--Pagination {
+.SingleTent--Pagination,
+.SingleGeneral--Pagination {
   margin: 4rem 0 0 0;
   display: flex;
   align-items: center;
@@ -91,7 +102,8 @@
 }
 
 .SingleToy--Pagination--Link,
-.SingleTent--Pagination--Link {
+.SingleTent--Pagination--Link,
+.SingleGeneral--Pagination--Link {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 600;
@@ -99,13 +111,15 @@
 }
 
 .SingleToy--Pagination--Link.next,
-.SingleTent--Pagination--Link.next {
+.SingleTent--Pagination--Link.next,
+.SingleGeneral--Pagination--Link.next {
   margin-left: auto;
 }
 
 @media screen and (max-width: 991.98px) {
   .SingleToy--Image,
-  .SingleTent--Image {
+  .SingleTent--Image,
+  .SingleGeneral--Image {
     img {
       transform: scale(1);
     }
@@ -120,13 +134,15 @@
 
 @media screen and (max-width: 991.98px) {
   .SingleToy--InnerContent,
-  .SingleTent--InnerContent {
+  .SingleTent--InnerContent,
+  .SingleGeneral--InnerContent {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
   }
 
   .SingleToy--Image,
-  .SingleTent--Image {
+  .SingleTent--Image,
+  .SingleGeneral--Image {
     @include margin-bottom(4rem);
   }
 }
