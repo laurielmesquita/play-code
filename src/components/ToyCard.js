@@ -15,18 +15,18 @@ const ClimtCard = ({
   lazy = true,
   ...props
 }) => (
-  <Link to={slug} className={`ClimtCard ${className}`}>
+  <Link to={slug} className={`GeneralCard ${className}`}>
     {featuredImage && (
-      <div className="ClimtCard--Image relative">
+      <div className="GeneralCard--Image relative">
         <Image LazyImage src={featuredImage} alt={title} />
       </div>
     )}
-    <div className="ClimtCard--Content">
-      {title && <h3 className="ClimtCard--Title">{title}</h3>}
-      <div className="ClimtCard--Category">
+    <div className="GeneralCard--Content">
+      {title && <h3 className="GeneralCard--Title">{title}</h3>}
+      <div className="GeneralCard--Category">
         {categories && categories.map(cat => cat.category).join(', ')}
       </div>
-      {price && <div className="ClimtCard--Excerpt">{price}</div>}
+      {price && <div className="GeneralCard--Excerpt">{price}</div>}
     </div>
   </Link>
 )

@@ -63,7 +63,7 @@ export const ToyIndexTemplate = ({
       }
 
       return (
-        <main className="Blog">
+        <main className="General">
           <PageHeader
             title={title}
             subtitle={subtitle}

@@ -27,10 +27,10 @@ class ToySection extends React.Component {
       visibleToys = toys.slice(0, limit || toys.length)
 
     return (
-      <div className="ToySection">
-        {title && <h2 className="ToySection--Title">{title}</h2>}
+      <div className="GeneralSection">
+        {title && <h2 className="GeneralSection--Title">{title}</h2>}
         {!!visibleToys.length && (
-          <div className="ToySection--Grid">
+          <div className="GeneralSection--Grid">
             {visibleToys.map((toy, index) => (
               <ToyCard key={toy.title + index} {...toy} />
             ))}

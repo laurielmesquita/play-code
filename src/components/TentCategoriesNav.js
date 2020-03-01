@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import TentSearch from './TentSearch'
 
 const TentCategoriesNav = ({ categories, enableSearch }) => (
-  <div className="TentCategoriesNav">
+  <div className="GeneralCategoriesNav">
     <Link className="NavLink" exact="true" to={'/tent/'}>
       Todas
     </Link>

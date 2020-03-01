@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import ToySearch from './ToySearch'
 
 const ToyCategoriesNav = ({ categories, enableSearch }) => (
-  <div className="ToyCategoriesNav">
+  <div className="GeneralCategoriesNav">
     <Link className="NavLink" exact="true" to={'/toy/'}>
       Todos
     </Link>

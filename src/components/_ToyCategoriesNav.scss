@@ -1,5 +1,3 @@
-.ToyCategoriesNav,
-.TentCategoriesNav,
 .GeneralCategoriesNav {
   color: white;
   display: flex;
@@ -14,14 +12,10 @@
   }
 }
 
-.ToyCategoriesNav > * + *,
-.TentCategoriesNav > * + *,
 .GeneralCategoriesNav > * + * {
   margin-left: 1rem;
 }
 
-.ToyCategoriesNav input[type='text'],
-.TentCategoriesNav input[type='text'],
 .GeneralCategoriesNav input[type='text'] {
   right: 0;
   position: absolute;
@@ -34,22 +28,16 @@
   transition: all 0.2s ease-in-out;
 }
 
-.ToyCategoriesNav input[type='text']:focus,
-.TentCategoriesNav input[type='text']:focus,
 .GeneralCategoriesNav input[type='text']:focus {
   outline: none;
   background-color: white;
 }
 
-.ToyCategoriesNav input[type='text']::placeholder,
-.TentCategoriesNav input[type='text']::placeholder,
 .GeneralCategoriesNav input[type='text']::placeholder {
   color: $deepPurple;
 }
 
 @media (max-width: 767.98px) {
-  .ToyCategoriesNav,
-  .TentCategoriesNav,
   .GeneralCategoriesNav {
     justify-content: center;
 
@@ -66,8 +54,6 @@
 }
 
 @media (max-width: 575.98px) {
-  .ToyCategoriesNav,
-  .TentCategoriesNav,
   .GeneralCategoriesNav {
     .NavLink {
       @include font-size(1.2rem);

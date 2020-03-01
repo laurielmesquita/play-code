@@ -20,35 +20,35 @@ export const SingleToyTemplate = ({
     <PageHeader title={title} />
     <article className="section grid">
       <div className="container">
-        <div className="SingleToy--Content relative">
+        <div className="SingleGeneral--Content relative">
 
-          <div className="SingleToy--InnerContent">
-            <div className="SingleToy--Image">
+          <div className="SingleGeneral--InnerContent">
+            <div className="SingleGeneral--Image">
               <Image src={featuredImage} alt={title} />
             </div>
-            <div className="SingleToy--Info">
+            <div className="SingleGeneral--Info">
               {title && (
-                <h1 className="SingleToy--Title" itemProp="title">{title}</h1>
+                <h1 className="SingleGeneral--Title" itemProp="title">{title}</h1>
               )}
-              <div className="SingleToy--Price">{price}</div>
+              <div className="SingleGeneral--Price">{price}</div>
               <Content source={excerpt} />
             </div>
           </div>
 
-          <div className="SingleToy--Pagination">
+          <div className="SingleGeneral--Pagination">
             {prevPostURL && (
-              <Link className="SingleToy--Pagination--Link prev" to={prevPostURL}>
+              <Link className="SingleGeneral--Pagination--Link prev" to={prevPostURL}>
                 Anterior
               </Link>
             )}
             {nextPostURL && (
-              <Link className="SingleToy--Pagination--Link next" to={nextPostURL}>
+              <Link className="SingleGeneral--Pagination--Link next" to={nextPostURL}>
                 Próximo
               </Link>
             )}
           </div>
         </div>
-        <Link className="SingleToy--BackButton" to="/toy/">
+        <Link className="SingleGeneral--BackButton" to="/toy/">
           <ChevronLeft /> Voltar para Brinquedos
         </Link>
       </div>

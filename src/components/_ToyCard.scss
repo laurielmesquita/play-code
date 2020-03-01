@@ -1,5 +1,3 @@
-.ToyCard,
-.TentCard,
 .GeneralCard {
   text-decoration: none;
   background: white;
@@ -7,15 +5,11 @@
   transition: all 0.15s ease-in-out;
   overflow: hidden;
 
-  .ToyCard--Content,
-  .TentCard--Content,
   .GeneralCard--Content {
     padding: 0;
     text-align: center;
   }
 
-  .ToyCard--Image,
-  .TentCard--Image,
   .GeneralCard--Image {
     @include padding(4rem);
     margin: 0 0 2rem 0;
@@ -29,16 +23,12 @@
     }
   }
 
-  .ToyCard--Title,
-  .TentCard--Title,
   .GeneralCard--Title {
     @include font-size(1.7rem);
     @include margin-bottom(1rem);
     font-weight: 500;
   }
 
-  .ToyCard--Category,
-  .TentCard--Category,
   .GeneralCard--Category {
     color: $midGrey;
     font-size: 1.2rem;
@@ -48,8 +38,6 @@
     text-transform: uppercase;
   }
 
-  .ToyCard--Excerpt,
-  .TentCard--Excerpt,
   .GeneralCard--Excerpt {
     color: $lightBlue;
     font-family: $font-secondary;
@@ -60,14 +48,9 @@
 
   &:hover,
   &:focus {
-    .ToyCard--Image,
-    .TentCard--Image,
     .GeneralCard--Image {
       background-color: $softGrey;
     }
-
-    .ToyCard--Excerpt,
-    .TentCard--Excerpt,
     .GeneralCard--Excerpt {
       color: $danger;
     }
@@ -75,8 +58,6 @@
 }
 
 @media screen and (max-width: 575.98px) {
-  .ToyCard,
-  .TentCard,
   .GeneralCard {
     display: block;
     @include margin-bottom(4rem);

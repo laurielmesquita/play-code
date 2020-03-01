@@ -27,10 +27,10 @@ class TentSection extends React.Component {
       visibleTents = tents.slice(0, limit || tents.length)
 
     return (
-      <div className="TentSection">
-        {title && <h2 className="TentSection--Title">{title}</h2>}
+      <div className="GeneralSection">
+        {title && <h2 className="GeneralSection--Title">{title}</h2>}
         {!!visibleTents.length && (
-          <div className="TentSection--Grid">
+          <div className="GeneralSection--Grid">
             {visibleTents.map((tent, index) => (
               <TentCard key={tent.title + index} {...tent} />
             ))}

@@ -63,7 +63,7 @@ export const TentIndexTemplate = ({
       }
 
       return (
-        <main className="Blog">
+        <main className="General">
           <PageHeader
             title={title}
             subtitle={subtitle}
