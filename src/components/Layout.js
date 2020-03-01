@@ -52,6 +52,21 @@ export default ({ children, meta, title }) => {
               }
             }
           }
+          allClimts: allMarkdownRemark(
+            filter: { fields: { contentType: { eq: "climtCategories" } } }
+            sort: { order: DESC, fields: [frontmatter___date] }
+          ) {
+            edges {
+              node {
+                fields {
+                  slug
+                }
+                frontmatter {
+                  title
+                }
+              }
+            }
+          }
         }
       `}
       render={data => {
@@ -66,6 +81,11 @@ export default ({ children, meta, title }) => {
           tents: data.allTents.hasOwnProperty('edges')
             ? data.allTents.edges.map(tent => {
               return { ...tent.node.fields, ...tent.node.frontmatter }
+            })
+            : false,
+          climts: data.allClimts.hasOwnProperty('edges')
+            ? data.allClimts.edges.map(climt => {
+              return { ...climt.node.fields, ...climt.node.frontmatter }
             })
             : false
         }

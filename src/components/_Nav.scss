@@ -87,7 +87,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  width: auto;
+  // width: auto;
   background: white;
   opacity: 0;
   max-height: 0;
@@ -112,7 +112,7 @@
 .Nav--GroupLink {
   display: block;
   position: relative;
-  width: 15rem;
+  width: 19rem;
 }
 
 @media (max-width: 1119.98px) {

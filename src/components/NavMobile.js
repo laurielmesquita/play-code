@@ -52,6 +52,7 @@ export class Navigation extends Component {
             <div className="Nav--Links">
               <NavLink to="/">Home</NavLink>
               <NavLink to="/sobre-nos/">Sobre Nós</NavLink>
+              {/* BRINQUEDOS */}
               <div
                 className={`Nav--Group ${
                   this.state.activeSubNav === 'toys' ? 'active' : ''
@@ -84,6 +85,7 @@ export class Navigation extends Component {
                   ))}
                 </div>
               </div>
+              {/* TENDAS */}
               <div
                 className={`Nav--Group ${
                   this.state.activeSubNav === 'tents' ? 'active' : ''
@@ -116,7 +118,39 @@ export class Navigation extends Component {
                   ))}
                 </div>
               </div>
-              <NavLink to="/climatizadores/">Climatizadores</NavLink>
+              {/* CLIMATIZADORES */}
+              <div
+                className={`Nav--Group ${
+                  this.state.activeSubNav === 'climts' ? 'active' : ''
+                }`}
+              >
+                <span
+                  className={`NavLink Nav--GroupParent ${
+                    this.props.location.pathname.includes('climts') ||
+                    this.props.location.pathname.includes('climt') ||
+                    this.props.location.pathname.includes('climt-categories')
+                      ? 'active'
+                      : ''
+                  }`}
+                  onClick={() => this.toggleSubNav('climts')}
+                >
+                  Climatizadores
+                </span>
+                <div className="Nav--GroupLinks">
+                  <NavLink to="/climt/" className="Nav--GroupLink">
+                    Todos os Climatizadores
+                  </NavLink>
+                  {subNav.climts.map((link, index) => (
+                    <NavLink
+                      to={link.slug}
+                      key={'climts-subnav-link-' + index}
+                      className="Nav--GroupLink"
+                    >
+                      {link.title}
+                    </NavLink>
+                  ))}
+                </div>
+              </div>
               <NavLink to="/contato/">Contato</NavLink>
             </div>
           </div>
