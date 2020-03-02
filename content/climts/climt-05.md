@@ -1,10 +1,10 @@
 ---
 template: SingleClimt
-title: Climat CLM-85RT
+title: Climat CLM-180T BR
 status: Featured / Published
 date: '2020-02-27'
-featuredImage: https://brincadeira.co/products/list_climt_85rt.png
-price: R$200,00
+featuredImage: https://brincadeira.co/products/list_climt_180t_br.png
+price: Consulte um vendedor
 excerpt: >-
   Diversão em dobro com o Tombo Legal!  
 
@@ -15,9 +15,9 @@ excerpt: >-
 
   **Recomendação:** usuário de até 70kg.
 categories:
-  - category: Aluguel
+  - category: Venda
 meta:
   description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
-  title: Climat CLM-85RT
+  title: Climat CLM-180T BR
 ---

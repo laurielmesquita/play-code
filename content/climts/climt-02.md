@@ -3,7 +3,7 @@ template: SingleClimt
 title: Climat CLM-180T BR
 status: Featured / Published
 date: '2020-02-27'
-featuredImage: https://brincadeira.co/products/list_tenda.png
+featuredImage: https://brincadeira.co/products/list_climt_180t_br.png
 price: R$200,00
 excerpt: >-
   Diversão em dobro com o Tombo Legal!  

@@ -43,7 +43,9 @@ module.exports = {
           '/tent/',
           '/tents/*',
           '/tent-categories/*',
-          '/climatizadores/',
+          '/climt/',
+          '/climts/*',
+          '/climt-categories/*',
           '/contato/'
         ]
       }
