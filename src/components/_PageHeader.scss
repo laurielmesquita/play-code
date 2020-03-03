@@ -11,6 +11,17 @@
   @include font-size(2.6rem);
   font-weight: 500;
   letter-spacing: 0.26rem;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+    svg {
+      margin-right: 1.5rem;
+    }
+  }
 }
 
 @media screen and (max-width: 413.98px) {

@@ -17,7 +17,13 @@ export const SingleClimtTemplate = ({
   prevPostURL
 }) => (
   <main>
-    <PageHeader title={title} />
+    <PageHeader
+      title={[
+        <a key="BackToIndex" href="/climt/">
+          <ChevronLeft /> Todos os Climatizadores
+        </a>
+      ]}
+    />
     <article className="section grid">
       <div className="container">
         <div className="SingleGeneral--Content relative">
@@ -48,9 +54,6 @@ export const SingleClimtTemplate = ({
             )}
           </div>
         </div>
-        <Link className="SingleGeneral--BackButton" to="/climt/">
-          <ChevronLeft /> Voltar para Brinquedos
-        </Link>
       </div>
     </article>
   </main>

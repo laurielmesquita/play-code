@@ -17,7 +17,13 @@ export const SingleTentTemplate = ({
   prevPostURL
 }) => (
   <main>
-    <PageHeader title={title} />
+    <PageHeader
+      title={[
+        <a key="BackToIndex" href="/tent/">
+          <ChevronLeft /> Todas as Tendas
+        </a>
+      ]}
+    />
     <article className="section grid">
       <div className="container">
         <div className="SingleGeneral--Content relative">
@@ -48,9 +54,6 @@ export const SingleTentTemplate = ({
             )}
           </div>
         </div>
-        <Link className="SingleGeneral--BackButton" to="/tent/">
-          <ChevronLeft /> Voltar para Brinquedos
-        </Link>
       </div>
     </article>
   </main>

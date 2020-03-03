@@ -17,7 +17,13 @@ export const SingleToyTemplate = ({
   prevPostURL
 }) => (
   <main>
-    <PageHeader title={title} />
+    <PageHeader
+      title={[
+        <a key="BackToIndex" href="/toy/">
+          <ChevronLeft /> Todos os Brinquedos
+        </a>
+      ]}
+    />
     <article className="section grid">
       <div className="container">
         <div className="SingleGeneral--Content relative">
@@ -48,9 +54,6 @@ export const SingleToyTemplate = ({
             )}
           </div>
         </div>
-        <Link className="SingleGeneral--BackButton" to="/toy/">
-          <ChevronLeft /> Voltar para Brinquedos
-        </Link>
       </div>
     </article>
   </main>
