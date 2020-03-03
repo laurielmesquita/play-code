@@ -3,7 +3,7 @@ import { MapPin, Smartphone, Mail } from 'react-feather'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import Content from '../components/Content'
+import HeaderSection from '../components/HeaderSection'
 import GoogleMap from '../components/GoogleMap'
 import Layout from '../components/Layout'
 
@@ -14,9 +14,12 @@ export const ContactPageTemplate = ({
   subtitle,
   featuredImage,
   address,
-  phone,
+  phone1,
+  phone2,
   email,
-  locations,
+  hdSectionTt,
+  hdSectionSubTt,
+  locations
 }) => (
   <main className="Contact">
     <PageHeader
@@ -26,32 +29,41 @@ export const ContactPageTemplate = ({
     />
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
-        <div>
-          <Content source={body} />
-          <div className="Contact--Details">
-            {address && (
-              <a
-                className="Contact--Details--Item"
-                href={`https://www.google.com.au/maps/search/${encodeURI(
-                  address
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <MapPin /> {address}
-              </a>
-            )}
-            {phone && (
-              <a className="Contact--Details--Item" href={`tel:${phone}`}>
-                <Smartphone /> {phone}
-              </a>
-            )}
-            {email && (
-              <a className="Contact--Details--Item" href={`mailto:${email}`}>
-                <Mail /> {email}
-              </a>
-            )}
-          </div>
+        <HeaderSection
+          hdSectionTt={hdSectionTt}
+          hdSectionSubTt={hdSectionSubTt}
+        />
+        <div className="Contact--Details">
+          <h4 className="Contact--Details--Title"><MapPin /> Endereço</h4>
+          {address && (
+            <a
+              className="Contact--Details--Item"
+              href={`https://www.google.com.au/maps/search/${encodeURI(
+              address
+              )}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {address}
+            </a>
+          )}
+          <h4 className="Contact--Details--Title"><Smartphone /> Telefones</h4>
+          {phone1 && (
+            <a className="Contact--Details--Item" href={`tel:${phone1}`}>
+              {phone1}
+            </a>
+          )}
+          {phone2 && (
+            <a className="Contact--Details--Item" href={`tel:${phone2}`}>
+              {phone2}
+            </a>
+          )}
+          <h4 className="Contact--Details--Title"><Mail /> Email</h4>
+          {email && (
+            <a className="Contact--Details--Item" href={`mailto:${email}`}>
+              {email}
+            </a>
+          )}
         </div>
       </div>
     </section>
@@ -82,8 +94,11 @@ export const pageQuery = graphql`
         subtitle
         featuredImage
         address
-        phone
+        phone1
+        phone2
         email
+        hdSectionTt
+        hdSectionSubTt
         locations {
           mapLink
           lat

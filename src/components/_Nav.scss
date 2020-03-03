@@ -49,7 +49,7 @@
   .GeneralCategoriesNav & {
     @include padding(2.5rem 2rem);
   }
-
+  
   .GeneralCategoriesNav &:hover,
   .GeneralCategoriesNav &[aria-current] {
     color: $midYellow;
