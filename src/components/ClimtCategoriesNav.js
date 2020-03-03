@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import ClimtSearch from './ClimtSearch'
+import GeneralSearch from './GeneralSearch'
 
 const ClimtCategoriesNav = ({ categories, enableSearch }) => (
   <div className="GeneralCategoriesNav">
@@ -19,7 +19,7 @@ const ClimtCategoriesNav = ({ categories, enableSearch }) => (
       </Link>
     ))}
 
-    {enableSearch && <ClimtSearch />}
+    {enableSearch && <GeneralSearch />}
   </div>
 )
 

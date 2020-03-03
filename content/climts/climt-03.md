@@ -1,6 +1,7 @@
 ---
 template: SingleClimt
 title: Climat CLM-180RT BR
+slug: alugue-climat-clm-180-rt-br
 status: Featured / Published
 date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_180rt_br.png
