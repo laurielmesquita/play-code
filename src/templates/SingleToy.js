@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import _get from 'lodash/get'
 import { Link, graphql } from 'gatsby'
-import { ChevronLeft } from 'react-feather'
+import { ChevronLeft, ChevronRight } from 'react-feather'
 
 import Content from '../components/Content'
 import Layout from '../components/Layout'
@@ -40,16 +40,21 @@ export const SingleToyTemplate = ({
               <Content source={excerpt} />
             </div>
           </div>
-
           <div className="SingleGeneral--Pagination">
             {prevPostURL && (
-              <Link className="SingleGeneral--Pagination--Link prev" to={prevPostURL}>
-                Anterior
+              <Link
+                className="SingleGeneral--Pagination--Link prev"
+                to={prevPostURL}
+              >
+                <ChevronLeft /> Anterior
               </Link>
             )}
             {nextPostURL && (
-              <Link className="SingleGeneral--Pagination--Link next" to={nextPostURL}>
-                Próximo
+              <Link
+                className="SingleGeneral--Pagination--Link next"
+                to={nextPostURL}
+              >
+                Próximo <ChevronRight />
               </Link>
             )}
           </div>

@@ -27,28 +27,34 @@ export const SingleClimtTemplate = ({
     <article className="section grid">
       <div className="container">
         <div className="SingleGeneral--Content relative">
-
           <div className="SingleGeneral--InnerContent">
             <div className="SingleGeneral--Image">
               <Image src={featuredImage} alt={title} />
             </div>
             <div className="SingleGeneral--Info">
               {title && (
-                <h1 className="SingleGeneral--Title" itemProp="title">{title}</h1>
+                <h1 className="SingleGeneral--Title" itemProp="title">
+                  {title}
+                </h1>
               )}
               <div className="SingleGeneral--Price">{price}</div>
               <Content source={excerpt} />
             </div>
           </div>
-
           <div className="SingleGeneral--Pagination">
             {prevPostURL && (
-              <Link className="SingleGeneral--Pagination--Link prev" to={prevPostURL}>
+              <Link
+                className="SingleGeneral--Pagination--Link prev"
+                to={prevPostURL}
+              >
                 <ChevronLeft /> Anterior
               </Link>
             )}
             {nextPostURL && (
-              <Link className="SingleGeneral--Pagination--Link next" to={nextPostURL}>
+              <Link
+                className="SingleGeneral--Pagination--Link next"
+                to={nextPostURL}
+              >
                 Próximo <ChevronRight />
               </Link>
             )}

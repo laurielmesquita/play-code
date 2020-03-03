@@ -89,17 +89,17 @@
   font-weight: 500;
   text-decoration: none;
   letter-spacing: 0.1rem;
-  background-color: $lightBlue;
   color: white;
   @include padding(1.4rem 3rem 1.4rem 2.1rem);
+  background-color: $primaryBlue;
   border-radius: $borderRadius;
   
   svg {
     margin-right: 0.5rem;
   }
-
+  
   &:hover {
-    background-color: $primaryBlue;
+    background-color: $midBlue;
   }
 }
 
