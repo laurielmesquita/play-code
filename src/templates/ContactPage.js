@@ -4,7 +4,6 @@ import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
 import HeaderSection from '../components/HeaderSection'
-import GoogleMap from '../components/GoogleMap'
 import Layout from '../components/Layout'
 
 // Export Template for use in CMS preview
@@ -18,8 +17,7 @@ export const ContactPageTemplate = ({
   phone2,
   email,
   hdSectionTt,
-  hdSectionSubTt,
-  locations
+  hdSectionSubTt
 }) => (
   <main className="Contact">
     <PageHeader
@@ -67,8 +65,6 @@ export const ContactPageTemplate = ({
         </div>
       </div>
     </section>
-
-    <GoogleMap locations={locations} />
   </main>
 )
 
@@ -99,11 +95,6 @@ export const pageQuery = graphql`
         email
         hdSectionTt
         hdSectionSubTt
-        locations {
-          mapLink
-          lat
-          lng
-        }
       }
     }
   }
