@@ -45,6 +45,19 @@
   text-decoration: none;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+
+  .GeneralCategoriesNav & {
+    @include padding(2.5rem 2rem);
+  }
+
+  .GeneralCategoriesNav &:hover,
+  .GeneralCategoriesNav &[aria-current] {
+    color: $midYellow;
+  }
+  
+  .GeneralCategoriesNav &[aria-current] {
+    background-color: $deepPurple;
+  }
 }
 
 .NavLink.Nav--GroupLink {

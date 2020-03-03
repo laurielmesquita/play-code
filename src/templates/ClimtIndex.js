@@ -71,7 +71,7 @@ export const ClimtIndexTemplate = ({
           />
 
           {!!climtCategories.length && (
-            <section className="section thin section-softPurple">
+            <section className="section pd0 section-softPurple">
               <div className="container">
                 <ClimtCategoriesNav enableSearch categories={climtCategories} />
               </div>

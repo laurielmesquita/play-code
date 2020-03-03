@@ -71,7 +71,7 @@ export const ToyIndexTemplate = ({
           />
 
           {!!toyCategories.length && (
-            <section className="section thin section-softPurple">
+            <section className="section pd0 section-softPurple">
               <div className="container">
                 <ToyCategoriesNav enableSearch categories={toyCategories} />
               </div>

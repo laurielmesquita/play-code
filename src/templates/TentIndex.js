@@ -71,7 +71,7 @@ export const TentIndexTemplate = ({
           />
 
           {!!tentCategories.length && (
-            <section className="section thin section-softPurple">
+            <section className="section pd0 section-softPurple">
               <div className="container">
                 <TentCategoriesNav enableSearch categories={tentCategories} />
               </div>
