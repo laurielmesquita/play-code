@@ -4,16 +4,12 @@ title: Climat CLM-180T BR
 status: Featured / Published
 date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_180t_br.png
-price: R$200,00
+price: R$300,00
 excerpt: >-
-  Diversão em dobro com o Tombo Legal!  
-
-  Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.   
-
-  Brinquedo automático com sirene de queda e plataforma lateral.
+  **Área climatizada:** De 100m² a 150m².
 
 
-  **Recomendação:** usuário de até 70kg.
+  **Alugue 4 por:** R$1000,00.
 categories:
   - category: Aluguel
 meta:

@@ -6,10 +6,7 @@ date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_85rt_eco.png
 price: Consulte um vendedor
 excerpt: >-
-  Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
-
-
-  **Alugue 4 por:** R$.1000,00.
+  **Área climatizada:** De 60m² a 85m².
 categories:
   - category: Venda
 meta:

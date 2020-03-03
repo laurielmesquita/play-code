@@ -4,20 +4,16 @@ title: Climat CLM-85RT
 status: Featured / Published
 date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_85rt.png
-price: R$200,00
+price: R$150,00
 excerpt: >-
-  Diversão em dobro com o Tombo Legal!  
+  **Área climatizada:** De 60m² a 85m².   
 
-  Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.   
-
-  Brinquedo automático com sirene de queda e plataforma lateral.
-
-
-  **Recomendação:** usuário de até 70kg.
+  
+  **Alugue 4 por:** R$500,00.
 categories:
   - category: Aluguel
 meta:
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
+  description: Climat CLM-85RT
   noindex: false
   title: Climat CLM-85RT
 ---
