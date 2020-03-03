@@ -9,33 +9,33 @@ export default () => (
   <div className="OurHighlights">
     <div className="OurHighlights--Item">
       <h2 className="OurHighlights--Tt">
-        <a href="/">Tendas</a>
+        <a href="/tent/">Tendas</a>
       </h2>
-      <a href="/" className="OurHighlights--Img">
+      <a href="/tent/" className="OurHighlights--Img">
         <img src={tenda} title="Tendas" alt="Foto da Tenda" />
       </a>
     </div>
     <div className="OurHighlights--Item">
       <h2 className="OurHighlights--Tt">
-        <a href="/">Aero Hockey</a>
+        <a href="/toys/aero-hockey/">Aero Hockey</a>
       </h2>
-      <a href="/" className="OurHighlights--Img">
+      <a href="/toys/aero-hockey/" className="OurHighlights--Img">
         <img src={aerohockey} title="Tendas" alt="Foto da Tenda" />
       </a>
     </div>
     <div className="OurHighlights--Item">
       <h2 className="OurHighlights--Tt">
-        <a href="/">Cama Elástica</a>
+        <a href="/toys/cama-elastica-3-05-m/">Cama Elástica</a>
       </h2>
-      <a href="/tendas/" className="OurHighlights--Img">
+      <a href="/toys/cama-elastica-3-05-m/" className="OurHighlights--Img">
         <img src={camaelastica} title="Tendas" alt="Foto da Tenda" />
       </a>
     </div>
     <div className="OurHighlights--Item">
       <h2 className="OurHighlights--Tt">
-        <a href="/">Pula Pula Inflável</a>
+        <a href="/toys/castelinho/">Pula Pula Inflável</a>
       </h2>
-      <a href="/" className="OurHighlights--Img">
+      <a href="/toys/castelinho/" className="OurHighlights--Img">
         <img src={pulapula} title="Tendas" alt="Foto da Tenda" />
       </a>
     </div>

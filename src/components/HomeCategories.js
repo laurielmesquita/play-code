@@ -7,27 +7,27 @@ import climatizador from '../../static/products/cat_climatizador.png'
 export default () => (
   <div className="HomeCategories">
     <div className="HomeCategories--Item">
-      <a href="/" className="HomeCategories--Img">
+      <a href="/tent/" className="HomeCategories--Img">
         <img src={tenda} title="Tendas" alt="Foto da Tenda" />
       </a>
       <h2 className="HomeCategories--Tt">
-        <a href="/">Tendas</a>
+        <a href="/tent/">Tendas</a>
       </h2>
     </div>
     <div className="HomeCategories--Item">
-      <a href="/" className="HomeCategories--Img">
+      <a href="/toy/" className="HomeCategories--Img">
         <img src={brinquedo} title="Tendas" alt="Foto da Tenda" />
       </a>
       <h2 className="HomeCategories--Tt">
-        <a href="/">Brinquedos</a>
+        <a href="/toy/">Brinquedos</a>
       </h2>
     </div>
     <div className="HomeCategories--Item">
-      <a href="/tendas/" className="HomeCategories--Img">
+      <a href="/climt/" className="HomeCategories--Img">
         <img src={climatizador} title="Tendas" alt="Foto da Tenda" />
       </a>
       <h2 className="HomeCategories--Tt">
-        <a href="/">Climatizadores</a>
+        <a href="/climt/">Climatizadores</a>
       </h2>
     </div>
   </div>

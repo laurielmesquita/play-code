@@ -34,7 +34,7 @@ const PageHero = ({
           )}
           <a
             className="Button Button--Large"
-            href="/toys/postagem-principal/"
+            href="/toys/tombo-legal/"
             title="Mais informações sobre Tombo Legal"
           >
             Mais Informações
