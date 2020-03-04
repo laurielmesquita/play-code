@@ -134,9 +134,12 @@ module.exports = {
       resolve: `gatsby-plugin-nprogress`,
       options: {
         // Setting a color is optional.
-        color: `red`,
+        color: `#9EC12F`,
         // Disable the loading spinner.
-        showSpinner: true
+        showSpinner: true,
+        minimum: 0.1,
+        easing: `ease`,
+        speed: 500
       }
     },
     `gatsby-plugin-sitemap`,
