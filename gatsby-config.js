@@ -10,13 +10,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Brincadeira de Criança`,
         short_name: `Brincadeira`,
+        name: `Brincadeira de Criança`,
+        description: `Site institucional da Brincadeira de Criança`,
+        icon: `${__dirname}/static/images/logo.svg`,
         start_url: `/`,
         background_color: `#9EC12F`,
-        theme_color: `#9EC12F`,
         display: `standalone`,
-        icon: `${__dirname}/static/images/logo.svg`
+        scope: `/`,
+        theme_color: `#9EC12F`
       }
     },
     {
