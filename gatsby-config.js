@@ -56,8 +56,8 @@ module.exports = {
         name: 'Brincadeira de Criança',
         short_name: 'Brincadeira',
         start_url: '/',
-        background_color: '8918b3',
-        theme_color: '8918b3',
+        background_color: '#9EC12F',
+        theme_color: '#9EC12F',
         // Enables "Add to Homescreen" prompt and disables browser UI (including back button)
         // see https://developers.google.com/web/fundamentals/web-app-manifest/#display
         display: 'standalone',
