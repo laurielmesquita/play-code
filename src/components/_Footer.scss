@@ -1,9 +1,10 @@
 .footer {
   color: white;
-  font-size: 1.4rem;
+  @include font-size(1.4rem);
 }
 
 .footer-Top {
+  @include margin-top(8rem);
   @include padding(8rem 0 5rem);
   background-color: $lightGreen;
 }

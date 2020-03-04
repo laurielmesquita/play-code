@@ -1,26 +1,10 @@
 /* eslint-disable react/display-name */
 import React from 'react'
-import InstagramFeed from './InstagramFeed'
-import HeaderSection from './HeaderSection'
 
 import logofooter from '../../static/images/logo_footer.svg'
 
 export default () => (
   <div>
-    <section className="section section-Instagram section-Inverse section-lightGreen">
-      <div className="container">
-        <HeaderSection
-          hdSectionTt="Instagram"
-          hdSectionSubTt={[
-            'Siga-nos no ',
-            <a key="Instagram" href="https://www.instagram.com/brincadeiradecriancathe/">
-              @brincadeiradecriancathe
-            </a>
-          ]}
-        />
-      </div>
-      <InstagramFeed count="8" />
-    </section>
     <footer className="footer footer-Top">
       <div className="container taCenter">
         <figure className="Logo-Footer">
