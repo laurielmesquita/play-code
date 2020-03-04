@@ -4,7 +4,7 @@
 }
 
 .footer-Top {
-  @include margin-top(8rem);
+  @include margin-top(6rem);
   @include padding(8rem 0 5rem);
   background-color: $lightGreen;
 }

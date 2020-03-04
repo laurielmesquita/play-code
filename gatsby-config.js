@@ -33,6 +33,18 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Brincadeira de Criança`,
+        short_name: `Brincadeira`,
+        start_url: `/`,
+        background_color: `#9EC12F`,
+        theme_color: `#9EC12F`,
+        display: `standalone`,
+        icon: `${__dirname}/static/images/logo.svg`
+      }
+    },
+    {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [
@@ -49,18 +61,6 @@ module.exports = {
           `/climt-categories/*`,
           `/contato/`
         ]
-      }
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Brincadeira de Criança`,
-        short_name: `Brincadeira`,
-        start_url: `/`,
-        background_color: `#9EC12F`,
-        theme_color: `#9EC12F`,
-        display: `standalone`,
-        icon: `${__dirname}/static/images/logo.svg`
       }
     },
 
