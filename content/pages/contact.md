@@ -8,7 +8,7 @@ hdSectionSubTt: Tire suas dúvidas ou deixe sua sugestão
 address: 'Rua Zumbí, n° 1048 - Mafrense - CEP: 64005-580 - Teresina - PI'
 phone1: (86) 98848-7045
 phone2: (86) 99522-2449
-email: brincadeiradecrianca@gmail.com
+email: brincadeiradecriancathe@gmail.com
 meta:
   description: Nessa página você pode entrar em contato com a Brincadeira de Criança.
   title: Contact Page
