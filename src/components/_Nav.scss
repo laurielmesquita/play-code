@@ -17,6 +17,12 @@
   display: flex;
   justify-content: space-between;
   height: 16rem;
+
+}
+
+.inner:nth-of-type(1),
+.inner:nth-of-type(3) {
+  width: 38%;
 }
 
 .Nav--Links {
@@ -24,6 +30,18 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+
+.inner:nth-of-type(1) {
+  .Nav--Links {
+    justify-content: flex-start;
+  }
+}
+
+.inner:nth-of-type(3) {
+  .Nav--Links {
+    justify-content: flex-end;
+  }
 }
 
 .Nav .Logo,
@@ -78,7 +96,7 @@
 }
 
 .Nav--GroupParent {
-  padding-right: 3rem;
+  @include padding-right(3rem);
 }
 
 .Nav--GroupParent::after {
@@ -128,14 +146,26 @@
   width: 19rem;
 }
 
+@media (max-width: 1199.98px) {
+  .NavLink {
+    @include padding(0.5rem 1.3rem);
+  }
+
+  .Nav--GroupParent {
+    @include padding-right(2.3rem);
+
+    &::after {
+      right: 1.3rem;
+    }
+  }
+}
+
 @media (max-width: 1119.98px) {
   .Nav-Large {
     display: none;
   }
 
   .LogoMobile {
-    // width: 12.658rem;
-    // height: 5.6rem;
     width: 10.172rem;
     height: 4.5rem;
   }
