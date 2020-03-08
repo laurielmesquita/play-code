@@ -47,6 +47,48 @@ export class Navigation extends Component {
             <div className="Nav--Links">
               <NavLink to="/">Home</NavLink>
               <NavLink to="/sobre-nos/">Sobre Nós</NavLink>
+              {/* CLIMATIZADORES */}
+              <div
+                className={`Nav--Group ${
+                  this.state.activeSubNav === 'climts' ? 'active' : ''
+                }`}
+              >
+                <span
+                  className={`NavLink Nav--GroupParent ${
+                    this.props.location.pathname.includes('climts') ||
+                    this.props.location.pathname.includes('climt') ||
+                    this.props.location.pathname.includes('climt-categories')
+                      ? 'active'
+                      : ''
+                  }`}
+                  onClick={() => this.toggleSubNav('climts')}
+                >
+                  Climatizadores
+                </span>
+                <div className="Nav--GroupLinks">
+                  <NavLink to="/climt/" className="Nav--GroupLink">
+                    Todos os Climatizadores
+                  </NavLink>
+                  {subNav.climts.map((link, index) => (
+                    <NavLink
+                      to={link.slug}
+                      key={'climts-subnav-link-' + index}
+                      className="Nav--GroupLink"
+                    >
+                      {link.title}
+                    </NavLink>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="inner">
+            <Link to="/" onClick={this.handleLinkClick}>
+              <Logo />
+            </Link>
+          </div>
+          <div className="inner">
+            <div className="Nav--Links">
               {/* BRINQUEDOS */}
               <div
                 className={`Nav--Group ${
@@ -80,15 +122,6 @@ export class Navigation extends Component {
                   ))}
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="inner">
-            <Link to="/" onClick={this.handleLinkClick}>
-              <Logo />
-            </Link>
-          </div>
-          <div className="inner">
-            <div className="Nav--Links">
               {/* TENDAS */}
               <div
                 className={`Nav--Group ${
@@ -115,39 +148,6 @@ export class Navigation extends Component {
                     <NavLink
                       to={link.slug}
                       key={'tents-subnav-link-' + index}
-                      className="Nav--GroupLink"
-                    >
-                      {link.title}
-                    </NavLink>
-                  ))}
-                </div>
-              </div>
-              {/* CLIMATIZADORES */}
-              <div
-                className={`Nav--Group ${
-                  this.state.activeSubNav === 'climts' ? 'active' : ''
-                }`}
-              >
-                <span
-                  className={`NavLink Nav--GroupParent ${
-                    this.props.location.pathname.includes('climts') ||
-                    this.props.location.pathname.includes('climt') ||
-                    this.props.location.pathname.includes('climt-categories')
-                      ? 'active'
-                      : ''
-                  }`}
-                  onClick={() => this.toggleSubNav('climts')}
-                >
-                  Climatizadores
-                </span>
-                <div className="Nav--GroupLinks">
-                  <NavLink to="/climt/" className="Nav--GroupLink">
-                    Todos os Climatizadores
-                  </NavLink>
-                  {subNav.climts.map((link, index) => (
-                    <NavLink
-                      to={link.slug}
-                      key={'climts-subnav-link-' + index}
                       className="Nav--GroupLink"
                     >
                       {link.title}
