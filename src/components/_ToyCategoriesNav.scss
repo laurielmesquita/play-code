@@ -33,7 +33,7 @@
     justify-content: center;
 
     .NavLink {
-      letter-spacing: 0.14em;
+      @include rfs(0.14em, letter-spacing);
     }
     
     input[type='text'] {
@@ -45,11 +45,14 @@
 }
 
 @media (max-width: 575.98px) {
+  .GeneralCategoriesNav input[type='text'] {
+    font-size: 1.8rem;
+  }
   .GeneralCategoriesNav {
     .NavLink {
       @include font-size(1.2rem);
       @include padding(0.5rem 0.7rem);
-      letter-spacing: 0.1em;
+      @include rfs(0.1em, letter-spacing);
     }
   }
 }

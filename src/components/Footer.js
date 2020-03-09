@@ -20,16 +20,25 @@ export default () => (
           <a
             href="https://www.instagram.com/brincadeiradecriancathe"
             className="SVGIcon--icon"
+            target="_blank"
+            rel="noopener noreferrer"
           />
         </div>
         <div className="SVGIcon Icon-Facebook">
           <a
             href="https://www.facebook.com/brincadeiradecriancathe"
             className="SVGIcon--icon"
+            target="_blank"
+            rel="noopener noreferrer"
           />
         </div>
         <div className="SVGIcon Icon-Whatsapp">
-          <a href="https://wa.me/5586988487045" className="SVGIcon--icon" />
+          <a
+            href="https://wa.me/5586988487045"
+            className="SVGIcon--icon"
+            target="_blank"
+            rel="noopener noreferrer"
+          />
         </div>
       </div>
     </footer>
