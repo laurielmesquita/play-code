@@ -24,24 +24,24 @@
   }
 
   .GeneralCard--Title {
-    @include font-size(1.7rem);
+    @include rfs(1.7rem, font-size);
     @include margin-bottom(1rem);
     font-weight: 500;
   }
-
+  
   .GeneralCard--Category {
     color: $midGrey;
-    font-size: 1.2rem;
+    @include rfs(1.2rem, font-size);
     min-height: 1.2em;
     line-height: 1;
     @include margin-bottom(0.5rem);
     text-transform: uppercase;
   }
-
+  
   .GeneralCard--Excerpt {
     color: $lightBlue;
     font-family: $font-secondary;
-    @include font-size(1.8rem);
+    @include rfs(1.8rem, font-size);
     font-weight: 500;
     transition: all 0.3s ease-in-out;
   }
@@ -57,6 +57,14 @@
   }
 }
 
+@media screen and (max-width: 767.98px) {
+  .GeneralCard {
+    .GeneralCard--Title {
+      @include rfs(2.4rem, font-size);
+    }
+  }
+}
+
 @media screen and (max-width: 575.98px) {
   .GeneralCard {
     display: block;
@@ -64,6 +72,18 @@
 
     &:last-of-type {
       margin-bottom: 0;
+    }
+    
+    .GeneralCard--Title {
+      @include rfs(3.2rem, font-size);
+    }
+
+    .GeneralCard--Category {
+      @include rfs(1.8rem, font-size);
+    }
+
+    .GeneralCard--Excerpt {
+      @include rfs(3.4rem, font-size);
     }
   }
 }
