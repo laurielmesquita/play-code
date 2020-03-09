@@ -16,6 +16,7 @@ hdSectionSubTt03: Saiba Mais Sobre a Brincadeira de Criança
 welcomeImage: https://brincadeira.co/images/kid.jpg
 welcomeTitle: Bem-vindo ao site da Brincadeira de Criança
 meta:
+  canonicalLink: 'https://brincadeira.co'
   description: Site institucional da empresa de aluguel Brincadeira de Criança.
   title: Brincadeira de Criança
 ---
