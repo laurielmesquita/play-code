@@ -17,6 +17,7 @@ excerpt: >-
 categories:
   - category: 10x10m
 meta:
+  canonicalLink: 'https://brincadeira.co/tendas/tenda-10-x-10-m/'
   description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Tenda 10x10m

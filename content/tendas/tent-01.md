@@ -17,7 +17,8 @@ excerpt: >-
 categories:
   - category: 3x3m
 meta:
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
+  canonicalLink: 'https://brincadeira.co/tendas/tenda-3-x-3-m/'
+  description: Tenda 3x3m para múltiplos propósitos.
   noindex: false
   title: Tenda 3x3m
 ---

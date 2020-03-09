@@ -17,6 +17,7 @@ excerpt: >-
 categories:
   - category: 6x6m
 meta:
+  canonicalLink: 'https://brincadeira.co/tendas/tenda-6-x-6-m/'
   description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Tenda 6x6m
