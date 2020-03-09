@@ -19,7 +19,7 @@ export const SingleTentTemplate = ({
   <main>
     <PageHeader
       title={[
-        <a key="BackToIndex" href="/tent/">
+        <a key="BackToIndex" href="/tenda/">
           <ChevronLeft /> Todas as Tendas
         </a>
       ]}
@@ -65,17 +65,17 @@ export const SingleTentTemplate = ({
 )
 
 // Export Default SingleTent for front-end
-const SingleTent = ({ data: { tent, allPosts } }) => {
-  const thisEdge = allPosts.edges.find(edge => edge.node.id === tent.id)
+const SingleTent = ({ data: { tenda, allPosts } }) => {
+  const thisEdge = allPosts.edges.find(edge => edge.node.id === tenda.id)
   return (
     <Layout
-      meta={tent.frontmatter.meta || false}
-      title={tent.frontmatter.title || false}
+      meta={tenda.frontmatter.meta || false}
+      title={tenda.frontmatter.title || false}
     >
       <SingleTentTemplate
-        {...tent}
-        {...tent.frontmatter}
-        body={tent.html}
+        {...tenda}
+        {...tenda.frontmatter}
+        body={tenda.html}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
@@ -87,7 +87,7 @@ export default SingleTent
 
 export const pageQuery = graphql`
   query SingleTent($id: String!) {
-    tent: markdownRemark(id: { eq: $id }) {
+    tenda: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
       id
@@ -106,7 +106,7 @@ export const pageQuery = graphql`
     }
 
     allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "tents" } } }
+      filter: { fields: { contentType: { eq: "tendas" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

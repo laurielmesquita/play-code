@@ -5,7 +5,7 @@ import GeneralSearch from './GeneralSearch'
 
 const TentCategoriesNav = ({ categories, enableSearch }) => (
   <div className="GeneralCategoriesNav">
-    <Link className="NavLink" exact="true" to={'/tent/'}>
+    <Link className="NavLink" exact="true" to={'/tenda/'}>
       Todas
     </Link>
     {categories.map((category, index) => (

@@ -4,7 +4,7 @@ import TentCard from './TentCard'
 
 class TentSection extends React.Component {
   static defaultProps = {
-    tents: [],
+    tendas: [],
     title: '',
     limit: 12,
     showLoadMore: true,
@@ -22,21 +22,21 @@ class TentSection extends React.Component {
     }))
 
   render() {
-    const { tents, title, showLoadMore, loadMoreTitle } = this.props,
+    const { tendas, title, showLoadMore, loadMoreTitle } = this.props,
       { limit } = this.state,
-      visibleTents = tents.slice(0, limit || tents.length)
+      visibleTents = tendas.slice(0, limit || tendas.length)
 
     return (
       <div className="GeneralSection">
         {title && <h2 className="GeneralSection--Title">{title}</h2>}
         {!!visibleTents.length && (
           <div className="GeneralSection--Grid">
-            {visibleTents.map((tent, index) => (
-              <TentCard key={tent.title + index} {...tent} />
+            {visibleTents.map((tenda, index) => (
+              <TentCard key={tenda.title + index} {...tenda} />
             ))}
           </div>
         )}
-        {showLoadMore && visibleTents.length < tents.length && (
+        {showLoadMore && visibleTents.length < tendas.length && (
           <div className="taCenter">
             <button className="button" onClick={this.increaseLimit}>
               {loadMoreTitle}

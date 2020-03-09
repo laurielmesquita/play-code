@@ -9,29 +9,29 @@ import TentCategoriesNav from '../components/TentCategoriesNav'
 import Layout from '../components/Layout'
 
 /**
- * Filter tents by date. Feature dates will be fitered
+ * Filter tendas by date. Feature dates will be fitered
  * When used, make sure you run a cronejob each day to show schaduled content. See docs
  *
- * @param {tents} object
+ * @param {tendas} object
  */
-export const byDate = tents => {
+export const byDate = tendas => {
   const now = Date.now()
-  return tents.filter(tent => Date.parse(tent.date) <= now)
+  return tendas.filter(tenda => Date.parse(tenda.date) <= now)
 }
 
 /**
- * filter tents by category.
+ * filter tendas by category.
  *
- * @param {tents} object
+ * @param {tendas} object
  * @param {title} string
  * @param {contentType} string
  */
-export const byCategory = (tents, title, contentType) => {
-  const isCategory = contentType === 'tentCategories'
-  const byCategory = tent =>
-    tent.categories &&
-    tent.categories.filter(cat => cat.category === title).length
-  return isCategory ? tents.filter(byCategory) : tents
+export const byCategory = (tendas, title, contentType) => {
+  const isCategory = contentType === 'tendaCategories'
+  const byCategory = tenda =>
+    tenda.categories &&
+    tenda.categories.filter(cat => cat.category === title).length
+  return isCategory ? tendas.filter(byCategory) : tendas
 }
 
 // Export Template for use in CMS preview
@@ -40,16 +40,16 @@ export const TentIndexTemplate = ({
   subtitle,
   featuredImage,
   price,
-  tents = [],
-  tentCategories = [],
+  tendas = [],
+  tendaCategories = [],
   enableSearch = true,
   contentType
 }) => (
   <Location>
     {({ location }) => {
       let filteredTents =
-        tents && !!tents.length
-          ? byCategory(byDate(tents), title, contentType)
+        tendas && !!tendas.length
+          ? byCategory(byDate(tendas), title, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -57,8 +57,8 @@ export const TentIndexTemplate = ({
 
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
-        filteredTents = filteredTents.filter(tent =>
-          tent.frontmatter.title.toLowerCase().includes(searchTerm)
+        filteredTents = filteredTents.filter(tenda =>
+          tenda.frontmatter.title.toLowerCase().includes(searchTerm)
         )
       }
 
@@ -70,18 +70,18 @@ export const TentIndexTemplate = ({
             backgroundImage={featuredImage}
           />
 
-          {!!tentCategories.length && (
+          {!!tendaCategories.length && (
             <section className="section pd0 section-softPurple">
               <div className="container">
-                <TentCategoriesNav enableSearch categories={tentCategories} />
+                <TentCategoriesNav enableSearch categories={tendaCategories} />
               </div>
             </section>
           )}
 
-          {!!tents.length && (
+          {!!tendas.length && (
             <section className="section grid">
               <div className="container">
-                <TentSection tents={filteredTents} />
+                <TentSection tendas={filteredTents} />
               </div>
             </section>
           )}
@@ -92,7 +92,7 @@ export const TentIndexTemplate = ({
 )
 
 // Export Default TentIndex for front-end
-const TentIndex = ({ data: { page, tents, tentCategories } }) => (
+const TentIndex = ({ data: { page, tendas, tendaCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -101,15 +101,15 @@ const TentIndex = ({ data: { page, tents, tentCategories } }) => (
       {...page}
       {...page.fields}
       {...page.frontmatter}
-      tents={tents.edges.map(tent => ({
-        ...tent.node,
-        ...tent.node.frontmatter,
-        ...tent.node.fields
+      tendas={tendas.edges.map(tenda => ({
+        ...tenda.node,
+        ...tenda.node.frontmatter,
+        ...tenda.node.fields
       }))}
-      tentCategories={tentCategories.edges.map(tent => ({
-        ...tent.node,
-        ...tent.node.frontmatter,
-        ...tent.node.fields
+      tendaCategories={tendaCategories.edges.map(tenda => ({
+        ...tenda.node,
+        ...tenda.node.frontmatter,
+        ...tenda.node.fields
       }))}
     />
   </Layout>
@@ -138,8 +138,8 @@ export const pageQuery = graphql`
       }
     }
 
-    tents: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "tents" } } }
+    tendas: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "tendas" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -160,8 +160,8 @@ export const pageQuery = graphql`
         }
       }
     }
-    tentCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "tentCategories" } } }
+    tendaCategories: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "tendaCategories" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
     ) {
       edges {

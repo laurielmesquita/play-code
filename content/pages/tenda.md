@@ -1,6 +1,6 @@
 ---
 template: TentIndex
-slug: tent
+slug: tenda
 title: Todas as Tendas
 featuredImage: 'https://brincadeira.co/'
 subtitle: Subtítulo para a página de Tendas.

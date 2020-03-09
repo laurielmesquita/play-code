@@ -38,7 +38,7 @@ export default ({ children, meta, title }) => {
             }
           }
           allTents: allMarkdownRemark(
-            filter: { fields: { contentType: { eq: "tentCategories" } } }
+            filter: { fields: { contentType: { eq: "tendaCategories" } } }
             sort: { order: DESC, fields: [frontmatter___date] }
           ) {
             edges {
@@ -78,9 +78,9 @@ export default ({ children, meta, title }) => {
               return { ...toy.node.fields, ...toy.node.frontmatter }
             })
             : false,
-          tents: data.allTents.hasOwnProperty('edges')
-            ? data.allTents.edges.map(tent => {
-              return { ...tent.node.fields, ...tent.node.frontmatter }
+          tendas: data.allTents.hasOwnProperty('edges')
+            ? data.allTents.edges.map(tenda => {
+              return { ...tenda.node.fields, ...tenda.node.frontmatter }
             })
             : false,
           climts: data.allClimts.hasOwnProperty('edges')
