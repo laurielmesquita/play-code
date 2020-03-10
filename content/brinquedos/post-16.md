@@ -1,6 +1,6 @@
 ---
 template: SingleToy
-title: Tombo Legal
+title: Tombo Legal (até 70kg)
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_tombolegal.png
@@ -18,8 +18,8 @@ excerpt: >-
 categories:
   - category: Outros
 meta:
-  canonicalLink: ''
-  description: Tombo Legal 2 proporciona momentos de intensa alegria, tanto para quem atira as bolinhas quanto para quem está na cadeirinha.
+  canonicalLink: 'https://brincadeira.co/brinquedos/tombo-legal-ate-70-kg/'
+  description: Descrição ocasional
   noindex: false
-  title: Tombo Legal
+  title: Tombo Legal (até 70kg)
 ---

@@ -15,7 +15,7 @@ excerpt: >-
 categories:
   - category: Outros
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/aero-hockey/'
   description: Uma descrição sobre a página
   noindex: false
   title: Aero Hockey

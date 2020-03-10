@@ -13,7 +13,7 @@ excerpt: >-
 categories:
   - category: Infláveis
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/touro-mecanico/'
   description: O Touro Mecânico é fabricado com a moderna tecnologia em brinquedos infláveis.
   noindex: false
   title: Touro Mecânico

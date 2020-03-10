@@ -17,7 +17,7 @@ excerpt: >-
 categories:
   - category: Infláveis
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/futebol-de-sabao/'
   description: O Futebol de Sabão com piso inflável, que pode ser utilizada com ou sem sabão.
   noindex: false
   title: Futebol de Sabão

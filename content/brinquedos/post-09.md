@@ -13,7 +13,7 @@ excerpt: >-
 categories:
   - category: Infláveis
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/guerra-de-contonetes/'
   description: O Touro Mecânico é fabricado com a moderna tecnologia em brinquedos infláveis.
   noindex: false
   title: Guerra de Contonetes

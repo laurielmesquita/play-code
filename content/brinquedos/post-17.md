@@ -18,7 +18,7 @@ excerpt: >-
 categories:
   - category: Outros
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/cama-elastica-3-05-m/'
   description: As camas elásticas são um complemento cada vez mais popular para os eventos infantis.
   noindex: false
   title: Cama Elástica 3,05m

@@ -12,7 +12,7 @@ excerpt: >-
 categories:
   - category: Outros
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/casa-de-bolinhas/'
   description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Casa de Bolinhas

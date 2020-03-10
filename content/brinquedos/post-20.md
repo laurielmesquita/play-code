@@ -19,7 +19,7 @@ excerpt: >-
 categories:
   - category: Outros
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/gangorra-e-escorrega/'
   description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Gangorra e Escorrega

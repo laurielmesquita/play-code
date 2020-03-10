@@ -12,7 +12,7 @@ excerpt: >-
 categories:
   - category: Infláveis
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/toboga/'
   description: É um multi atividades tematizado com impressão digital possui diversos obstáculos.
   noindex: false
   title: Tobogã

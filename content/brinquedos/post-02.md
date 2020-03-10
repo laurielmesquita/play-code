@@ -17,7 +17,7 @@ excerpt: >-
 categories:
   - category: Infláveis
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/corrida-maluca/'
   description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Corrida Maluca

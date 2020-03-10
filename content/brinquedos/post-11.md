@@ -10,7 +10,7 @@ excerpt: >-
 categories:
   - category: Outros
 meta:
-  canonicalLink: ''
+  canonicalLink: 'https://brincadeira.co/brinquedos/basquete-eletronico/'
   description: Se existe uma diversão que atrai a atenção não só da criançada, mas de alguns adultos, é o basquete eletrônico.
   noindex: false
   title: Basquete Eletrônico
