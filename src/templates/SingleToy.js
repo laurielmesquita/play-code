@@ -19,7 +19,7 @@ export const SingleToyTemplate = ({
   <main>
     <PageHeader
       title={[
-        <a key="BackToIndex" href="/toy/">
+        <a key="BackToIndex" href="/brinquedo/">
           <ChevronLeft /> Todos os Brinquedos
         </a>
       ]}
@@ -65,17 +65,17 @@ export const SingleToyTemplate = ({
 )
 
 // Export Default SingleToy for front-end
-const SingleToy = ({ data: { toy, allPosts } }) => {
-  const thisEdge = allPosts.edges.find(edge => edge.node.id === toy.id)
+const SingleToy = ({ data: { brinquedo, allPosts } }) => {
+  const thisEdge = allPosts.edges.find(edge => edge.node.id === brinquedo.id)
   return (
     <Layout
-      meta={toy.frontmatter.meta || false}
-      title={toy.frontmatter.title || false}
+      meta={brinquedo.frontmatter.meta || false}
+      title={brinquedo.frontmatter.title || false}
     >
       <SingleToyTemplate
-        {...toy}
-        {...toy.frontmatter}
-        body={toy.html}
+        {...brinquedo}
+        {...brinquedo.frontmatter}
+        body={brinquedo.html}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
@@ -87,7 +87,7 @@ export default SingleToy
 
 export const pageQuery = graphql`
   query SingleToy($id: String!) {
-    toy: markdownRemark(id: { eq: $id }) {
+    brinquedo: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
       id
@@ -106,7 +106,7 @@ export const pageQuery = graphql`
     }
 
     allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "toys" } } }
+      filter: { fields: { contentType: { eq: "brinquedos" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

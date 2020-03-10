@@ -23,7 +23,7 @@ export default ({ children, meta, title }) => {
             }
           }
           allToys: allMarkdownRemark(
-            filter: { fields: { contentType: { eq: "toyCategories" } } }
+            filter: { fields: { contentType: { eq: "brinquedoCategories" } } }
             sort: { order: DESC, fields: [frontmatter___date] }
           ) {
             edges {
@@ -73,9 +73,9 @@ export default ({ children, meta, title }) => {
         const { siteTitle, socialMediaCard, googleTrackingId } =
           data.settingsYaml || {}
         const subNav = {
-          toys: data.allToys.hasOwnProperty('edges')
-            ? data.allToys.edges.map(toy => {
-              return { ...toy.node.fields, ...toy.node.frontmatter }
+          brinquedos: data.allToys.hasOwnProperty('edges')
+            ? data.allToys.edges.map(brinquedo => {
+              return { ...brinquedo.node.fields, ...brinquedo.node.frontmatter }
             })
             : false,
           tendas: data.allTents.hasOwnProperty('edges')

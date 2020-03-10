@@ -9,29 +9,29 @@ import ToyCategoriesNav from '../components/ToyCategoriesNav'
 import Layout from '../components/Layout'
 
 /**
- * Filter toys by date. Feature dates will be fitered
+ * Filter brinquedos by date. Feature dates will be fitered
  * When used, make sure you run a cronejob each day to show schaduled content. See docs
  *
- * @param {toys} object
+ * @param {brinquedos} object
  */
-export const byDate = toys => {
+export const byDate = brinquedos => {
   const now = Date.now()
-  return toys.filter(toy => Date.parse(toy.date) <= now)
+  return brinquedos.filter(brinquedo => Date.parse(brinquedo.date) <= now)
 }
 
 /**
- * filter toys by category.
+ * filter brinquedos by category.
  *
- * @param {toys} object
+ * @param {brinquedos} object
  * @param {title} string
  * @param {contentType} string
  */
-export const byCategory = (toys, title, contentType) => {
-  const isCategory = contentType === 'toyCategories'
-  const byCategory = toy =>
-    toy.categories &&
-    toy.categories.filter(cat => cat.category === title).length
-  return isCategory ? toys.filter(byCategory) : toys
+export const byCategory = (brinquedos, title, contentType) => {
+  const isCategory = contentType === 'brinquedoCategories'
+  const byCategory = brinquedo =>
+    brinquedo.categories &&
+    brinquedo.categories.filter(cat => cat.category === title).length
+  return isCategory ? brinquedos.filter(byCategory) : brinquedos
 }
 
 // Export Template for use in CMS preview
@@ -40,16 +40,16 @@ export const ToyIndexTemplate = ({
   subtitle,
   featuredImage,
   price,
-  toys = [],
-  toyCategories = [],
+  brinquedos = [],
+  brinquedoCategories = [],
   enableSearch = true,
   contentType
 }) => (
   <Location>
     {({ location }) => {
       let filteredToys =
-        toys && !!toys.length
-          ? byCategory(byDate(toys), title, contentType)
+        brinquedos && !!brinquedos.length
+          ? byCategory(byDate(brinquedos), title, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -57,8 +57,8 @@ export const ToyIndexTemplate = ({
 
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
-        filteredToys = filteredToys.filter(toy =>
-          toy.frontmatter.title.toLowerCase().includes(searchTerm)
+        filteredToys = filteredToys.filter(brinquedo =>
+          brinquedo.frontmatter.title.toLowerCase().includes(searchTerm)
         )
       }
 
@@ -70,18 +70,18 @@ export const ToyIndexTemplate = ({
             backgroundImage={featuredImage}
           />
 
-          {!!toyCategories.length && (
+          {!!brinquedoCategories.length && (
             <section className="section pd0 section-softPurple">
               <div className="container">
-                <ToyCategoriesNav enableSearch categories={toyCategories} />
+                <ToyCategoriesNav enableSearch categories={brinquedoCategories} />
               </div>
             </section>
           )}
 
-          {!!toys.length && (
+          {!!brinquedos.length && (
             <section className="section grid">
               <div className="container">
-                <ToySection toys={filteredToys} />
+                <ToySection brinquedos={filteredToys} />
               </div>
             </section>
           )}
@@ -92,7 +92,7 @@ export const ToyIndexTemplate = ({
 )
 
 // Export Default ToyIndex for front-end
-const ToyIndex = ({ data: { page, toys, toyCategories } }) => (
+const ToyIndex = ({ data: { page, brinquedos, brinquedoCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -101,15 +101,15 @@ const ToyIndex = ({ data: { page, toys, toyCategories } }) => (
       {...page}
       {...page.fields}
       {...page.frontmatter}
-      toys={toys.edges.map(toy => ({
-        ...toy.node,
-        ...toy.node.frontmatter,
-        ...toy.node.fields
+      brinquedos={brinquedos.edges.map(brinquedo => ({
+        ...brinquedo.node,
+        ...brinquedo.node.frontmatter,
+        ...brinquedo.node.fields
       }))}
-      toyCategories={toyCategories.edges.map(toy => ({
-        ...toy.node,
-        ...toy.node.frontmatter,
-        ...toy.node.fields
+      brinquedoCategories={brinquedoCategories.edges.map(brinquedo => ({
+        ...brinquedo.node,
+        ...brinquedo.node.frontmatter,
+        ...brinquedo.node.fields
       }))}
     />
   </Layout>
@@ -138,8 +138,8 @@ export const pageQuery = graphql`
       }
     }
 
-    toys: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "toys" } } }
+    brinquedos: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "brinquedos" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -160,8 +160,8 @@ export const pageQuery = graphql`
         }
       }
     }
-    toyCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "toyCategories" } } }
+    brinquedoCategories: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "brinquedoCategories" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
     ) {
       edges {
