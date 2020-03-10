@@ -2,6 +2,7 @@
 template: SingleClimt
 title: Climat CLM-180RT BR
 status: Featured / Published
+slug: 'climatizadores/climat-clm-180-rt-br-aluguel'
 date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_180rt_br.png
 price: R$300,00
