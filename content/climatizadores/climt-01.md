@@ -1,6 +1,6 @@
 ---
 template: SingleClimt
-title: Climat CLM-85RT
+title: Climat CLM-85RT (AL)
 status: Featured / Published
 slug: 'climatizadores/climat-clm-85-rt-aluguel'
 date: '2020-02-27'
@@ -17,5 +17,5 @@ meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-85-rt-aluguel/'
   description: Climat CLM-85RT
   noindex: false
-  title: Climat CLM-85RT
+  title: Climat CLM-85RT (AL)
 ---
