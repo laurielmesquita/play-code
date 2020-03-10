@@ -6,19 +6,15 @@ date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_frajola.png
 price: R$250,00
 excerpt: >-
-  Diversão em dobro com o Tombo Legal!  
-
-  Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.   
-
-  Brinquedo automático com sirene de queda e plataforma lateral.
+  Esperando o Márcio Quer Frango enviar a descrição do produto antes que John Connor lance uma ofensiva final contra a Skynet em 2029.
 
 
-  **Recomendação:** crianças até 70kg.
+  Um dia chega...
 categories:
   - category: Infláveis
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/frajola/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
+  description: Esperando o Márcio Quer Frango enviar a descrição do produto antes que John Connor lance uma ofensiva final contra a Skynet em 2029.
   noindex: false
   title: Frajola
 ---

@@ -6,9 +6,7 @@ date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_tenismesa.png
 price: R$100,00
 excerpt: >-
-  Este é um texto de espaço reservado para garantir que as palavras apareça
-  corretamente no seu site. Este texto será substituído assim que o site está
-  completo. No momento, você está lendo um texto escrito em português.
+  Tênis de mesa esperando por conteúdo para essa página.
 categories:
   - category: Outros
 meta:
