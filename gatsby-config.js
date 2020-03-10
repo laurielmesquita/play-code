@@ -39,13 +39,6 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-yaml`,
     {
-      resolve: `gatsby-plugin-google-tagmanager`,
-      options: {
-        id: `GTM-P67TXJZ`,
-        includeInDevelopment: false
-      }
-    },
-    {
       resolve: `gatsby-plugin-offline`,
       options: {
         precachePages: [
