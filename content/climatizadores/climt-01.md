@@ -2,7 +2,6 @@
 template: SingleClimt
 title: Climat CLM-85RT
 status: Featured / Published
-slug: alugue-climat-clm-85-rt
 date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_85rt.png
 price: R$150,00
@@ -14,6 +13,7 @@ excerpt: >-
 categories:
   - category: Aluguel
 meta:
+  canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-85-rt-aluguel/'
   description: Climat CLM-85RT
   noindex: false
   title: Climat CLM-85RT

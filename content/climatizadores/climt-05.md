@@ -10,6 +10,7 @@ excerpt: >-
 categories:
   - category: Venda
 meta:
+  canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-180-t-br/'
   description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Climat CLM-180T BR
