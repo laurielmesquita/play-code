@@ -53,7 +53,7 @@ export default ({ children, meta, title }) => {
             }
           }
           allClimts: allMarkdownRemark(
-            filter: { fields: { contentType: { eq: "climtCategories" } } }
+            filter: { fields: { contentType: { eq: "climatizadorCategories" } } }
             sort: { order: DESC, fields: [frontmatter___date] }
           ) {
             edges {
@@ -83,9 +83,9 @@ export default ({ children, meta, title }) => {
               return { ...tenda.node.fields, ...tenda.node.frontmatter }
             })
             : false,
-          climts: data.allClimts.hasOwnProperty('edges')
-            ? data.allClimts.edges.map(climt => {
-              return { ...climt.node.fields, ...climt.node.frontmatter }
+          climatizadores: data.allClimts.hasOwnProperty('edges')
+            ? data.allClimts.edges.map(climatizador => {
+              return { ...climatizador.node.fields, ...climatizador.node.frontmatter }
             })
             : false
         }

@@ -5,7 +5,7 @@ import GeneralSearch from './GeneralSearch'
 
 const ClimtCategoriesNav = ({ categories, enableSearch }) => (
   <div className="GeneralCategoriesNav">
-    <Link className="NavLink" exact="true" to={'/climt/'}>
+    <Link className="NavLink" exact="true" to={'/climatizador/'}>
       Todos
     </Link>
     {categories.map((category, index) => (

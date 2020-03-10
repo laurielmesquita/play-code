@@ -9,29 +9,29 @@ import ClimtCategoriesNav from '../components/ClimtCategoriesNav'
 import Layout from '../components/Layout'
 
 /**
- * Filter climts by date. Feature dates will be fitered
+ * Filter climatizadores by date. Feature dates will be fitered
  * When used, make sure you run a cronejob each day to show schaduled content. See docs
  *
- * @param {climts} object
+ * @param {climatizadores} object
  */
-export const byDate = climts => {
+export const byDate = climatizadores => {
   const now = Date.now()
-  return climts.filter(climt => Date.parse(climt.date) <= now)
+  return climatizadores.filter(climatizador => Date.parse(climatizador.date) <= now)
 }
 
 /**
- * filter climts by category.
+ * filter climatizadores by category.
  *
- * @param {climts} object
+ * @param {climatizadores} object
  * @param {title} string
  * @param {contentType} string
  */
-export const byCategory = (climts, title, contentType) => {
-  const isCategory = contentType === 'climtCategories'
-  const byCategory = climt =>
-    climt.categories &&
-    climt.categories.filter(cat => cat.category === title).length
-  return isCategory ? climts.filter(byCategory) : climts
+export const byCategory = (climatizadores, title, contentType) => {
+  const isCategory = contentType === 'climatizadorCategories'
+  const byCategory = climatizador =>
+    climatizador.categories &&
+    climatizador.categories.filter(cat => cat.category === title).length
+  return isCategory ? climatizadores.filter(byCategory) : climatizadores
 }
 
 // Export Template for use in CMS preview
@@ -40,16 +40,16 @@ export const ClimtIndexTemplate = ({
   subtitle,
   featuredImage,
   price,
-  climts = [],
-  climtCategories = [],
+  climatizadores = [],
+  climatizadorCategories = [],
   enableSearch = true,
   contentType
 }) => (
   <Location>
     {({ location }) => {
       let filteredClimts =
-        climts && !!climts.length
-          ? byCategory(byDate(climts), title, contentType)
+        climatizadores && !!climatizadores.length
+          ? byCategory(byDate(climatizadores), title, contentType)
           : []
 
       let queryObj = location.search.replace('?', '')
@@ -57,8 +57,8 @@ export const ClimtIndexTemplate = ({
 
       if (enableSearch && queryObj.s) {
         const searchTerm = queryObj.s.toLowerCase()
-        filteredClimts = filteredClimts.filter(climt =>
-          climt.frontmatter.title.toLowerCase().includes(searchTerm)
+        filteredClimts = filteredClimts.filter(climatizador =>
+          climatizador.frontmatter.title.toLowerCase().includes(searchTerm)
         )
       }
 
@@ -70,18 +70,18 @@ export const ClimtIndexTemplate = ({
             backgroundImage={featuredImage}
           />
 
-          {!!climtCategories.length && (
+          {!!climatizadorCategories.length && (
             <section className="section pd0 section-softPurple">
               <div className="container">
-                <ClimtCategoriesNav enableSearch categories={climtCategories} />
+                <ClimtCategoriesNav enableSearch categories={climatizadorCategories} />
               </div>
             </section>
           )}
 
-          {!!climts.length && (
+          {!!climatizadores.length && (
             <section className="section grid">
               <div className="container">
-                <ClimtSection climts={filteredClimts} />
+                <ClimtSection climatizadores={filteredClimts} />
               </div>
             </section>
           )}
@@ -92,7 +92,7 @@ export const ClimtIndexTemplate = ({
 )
 
 // Export Default ClimtIndex for front-end
-const ClimtIndex = ({ data: { page, climts, climtCategories } }) => (
+const ClimtIndex = ({ data: { page, climatizadores, climatizadorCategories } }) => (
   <Layout
     meta={page.frontmatter.meta || false}
     title={page.frontmatter.title || false}
@@ -101,15 +101,15 @@ const ClimtIndex = ({ data: { page, climts, climtCategories } }) => (
       {...page}
       {...page.fields}
       {...page.frontmatter}
-      climts={climts.edges.map(climt => ({
-        ...climt.node,
-        ...climt.node.frontmatter,
-        ...climt.node.fields
+      climatizadores={climatizadores.edges.map(climatizador => ({
+        ...climatizador.node,
+        ...climatizador.node.frontmatter,
+        ...climatizador.node.fields
       }))}
-      climtCategories={climtCategories.edges.map(climt => ({
-        ...climt.node,
-        ...climt.node.frontmatter,
-        ...climt.node.fields
+      climatizadorCategories={climatizadorCategories.edges.map(climatizador => ({
+        ...climatizador.node,
+        ...climatizador.node.frontmatter,
+        ...climatizador.node.fields
       }))}
     />
   </Layout>
@@ -138,8 +138,8 @@ export const pageQuery = graphql`
       }
     }
 
-    climts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "climts" } } }
+    climatizadores: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "climatizadores" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
@@ -160,8 +160,8 @@ export const pageQuery = graphql`
         }
       }
     }
-    climtCategories: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "climtCategories" } } }
+    climatizadorCategories: allMarkdownRemark(
+      filter: { fields: { contentType: { eq: "climatizadorCategories" } } }
       sort: { order: ASC, fields: [frontmatter___title] }
     ) {
       edges {

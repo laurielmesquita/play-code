@@ -4,7 +4,7 @@ import ClimtCard from './ClimtCard'
 
 class ClimtSection extends React.Component {
   static defaultProps = {
-    climts: [],
+    climatizadores: [],
     title: '',
     limit: 12,
     showLoadMore: true,
@@ -22,21 +22,21 @@ class ClimtSection extends React.Component {
     }))
 
   render() {
-    const { climts, title, showLoadMore, loadMoreTitle } = this.props,
+    const { climatizadores, title, showLoadMore, loadMoreTitle } = this.props,
       { limit } = this.state,
-      visibleClimts = climts.slice(0, limit || climts.length)
+      visibleClimts = climatizadores.slice(0, limit || climatizadores.length)
 
     return (
       <div className="GeneralSection">
         {title && <h2 className="GeneralSection--Title">{title}</h2>}
         {!!visibleClimts.length && (
           <div className="GeneralSection--Grid">
-            {visibleClimts.map((climt, index) => (
-              <ClimtCard key={climt.title + index} {...climt} />
+            {visibleClimts.map((climatizador, index) => (
+              <ClimtCard key={climatizador.title + index} {...climatizador} />
             ))}
           </div>
         )}
-        {showLoadMore && visibleClimts.length < climts.length && (
+        {showLoadMore && visibleClimts.length < climatizadores.length && (
           <div className="taCenter">
             <button className="button" onClick={this.increaseLimit}>
               {loadMoreTitle}

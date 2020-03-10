@@ -50,29 +50,29 @@ export class Navigation extends Component {
               {/* CLIMATIZADORES */}
               <div
                 className={`Nav--Group ${
-                  this.state.activeSubNav === 'climts' ? 'active' : ''
+                  this.state.activeSubNav === 'climatizadores' ? 'active' : ''
                 }`}
               >
                 <span
                   className={`NavLink Nav--GroupParent ${
-                    this.props.location.pathname.includes('climts') ||
-                    this.props.location.pathname.includes('climt') ||
-                    this.props.location.pathname.includes('climt-categories')
+                    this.props.location.pathname.includes('climatizadores') ||
+                    this.props.location.pathname.includes('climatizador') ||
+                    this.props.location.pathname.includes('climatizador-categories')
                       ? 'active'
                       : ''
                   }`}
-                  onClick={() => this.toggleSubNav('climts')}
+                  onClick={() => this.toggleSubNav('climatizadores')}
                 >
                   Climatizadores
                 </span>
                 <div className="Nav--GroupLinks">
-                  <NavLink to="/climt/" className="Nav--GroupLink">
+                  <NavLink to="/climatizador/" className="Nav--GroupLink">
                     Todos os Climatizadores
                   </NavLink>
-                  {subNav.climts.map((link, index) => (
+                  {subNav.climatizadores.map((link, index) => (
                     <NavLink
                       to={link.slug}
-                      key={'climts-subnav-link-' + index}
+                      key={'climatizadores-subnav-link-' + index}
                       className="Nav--GroupLink"
                     >
                       {link.title}

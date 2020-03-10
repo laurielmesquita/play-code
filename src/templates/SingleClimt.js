@@ -19,7 +19,7 @@ export const SingleClimtTemplate = ({
   <main>
     <PageHeader
       title={[
-        <a key="BackToIndex" href="/climt/">
+        <a key="BackToIndex" href="/climatizador/">
           <ChevronLeft /> Todos os Climatizadores
         </a>
       ]}
@@ -66,17 +66,17 @@ export const SingleClimtTemplate = ({
 )
 
 // Export Default SingleClimt for front-end
-const SingleClimt = ({ data: { climt, allPosts } }) => {
-  const thisEdge = allPosts.edges.find(edge => edge.node.id === climt.id)
+const SingleClimt = ({ data: { climatizador, allPosts } }) => {
+  const thisEdge = allPosts.edges.find(edge => edge.node.id === climatizador.id)
   return (
     <Layout
-      meta={climt.frontmatter.meta || false}
-      title={climt.frontmatter.title || false}
+      meta={climatizador.frontmatter.meta || false}
+      title={climatizador.frontmatter.title || false}
     >
       <SingleClimtTemplate
-        {...climt}
-        {...climt.frontmatter}
-        body={climt.html}
+        {...climatizador}
+        {...climatizador.frontmatter}
+        body={climatizador.html}
         nextPostURL={_get(thisEdge, 'next.fields.slug')}
         prevPostURL={_get(thisEdge, 'previous.fields.slug')}
       />
@@ -88,7 +88,7 @@ export default SingleClimt
 
 export const pageQuery = graphql`
   query SingleClimt($id: String!) {
-    climt: markdownRemark(id: { eq: $id }) {
+    climatizador: markdownRemark(id: { eq: $id }) {
       ...Meta
       html
       id
@@ -107,7 +107,7 @@ export const pageQuery = graphql`
     }
 
     allPosts: allMarkdownRemark(
-      filter: { fields: { contentType: { eq: "climts" } } }
+      filter: { fields: { contentType: { eq: "climatizadores" } } }
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

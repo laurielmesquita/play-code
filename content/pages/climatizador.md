@@ -1,6 +1,6 @@
 ---
 template: ClimtIndex
-slug: climt
+slug: climatizador
 title: Todos os Climatizadores
 featuredImage: 'https://brincadeira.co/'
 subtitle: Subtítulo para a página de Tendas.
