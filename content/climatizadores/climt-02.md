@@ -7,6 +7,7 @@ date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_180t_br.png
 price: R$300,00
 excerpt: >-
+  O Climat CLM-180T BR tem uma descrição sim, aguarde e logo estará disponível aqui.
   **Área climatizada:** De 100m² a 150m².
 
 
