@@ -5,5 +5,5 @@ subtitle: ''
 featuredImage: 'https://brincadeira.co/'
 meta:
   canonicalLink: 'https://brincadeira.co/climatizador-categories/aluguel/'
-  title: Aluguel
+  title: Categoria Aluguel
 ---
