@@ -34,7 +34,7 @@ const PageHero = ({
           )}
           <a
             className="Button Button--Large"
-            href="/toys/tombo-legal/"
+            href="/brinquedos/tombo-legal-ate-70-kg/"
             title="Mais informações sobre Tombo Legal"
           >
             Mais Informações
