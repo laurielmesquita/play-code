@@ -3,7 +3,7 @@ import React from 'react'
 
 export default ({ hdSectionTt, hdSectionSubTt }) => (
   <header className="hdSection">
-    <h1 className="hdSection--Title">{hdSectionTt}</h1>
+    <h2 className="hdSection--Title">{hdSectionTt}</h2>
     <h4 className="hdSection--SubTitle">{hdSectionSubTt}</h4>
   </header>
 )

@@ -10,7 +10,7 @@ const PageHeader = ({
   return (
     <div className={`PageHeader relative ${className}`}>
       <div className="container relative">
-        <h1 className="PageHeader--Title">{title}</h1>
+        <h2 className="PageHeader--Title">{title}</h2>
       </div>
     </div>
   )
