@@ -2,7 +2,7 @@ import React from 'react'
 import { MapPin, Smartphone, Mail } from 'react-feather'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
+import PageHeader1 from '../components/PageHeader1'
 import HeaderSection from '../components/HeaderSection'
 import Layout from '../components/Layout'
 
@@ -20,7 +20,7 @@ export const ContactPageTemplate = ({
   hdSectionSubTt
 }) => (
   <main className="Contact">
-    <PageHeader
+    <PageHeader1
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}

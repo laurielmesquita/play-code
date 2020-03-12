@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
+import PageHeader1 from '../components/PageHeader1'
 import HeaderSection from '../components/HeaderSection'
 import Content from '../components/Content'
 import Layout from '../components/Layout.js'
@@ -17,7 +17,7 @@ export const ComponentsPageTemplate = ({
   body
 }) => (
   <main>
-    <PageHeader title={title} />
+    <PageHeader1 title={title} />
     <section className="section">
       <div className="container">
         <div className="About">
