@@ -16,5 +16,5 @@ meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/touro-mecanico/'
   noindex: false
   title: Touro Mecânico
-  description: Encontrar uma agulha no palheiro não é difícil quando todo canudo é computadorizado. Mantenha sua mente flexível. Este homem é um cavaleiro de armadura brilhante. Eu acho que ele tem uma queda por você, Dex! Eu gosto de frutos do mar.
+  description: Finding a needle in a haystack is not difficult when every straw is computerized. Keep your mind flexible. This man is a knight in shining armor. I think he has a thing for you, Dex! I like seafood.
 ---
