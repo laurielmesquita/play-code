@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import { Location } from '@reach/router'
 import qs from 'qs'
 
-import PageHeader from '../components/PageHeader'
+import PageHeader1 from '../components/PageHeader1'
 import ClimtSection from '../components/ClimtSection'
 import ClimtCategoriesNav from '../components/ClimtCategoriesNav'
 import Layout from '../components/Layout'
@@ -64,7 +64,7 @@ export const ClimtIndexTemplate = ({
 
       return (
         <main className="General">
-          <PageHeader
+          <PageHeader1
             title={title}
             subtitle={subtitle}
             backgroundImage={featuredImage}
