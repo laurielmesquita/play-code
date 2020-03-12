@@ -18,7 +18,7 @@ categories:
   - category: Infláveis
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/castelinho/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Castelinho
+  description: Hoje é a noite. E isso vai acontecer de novo e de novo. Isso tem que acontecer. Eu sou realmente mais uma pessoa de apartamento.
 ---

@@ -18,7 +18,7 @@ categories:
   - category: Infláveis
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/bob-esponja/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Bob Esponja
+  description: Eu não sou o monstro que ele quer que eu seja. Então, eu não sou homem nem animal. Eu sou algo totalmente novo.
 ---

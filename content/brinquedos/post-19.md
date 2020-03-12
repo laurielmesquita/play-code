@@ -13,7 +13,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/sinuca/'
-  description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Sinuca
+  description: Eu me sinto como um quebra-cabeça faltando uma peça. E nem tenho certeza de qual deve ser a imagem. De alguma forma, duvido disso. Você tem um bom coração, Dexter.
 ---

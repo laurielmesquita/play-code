@@ -20,7 +20,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/gangorra-e-escorrega/'
-  description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Gangorra e Escorrega
+  description: Geralmente estou confuso a maior parte do tempo. Diga a ele que o tempo é essencial. Eu não sou um assassino. Eu sou parcial para o ar condicionado. Faz de conta.
 ---

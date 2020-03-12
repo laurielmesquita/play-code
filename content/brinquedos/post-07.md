@@ -18,7 +18,7 @@ categories:
   - category: Infláveis
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/futebol-de-sabao/'
-  description: O Futebol de Sabão com piso inflável, que pode ser utilizada com ou sem sabão.
   noindex: false
   title: Futebol de Sabão
+  description: Sou Dexter e não tenho certeza do que sou. Só você poderia fazer essas palavras fofas. Você é um assassino. Eu pego assassinos. Assistindo o gelo derreter. Isto é divertido. Como uma preguiça. Eu posso fazer isso.
 ---

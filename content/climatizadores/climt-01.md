@@ -15,7 +15,7 @@ categories:
   - category: Aluguel
 meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-85-rt-aluguel/'
-  description: Climat CLM-85RT
   noindex: false
   title: Climat CLM-85RT (AL)
+  description: Você é um assassino. Eu pego assassinos. Você está bem, Dexter? Eu amo o Halloween. A única época do ano em que todo mundo usa uma máscara.
 ---

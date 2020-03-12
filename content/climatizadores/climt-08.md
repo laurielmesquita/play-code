@@ -11,7 +11,7 @@ categories:
   - category: Venda
 meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-85-rt-eco/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Climat CLM-85RT ECO
+  description: Keep your mind limber. I'm a sociopath; there's not much he can do for me. Makes me a … scientist. You all right, Dexter? Tell him time is of the essence.
 ---

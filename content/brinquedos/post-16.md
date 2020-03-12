@@ -19,7 +19,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/tombo-legal-ate-70-kg/'
-  description: Descrição ocasional
   noindex: false
   title: Tombo Legal (até 70kg)
+  description: Teste a sua pontaria e desafie a sua própria coragem e a coragem de seus amigos com este brinquedo incrível, que consiste em derrubar uma pessoa na piscina de bolinhas através de um divertido jogo que testa a sua pontaria e a sua coordenação.
 ---

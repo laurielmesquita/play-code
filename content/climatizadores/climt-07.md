@@ -11,7 +11,7 @@ categories:
   - category: Venda
 meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-100-rt/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Climat CLM-100RT
+  description: Who knows? Maybe one day they will be. I'm thinking two circus clowns dancing. You? Only you could make those words cute.
 ---

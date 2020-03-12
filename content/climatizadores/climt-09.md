@@ -11,7 +11,7 @@ categories:
   - category: Venda
 meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-50-rt-new/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Climat CLM-50RT NEW
+  description: I'm going to tell you something that I've never told anyone before. I am not a killer. I'm really more an apartment person. I'm Dexter, and I'm not sure what I am. Hello, Dexter Morgan.
 ---

@@ -11,7 +11,7 @@ categories:
   - category: Infláveis
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/kid-play/'
-  description: É um multi atividades tematizado com impressão digital possui diversos obstáculos.
   noindex: false
   title: Kid Play
+  description: É um multi atividades tematizado com impressão digital possui diversos obstáculos. Brinquedo seguro com telas de proteção de alta resistência, ele valoriza práticas corporais em grupo de forma dinâmica e muito divertida.
 ---

@@ -14,7 +14,7 @@ categories:
   - category: Infláveis
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/frajola/'
-  description: Esperando o Márcio Quer Frango enviar a descrição do produto antes que John Connor lance uma ofensiva final contra a Skynet em 2029.
   noindex: false
   title: Frajola
+  description: Esperando o Márcio Quer Frango enviar a descrição do produto antes que John Connor lance uma ofensiva final contra a Skynet em 2029.
 ---

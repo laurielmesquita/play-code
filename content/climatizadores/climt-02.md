@@ -16,7 +16,7 @@ categories:
   - category: Aluguel
 meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-180-t-br-aluguel/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Climat CLM-180T BR (AL)
+  description: Eu vivi na escuridão há muito tempo. Ao longo dos anos, meus olhos se ajustaram até a escuridão se tornar meu mundo e eu pude ver.
 ---

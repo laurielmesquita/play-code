@@ -17,6 +17,6 @@ welcomeImage: https://brincadeira.co/images/kid.jpg
 welcomeTitle: Bem-vindo ao site da Brincadeira de Criança
 meta:
   canonicalLink: 'https://brincadeira.co'
-  description: Site institucional da empresa de aluguel Brincadeira de Criança.
   title:
+  description: A Brincadeira de Criança atua no mercado desde 2013 e somos uma empresa que presta serviços de locação de brinquedos, tendas e climatizadores para qualquer tipo de evento.
 ---

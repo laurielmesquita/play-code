@@ -11,7 +11,7 @@ categories:
   - category: Venda
 meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-85-rt/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Climat CLM-85RT
+  description: Watching ice melt. This is fun. I am not a killer. Watching ice melt. This is fun. I'm generally confused most of the time.
 ---

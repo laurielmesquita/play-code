@@ -11,7 +11,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/casa-de-bolinhas/'
-  description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Casa de Bolinhas
+  description: Eu amo o Halloween. A única época do ano em que todo mundo usa uma máscara ... não apenas eu. Estou fazendo valetes mentais. Eu me sinto como um quebra-cabeça faltando uma peça. E nem tenho certeza de qual deve ser a imagem.
 ---

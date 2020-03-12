@@ -19,7 +19,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/tombo-legal-ate-100-kg/'
-  description: Tombo Legal proporciona momentos de intensa alegria, tanto para quem atira as bolinhas quanto para quem está na cadeirinha.
   noindex: false
   title: Tombo Legal (até 100kg)
+  description: Tombo Legal proporciona momentos de intensa alegria, tanto para quem atira as bolinhas quanto para quem está na cadeirinha.
 ---

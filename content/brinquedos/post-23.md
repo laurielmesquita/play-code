@@ -11,7 +11,7 @@ categories:
   - category: Torta na Cara
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/brinquedo-torta-na-cara/'
-  description: Torta na Cara é um brinquedo interativo, capaz de tornar sua gincana muito mais dinâmica e divertida!
   noindex: false
   title: Brinquedo Torta na Cara
+  description: Torta na Cara é um brinquedo interativo, capaz de tornar sua gincana muito mais dinâmica e divertida!
 ---

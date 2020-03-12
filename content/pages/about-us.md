@@ -15,6 +15,6 @@ section1: >-
   Nosso objetivo é satisfazer nossos clientes, prezando pela qualidade no atendimento, pontualidade, cordialidade e produtos em bom estado proporcionando maior segurança.
 meta:
   canonicalLink: 'https://brincadeira.co/sobre-nos/'
-  description: Saiba um pouco mais sobre a Brincadeira de Criança
   title: Sobre Nós
+  description: Aqui você sabe um pouco mais sobre a Brincadeira de Criança, quando começamos, nosso objetivo, que tipo de público atendemos e mais.
 ---

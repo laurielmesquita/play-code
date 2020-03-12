@@ -13,7 +13,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/simulador-de-corridas/'
-  description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Simulador de Corridas
+  description: Eu sou realmente mais uma pessoa de apartamento. Eu sou realmente mais uma pessoa de apartamento. Eu não sou um assassino. Me faz um ... cientista. Diga a ele que o tempo é essencial.
 ---

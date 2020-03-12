@@ -11,7 +11,7 @@ categories:
   - category: Venda
 meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-180-rt-br/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Climat CLM-180RT BR
+  description: Policiais, outra comunidade da qual não faço parte. Eu gosto de frutos do mar Hoje é a noite. E isso vai acontecer de novo e de novo. Isso tem que acontecer.
 ---

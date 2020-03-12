@@ -16,7 +16,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/aero-hockey/'
-  description: Uma descrição sobre a página
   noindex: false
   title: Aero Hockey
+  description: Assistindo o gelo derreter. Isto é divertido. Eu vivi na escuridão há muito tempo. Ao longo dos anos, meus olhos se ajustaram até a escuridão se tornar meu mundo e eu pude ver.
 ---

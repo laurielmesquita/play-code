@@ -11,7 +11,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/pebolim/'
-  description: ste é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Pebolim
+  description: Deus criou pudim e depois descansou. Eu não vou matar minha irmã. Eu não vou matar minha irmã. Eu não vou matar minha irmã. Assistindo o gelo derreter. Isto é divertido.
 ---

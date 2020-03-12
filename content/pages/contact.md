@@ -11,6 +11,6 @@ phone2: (86) 99522-2449
 email: brincadeiradecriancathe@gmail.com
 meta:
   canonicalLink: 'https://brincadeira.co/contato/'
-  description: Nessa página você pode entrar em contato com a Brincadeira de Criança.
   title: Contact Page
+  description: Essa página é o lugar onde você pode entrar em contato com a Brincadeira de Criança e tirar suas dúvidas além de poder nos dar sugestões também.
 ---

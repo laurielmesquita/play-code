@@ -18,7 +18,7 @@ categories:
   - category: 3x3m
 meta:
   canonicalLink: 'https://brincadeira.co/tendas/tenda-3-x-3-m/'
-  description: Tenda 3x3m para múltiplos propósitos.
   noindex: false
   title: Tenda 3x3m
+  description: Aqui você encontra todas as tendas para aluguel de 3x3m que a Brincadeira de Criança tem disponível para múltiplos propósitos.
 ---

@@ -16,7 +16,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/multi-jogos/'
-  description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Multi Jogos
+  description: Rorschach diria que você tem dificuldade em se relacionar com os outros. Como uma preguiça. Eu posso fazer isso. Eu gosto de frutos do mar Eu não sou o monstro que ele quer que eu seja.
 ---

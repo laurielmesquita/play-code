@@ -11,7 +11,7 @@ categories:
   - category: Venda
 meta:
   canonicalLink: 'https://brincadeira.co/climatizadores/climat-clm-45-rt/'
-  description: Teste sua pontaria e derrube uma pessoa na piscina de bolinhas, ou seja corajoso para sentar na cadeirinha e ser derrubado.
   noindex: false
   title: Climat CLM-45RT
+  description: Rorschach would say you have a hard time relating to others. You're a killer. I catch killers. Hello, Dexter Morgan. Tell him time is of the essence. Somehow, I doubt that. You have a good heart, Dexter.
 ---

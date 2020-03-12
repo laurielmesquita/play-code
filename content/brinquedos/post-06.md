@@ -11,7 +11,7 @@ categories:
   - category: Infláveis
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/toboga/'
-  description: É um multi atividades tematizado com impressão digital possui diversos obstáculos.
   noindex: false
   title: Tobogã
+  description: Com meu próprio conjunto de regras. Eu sou Dexter. Vaia. Estou muito orgulhoso de você por ter vindo, mano. Eu sei que você odeia funerais.
 ---

@@ -11,7 +11,7 @@ categories:
   - category: Outros
 meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/tenis-de-mesa/'
-  description: Este é um texto de espaço reservado para garantir que as palavras apareça corretamente no seu site.
   noindex: false
   title: Tênis de Mesa
+  description: Encontrar uma agulha no palheiro não é difícil quando todo canudo é computadorizado. Mantenha sua mente flexível. Este homem é um cavaleiro de armadura brilhante. Eu acho que ele tem uma queda por você, Dex! Eu gosto de frutos do mar.
 ---
