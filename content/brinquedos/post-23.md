@@ -1,6 +1,6 @@
 ---
 template: SingleToy
-title: Torta na Cara
+title: Brinquedo Torta na Cara
 status: Featured / Published
 date: '2020-02-10'
 featuredImage: https://brincadeira.co/products/list_tortanacara.png
@@ -13,5 +13,5 @@ meta:
   canonicalLink: 'https://brincadeira.co/brinquedos/torta-na-cara/'
   description: Torta na Cara é um brinquedo interativo, capaz de tornar sua gincana muito mais dinâmica e divertida!
   noindex: false
-  title: Torta na Cara
+  title: Brinquedo Torta na Cara
 ---
