@@ -2,10 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  text-align: center;
 }
 
 .OurHighlights--Item {
-  @include padding(3rem);
+  @include padding(2rem);
   border-radius: $borderRadius;
   background-size: cover;
 
@@ -30,17 +31,27 @@
 .OurHighlights--Tt {
   @include font-size(1.6rem);
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.23rem;
-  @include margin-bottom(2.4rem);
+  @include rfs(0.8rem 0 2rem, margin);
 
   a {
     color: black;
 
     &:hover {
-      color: $primary;
+      color: white;
     }
+  }
+}
+
+.OurHighlights--Desc {
+  line-height: 1.4;
+  color: black;
+  @include rfs(1.8rem 0 1rem, margin);
+  transition: all 0.2s ease-in-out;
+
+  .OurHighlights--Img:hover & {
+    color: white;
   }
 }
 
@@ -50,13 +61,20 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  @include padding(4rem 2rem);
+  background: #fff5;
+  @include padding(1.2rem);
   width: 100%;
   height: auto;
-  background-color: white;
   border-radius: $borderRadius;
 
+  &:hover {
+    background: #0005;
+  }
+
   img {
+    @include padding(1.5rem);
+    border-radius: $borderRadius;
+    background-color: white;
     width: 100%;
   }
 }
@@ -76,21 +94,16 @@
 
 @media screen and (max-width: 1199.98px) {
   .OurHighlights--Item {
-    @include padding(2rem);
+    @include padding(1.5rem);
   }
 
   .OurHighlights--Img {
-    @include padding(3rem 2rem);
   }
 }
 
 @media screen and (max-width: 991.98px) {
-  // .OurHighlights--Item {
-  //   @include padding(2rem);
-  // }
-
   .OurHighlights--Img {
-    @include padding(3rem 2rem);
+    @include padding(1.2rem);
   }
 }
 
@@ -99,5 +112,13 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 413.98px) {
+  .OurHighlights {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 3rem 0;
   }
 }
