@@ -6,7 +6,7 @@ featuredImage: https://brincadeira.co/images/home_bg.jpg
 heroImage: https://brincadeira.co/products/tombo_legal.png
 heroTitle: Tombo Legal
 heroAlt: Foto do brinquedo Tombo Legal
-subtitle: 'Diversão em dobro com o **Tombo Legal**!'
+subtitle: Teste a sua pontaria e desafie a sua própria coragem e a coragem de seus amigos com este brinquedo incrível
 hdSectionTt01: Nossos Destaques
 hdSectionSubTt01: Conheça os Nossos Maiores Sucessos
 hdSectionTt02: Nossos Produtos
