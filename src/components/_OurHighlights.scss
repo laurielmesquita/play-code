@@ -50,14 +50,14 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
-  background: #fff5;
+  background: rgba($color: #FFF, $alpha: 0.7);
   width: 100%;
   height: auto;
   transition: all 0.2s ease-in-out;
   border-radius: $borderRadius;
 
   &:hover {
-    background: rgba($color: #000, $alpha: 0.2);
+    background: rgba($color: #000, $alpha: 0.25);
   }
 
   img {
@@ -100,17 +100,21 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991.98px) {
+@media screen and (min-width: 769px) and (max-width: 991.98px) {
   .OurHighlights--Tt {
     @include rfs(0.8rem 0 1.3rem, margin);
   }
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .OurHighlights {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
+  }
+
+  .OurHighlights--Item {
+    @include padding(2.2rem);
   }
 
   .OurHighlights--Img {
@@ -136,7 +140,8 @@
   }
 
   .OurHighlights--Item {
-    @include padding(3rem);
+    @include rfs(0 2rem, margin);
+    @include rfs(3rem, padding);
   }
 
   .OurHighlights--Tt {

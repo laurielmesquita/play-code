@@ -161,7 +161,19 @@ blockquote {
   padding: 0;
 }
 
-@media (max-width: 600px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .section {
+    @include padding(9rem 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    @include padding(16rem 0);
+  }
+}
+
+@media (max-width: 576px) {
   .section {
     width: 100%;
   }

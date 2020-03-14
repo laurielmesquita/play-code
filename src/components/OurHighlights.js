@@ -1,6 +1,6 @@
 /* eslint-disable react/display-name */
 import React from 'react'
-import tenda from '../../static/products/home_tenda.png'
+import tenda from '../../static/products/cat_tenda.png'
 import aerohockey from '../../static/products/home_aerohockey.png'
 import camaelastica from '../../static/products/home_camaelastica.png'
 import pulapula from '../../static/products/home_pulapula.png'
