@@ -29,7 +29,7 @@
 }
 
 .OurHighlights--Tt {
-  @include font-size(1.6rem);
+  @include rfs(1.6rem, font-size);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.23rem;
@@ -137,6 +137,10 @@
 
   .OurHighlights--Item {
     @include padding(3rem);
+  }
+
+  .OurHighlights--Tt {
+    @include rfs(2.4rem, font-size);
   }
 
   .OurHighlights--Desc {

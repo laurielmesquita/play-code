@@ -6,7 +6,7 @@
 }
 
 .hdSection--Title {
-  @include font-size(3.2rem);
+  @include font-size(3.8rem);
   text-transform: uppercase;
   letter-spacing: 0.37rem;
   line-height: 1.2;
@@ -49,5 +49,11 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .hdSection--Title {
+    @include font-size(3.8rem);
   }
 }
