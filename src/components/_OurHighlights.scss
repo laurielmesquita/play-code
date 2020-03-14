@@ -1,7 +1,7 @@
 .OurHighlights {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
   text-align: center;
 }
 
@@ -44,17 +44,6 @@
   }
 }
 
-.OurHighlights--Desc {
-  line-height: 1.4;
-  color: black;
-  @include rfs(1.8rem 0 1rem, margin);
-  transition: all 0.2s ease-in-out;
-
-  .OurHighlights--Img:hover & {
-    color: white;
-  }
-}
-
 .OurHighlights--Img {
   display: flex;
   align-items: stretch;
@@ -62,20 +51,33 @@
   justify-content: center;
   overflow: hidden;
   background: #fff5;
-  @include padding(1.2rem);
   width: 100%;
   height: auto;
+  transition: all 0.2s ease-in-out;
   border-radius: $borderRadius;
 
   &:hover {
-    background: #0005;
+    background: rgba($color: #000, $alpha: 0.2);
   }
 
   img {
-    @include padding(1.5rem);
-    border-radius: $borderRadius;
+    display: block;
+    @include rfs(2rem, padding);
+    border-radius: $borderRadius $borderRadius 0 0;
     background-color: white;
     width: 100%;
+  }
+}
+
+.OurHighlights--Desc {
+  line-height: 1.4;
+  color: rgba($color: #000, $alpha: 0.8);
+  @include rfs(1.5rem 1.2rem 1.8rem, padding);
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+
+  .OurHighlights--Img:hover & {
+    color: white;
   }
 }
 
@@ -94,16 +96,13 @@
 
 @media screen and (max-width: 1199.98px) {
   .OurHighlights--Item {
-    @include padding(1.5rem);
-  }
-
-  .OurHighlights--Img {
+    @include padding(1.7rem);
   }
 }
 
-@media screen and (max-width: 991.98px) {
-  .OurHighlights--Img {
-    @include padding(1.2rem);
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .OurHighlights--Tt {
+    @include rfs(0.8rem 0 1.3rem, margin);
   }
 }
 
@@ -113,6 +112,20 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 3rem;
   }
+
+  .OurHighlights--Img {
+    img {
+      @include rfs(4rem, padding);
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .OurHighlights--Img {
+    img {
+      @include rfs(1rem 3rem, padding);
+    }
+  }
 }
 
 @media screen and (max-width: 413.98px) {
@@ -120,5 +133,19 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 3rem 0;
+  }
+
+  .OurHighlights--Item {
+    @include padding(3rem);
+  }
+
+  .OurHighlights--Desc {
+    @include rfs(2rem 1.6rem, padding);
+  }
+
+  .OurHighlights--Img {
+    img {
+      @include rfs(6rem, padding);
+    }
   }
 }

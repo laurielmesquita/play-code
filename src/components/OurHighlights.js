@@ -11,37 +11,53 @@ export default () => (
       <h2 className="OurHighlights--Tt">
         <a href="/tenda/">Tendas</a>
       </h2>
-      <a href="/tenda/" className="OurHighlights--Img">
-        <img src={tenda} title="Tendas" alt="Foto da Tenda" />
-        <p className="OurHighlights--Desc">Aqui você encontrará uma tenda para cada ocasião que precisar</p>
-      </a>
+      <div className="OurHighlights--Img">
+        <a href="/tenda/">
+          <img src={tenda} title="Tendas" alt="Foto da Tenda" />
+        </a>
+        <p className="OurHighlights--Desc">
+          Aqui você encontrará uma tenda para cada ocasião que precisar
+        </p>
+      </div>
     </div>
     <div className="OurHighlights--Item">
       <h2 className="OurHighlights--Tt">
         <a href="/brinquedos/aero-hockey/">Aero Hockey</a>
       </h2>
-      <a href="/brinquedos/aero-hockey/" className="OurHighlights--Img">
-        <img src={aerohockey} title="Tendas" alt="Foto da Tenda" />
-        <p className="OurHighlights--Desc">Aqui você encontrará uma tenda para cada situação que precisar</p>
-      </a>
+      <div className="OurHighlights--Img">
+        <a href="/brinquedos/aero-hockey/">
+          <img src={aerohockey} title="Tendas" alt="Foto da Tenda" />
+        </a>
+        <p className="OurHighlights--Desc">
+          Aqui você encontrará uma tenda para cada situação que precisar
+        </p>
+      </div>
     </div>
     <div className="OurHighlights--Item">
       <h2 className="OurHighlights--Tt">
         <a href="/brinquedos/cama-elastica-3-05-m/">Cama Elástica</a>
       </h2>
-      <a href="/brinquedos/cama-elastica-3-05-m/" className="OurHighlights--Img">
-        <img src={camaelastica} title="Tendas" alt="Foto da Tenda" />
-        <p className="OurHighlights--Desc">Aqui você encontrará uma tenda para cada situação que precisar</p>
-      </a>
+      <div className="OurHighlights--Img">
+        <a href="/brinquedos/cama-elastica-3-05-m/">
+          <img src={camaelastica} title="Tendas" alt="Foto da Tenda" />
+        </a>
+        <p className="OurHighlights--Desc">
+          Aqui você encontrará uma tenda para cada situação que precisar
+        </p>
+      </div>
     </div>
     <div className="OurHighlights--Item">
       <h2 className="OurHighlights--Tt">
         <a href="/brinquedos/castelinho/">Pula Pula</a>
       </h2>
-      <a href="/brinquedos/castelinho/" className="OurHighlights--Img">
-        <img src={pulapula} title="Tendas" alt="Foto da Tenda" />
-        <p className="OurHighlights--Desc">Aqui você encontrará uma tenda para cada situação que precisar</p>
-      </a>
+      <div className="OurHighlights--Img">
+        <a href="/brinquedos/castelinho/">
+          <img src={pulapula} title="Tendas" alt="Foto da Tenda" />
+        </a>
+        <p className="OurHighlights--Desc">
+          Aqui você encontrará uma tenda para cada situação que precisar
+        </p>
+      </div>
     </div>
   </div>
 )
