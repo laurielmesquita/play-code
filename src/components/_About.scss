@@ -61,6 +61,7 @@
   .About {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
+    @include padding(0 6rem);
 
     p {
       padding: 0;
