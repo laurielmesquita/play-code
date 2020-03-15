@@ -12,6 +12,7 @@
   letter-spacing: 0.1rem;
   color: $midOrange;
   font-weight: 500;
+  @include rfs(3rem, margin-top);
   svg {
     margin-right: 1.5rem;
   }
