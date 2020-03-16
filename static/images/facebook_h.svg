@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 24.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 46 46" style="enable-background:new 0 0 46 46;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
-</style>
-<path id="facebook" class="st0" d="M24.175,18.99v-1.606c-0.06365-0.46009,0.25772-0.88467,0.71781-0.94832
-	c0.05339-0.00739,0.10737-0.00962,0.16119-0.00668H27.3V13h-3.092c-2.14001-0.1832-4.02334,1.40311-4.20654,3.54312
-	C19.98307,16.758,19.98258,16.97404,20,17.189v1.8h-2v4h2.019V33h4V22.994h2.967l0.131-1.574l0.238-2.43H24.175z"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46"><path d="M24.175 18.99v-1.606a.841.841 0 01.879-.955H27.3V13h-3.092A3.889 3.889 0 0020 17.189v1.8h-2v4h2.019V33h4V22.994h2.967l.131-1.574.238-2.43h-3.18z" fill-rule="evenodd" clip-rule="evenodd" fill="#fff"/></svg>
