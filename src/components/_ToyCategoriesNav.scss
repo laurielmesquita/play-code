@@ -34,6 +34,7 @@
 
     .NavLink {
       @include rfs(0.14em, letter-spacing);
+      @include rfs(1.4rem 0 0, margin);
     }
     
     input[type='text'] {
@@ -52,7 +53,7 @@
   .GeneralCategoriesNav {
     .NavLink {
       @include font-size(1.2rem);
-      @include padding(0.5rem 0.7rem);
+      @include padding(0.8rem 1.4rem);
       @include rfs(0.1em, letter-spacing);
     }
   }
