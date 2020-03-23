@@ -57,7 +57,7 @@
   border-radius: $borderRadius;
 
   &:hover {
-    background: rgba($color: #000, $alpha: 0.25);
+    background: rgba($color: #FFF, $alpha: 1);
   }
 
   img {
@@ -71,13 +71,13 @@
 
 .OurHighlights--Desc {
   line-height: 1.4;
-  color: rgba($color: #000, $alpha: 0.8);
+  color: rgba($color: #000, $alpha: 0.85);
   @include rfs(1.5rem 1.2rem 1.8rem, padding);
   margin: 0;
   transition: all 0.2s ease-in-out;
 
   .OurHighlights--Img:hover & {
-    color: white;
+    color: black;
   }
 }
 
