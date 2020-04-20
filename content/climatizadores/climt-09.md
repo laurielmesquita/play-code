@@ -4,8 +4,11 @@ title: Climat CLM-50RT NEW
 status: Featured / Published
 date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_50rt_new.png
-price: R$1.650,00
+price: R$1.800,00
 excerpt: >-
+  Ou em **12x SEM JUROS** de **R$150,00**    
+  
+
   **Área climatizada:** De 30m² a 50m².
 categories:
   - category: Venda

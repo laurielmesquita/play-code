@@ -4,8 +4,11 @@ title: Climat CLM-180T BR
 status: Featured / Published
 date: '2020-02-27'
 featuredImage: https://brincadeira.co/products/list_climt_180t_br.png
-price: R$6.286,00
+price: R$6.456,00
 excerpt: >-
+  Ou em **12x SEM JUROS** de **R$538,00**    
+  
+
   **Área climatizada:** De 100m² a 150m².
 categories:
   - category: Venda
